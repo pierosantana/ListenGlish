@@ -1,20 +1,17 @@
 # ──────────────────────────────────────────────────────────
-# Stage 1 — build: compila el JAR con Maven en una imagen JDK
+# Stage 1 — build: compila el JAR con Maven
 # ──────────────────────────────────────────────────────────
-FROM eclipse-temurin:21-jdk AS build
+FROM maven:3.9-eclipse-temurin-21 AS build
 
 WORKDIR /build
 
-# Copiar primero pom.xml para aprovechar la caché de Docker:
-# si solo cambia el código, no re-descargamos todas las deps.
+# Copiar pom.xml primero para que Docker cachee la descarga de deps:
+# si solo cambia el código fuente, no se re-descarga todo.
 COPY pom.xml ./
-RUN --mount=type=cache,target=/root/.m2 \
-    apt-get update && apt-get install -y --no-install-recommends maven && \
-    mvn -q -B dependency:go-offline
+RUN mvn -q -B dependency:go-offline
 
 COPY src ./src
-RUN --mount=type=cache,target=/root/.m2 \
-    mvn -q -B -DskipTests package && \
+RUN mvn -q -B -DskipTests package && \
     cp target/listenglish-*.jar /build/app.jar
 
 # ──────────────────────────────────────────────────────────
@@ -30,9 +27,8 @@ USER spring
 
 COPY --from=build /build/app.jar /app/app.jar
 
-# Railway inyecta PORT dinámicamente; application.yml lo usa con ${PORT:8080}.
+# Railway inyecta PORT dinámicamente; application.yml lo lee con ${PORT:8080}.
 EXPOSE 8080
 
-# -XX:+UseContainerSupport ya es el default en JDK 21,
-# pero fijamos MaxRAMPercentage por si el contenedor tiene límite de memoria.
+# MaxRAMPercentage ajusta el heap al tamaño real del contenedor.
 ENTRYPOINT ["sh", "-c", "java -XX:MaxRAMPercentage=75 -jar /app/app.jar"]
