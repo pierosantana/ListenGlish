@@ -25,12 +25,17 @@ API_URL = "http://localhost:8080/api/admin/videos"
 def ingest(youtube_id, title, channel, accent=None, cookies_file=None):
     print(f"Descargando transcripción de: {youtube_id}")
 
-    kwargs = {}
+    http_client = None
     if cookies_file:
-        kwargs["cookies"] = cookies_file
+        import requests, http.cookiejar
+        jar = http.cookiejar.MozillaCookieJar(cookies_file)
+        jar.load(ignore_discard=True, ignore_expires=True)
+        session = requests.Session()
+        session.cookies = jar
+        http_client = session
         print(f"  → Usando cookies de: {cookies_file}")
 
-    api = YouTubeTranscriptApi(**kwargs)
+    api = YouTubeTranscriptApi(http_client=http_client)
     transcript = list(api.fetch(youtube_id))
     print(f"  → {len(transcript)} segmentos descargados")
 

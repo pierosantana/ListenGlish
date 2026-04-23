@@ -1,4 +1,4 @@
--- Seed: 21 vídeos y 7.200+ segmentos de transcripciones reales
+-- Seed: 28 vídeos, 9.180+ segmentos de transcripciones reales
 -- TRUNCATE + RESTART IDENTITY garantiza IDs limpios en cualquier entorno.
 TRUNCATE subtitle_segment, video RESTART IDENTITY CASCADE;
 
@@ -23,7 +23,14 @@ INSERT INTO video (id, youtube_id, title, channel, duration_seconds, language, a
   (92, 'o_XVt5rdpFY', 'The secrets of learning a new language', 'TED', 644, 'en', 'american'),
   (93, 'oO8w6XcXJUs', 'Elon Musk Full Interview', 'Real Time with Bill Maher', 1266, 'en', 'american'),
   (94, 'oX7OduG1YmI', 'The Future Mark Zuckerberg Is Trying To Build', 'Cleo Abram', 2829, 'en', 'american'),
-  (95, 'Pkj-BLHs6dE', 'Jensen Huang of Nvidia on the Future of AI', 'DealBook Summit', 1689, 'en', 'american');
+  (95, 'Pkj-BLHs6dE', 'Jensen Huang of Nvidia on the Future of AI', 'DealBook Summit', 1689, 'en', 'american'),
+  (96, 'xNmf-G81Irs', 'Breaking the language barrier', 'TEDx Talks', 979, 'en', 'american'),
+  (97, 'zESeeaFDVSw', 'Draw your future', 'TEDx Talks', 623, 'en', 'american'),
+  (98, 'aaXBYcfVYZM', 'Living without shame', 'TEDx Talks', 1197, 'en', 'american'),
+  (99, 'ljqra3BcqWM', 'Extreme Ownership', 'TEDx Talks', 817, 'en', 'american'),
+  (100, 'arj7oStGLkU', 'Inside the Mind of a Master Procrastinator', 'TED', 842, 'en', 'american'),
+  (101, 'pF72px2R3Hg', 'Why I live a zero waste life', 'TEDx Talks', 808, 'en', 'american'),
+  (102, 'vVsXO9brK7M', 'How to know your life purpose in 5 minutes', 'TEDx Talks', 605, 'en', 'american');
 
 INSERT INTO subtitle_segment (id, video_id, text, start_seconds, end_seconds, search_vector) VALUES
   (227, 54, 'Good morning. How are you?', 27.103, 29.678, NULL),
@@ -9826,9 +9833,2770 @@ INSERT INTO subtitle_segment (id, video_id, text, start_seconds, end_seconds, se
   (7535, 95, 'Wong everybody. Thank you ', 1687.594, 1689.194, NULL),
   (7536, 95, 'very  very  much. ', 1688.228, 1689.528, NULL),
   (7537, 95, 'long everybody. ', 1688.661, 1689.528, NULL),
-  (7538, 95, 'Thanks everybody', 1689.294, 1689.528, NULL);
+  (7538, 95, 'Thanks everybody', 1689.294, 1689.528, NULL),
+  (7539, 96, 'Transcriber: Amir HABCHI
+Reviewer: ngoc son Huynh', 0.000, 7.000, NULL),
+  (7540, 96, 'So about two years ago,', 26.754, 28.517, NULL),
+  (7541, 96, 'I was featured in
+a New York Times article called,', 28.517, 31.024, NULL),
+  (7542, 96, '"Adventures of a teenage polyglot,"', 31.024, 32.761, NULL),
+  (7543, 96, 'which featured my passion
+for learning foreign languages,', 32.761, 35.841, NULL),
+  (7544, 96, 'this peculiar hobby that I had.', 35.841, 38.253, NULL),
+  (7545, 96, 'And at first I thought it was great.', 38.253, 40.265, NULL),
+  (7546, 96, 'I loved the fact that language learning
+was getting more attention', 40.265, 43.377, NULL),
+  (7547, 96, 'and that it wouldn''t always', 43.377, 44.736, NULL),
+  (7548, 96, 'seem like an isolating hobby', 44.736, 46.121, NULL),
+  (7549, 96, 'that was suddenly putting me into contact
+with people all around the world.', 46.121, 49.705, NULL),
+  (7550, 96, 'And as I spent more time
+in the media spotlight,', 49.705, 52.395, NULL),
+  (7551, 96, 'the focus of my story began to shift.', 52.395, 54.800, NULL),
+  (7552, 96, 'So whereas I''ve always been interested
+in talking about the why and the how,', 55.560, 59.262, NULL),
+  (7553, 96, 'why I was learning foreign languages,
+how I did it,', 59.262, 62.169, NULL),
+  (7554, 96, 'instead, it turned into a bit of a circus,', 62.169, 64.509, NULL),
+  (7555, 96, 'in which media shows wanted
+to sensationalize my story.', 64.509, 68.930, NULL),
+  (7556, 96, 'So it would go a little something
+like this,', 69.659, 72.112, NULL),
+  (7557, 96, '"Hello, I''m here today with
+17-year-old Timothy Doner', 72.112, 74.885, NULL),
+  (7558, 96, 'who''s fluent in 20 languages.', 74.885, 77.050, NULL),
+  (7559, 96, 'Oh, I''m sorry.', 77.050, 78.057, NULL),
+  (7560, 96, 'He actually can insult you in 25 languages', 78.057, 80.515, NULL),
+  (7561, 96, 'and he''s fluent in another ten.', 80.515, 82.573, NULL),
+  (7562, 96, 'Tim, how about you tell our audience
+''Good morning''', 82.573, 86.237, NULL),
+  (7563, 96, 'and ''Thank you for watching'', in Muslim?"', 86.237, 88.769, NULL),
+  (7564, 96, '(Laughter)', 88.769, 91.759, NULL),
+  (7565, 96, '"Er... Arabic."', 93.003, 94.781, NULL),
+  (7566, 96, '(Arabic)', 96.261, 99.304, NULL),
+  (7567, 96, '"Great Tim. Now can we get you', 99.765, 101.314, NULL),
+  (7568, 96, 'to introduce yourself and say,', 101.314, 102.870, NULL),
+  (7569, 96, '''I''m fluent in 23 languages'' in German."', 102.870, 104.899, NULL),
+  (7570, 96, '"It''s not really true. But..."', 104.899, 106.741, NULL),
+  (7571, 96, '"No, no, just tell the audience."', 106.741, 108.520, NULL),
+  (7572, 96, '(German)', 108.520, 112.212, NULL),
+  (7573, 96, '"Perfect. Now how about', 117.778, 119.141, NULL),
+  (7574, 96, 'a tongue twister in Chinese?', 119.141, 120.758, NULL),
+  (7575, 96, '(Laughter)', 120.758, 122.250, NULL),
+  (7576, 96, '"Well, we could talk about Chinese,', 122.250, 124.772, NULL),
+  (7577, 96, 'you know, a lot more Americans
+are learning Chinese these days,', 124.772, 127.790, NULL),
+  (7578, 96, 'and I think there''s
+a lot of value in that."', 127.790, 129.978, NULL),
+  (7579, 96, '"No, no, no. 
+Just give us a tongue twister."', 129.978, 132.131, NULL),
+  (7580, 96, '(Laughter)', 132.131, 132.991, NULL),
+  (7581, 96, '(Chinese)', 132.991, 136.111, NULL),
+  (7582, 96, '"This guy! Tim, how about', 138.444, 139.775, NULL),
+  (7583, 96, 'another tongue twister in Chinese?"', 139.775, 141.751, NULL),
+  (7584, 96, '"I will prefer not to, but you know', 141.751, 143.429, NULL),
+  (7585, 96, 'we could talk about China.', 143.429, 145.107, NULL),
+  (7586, 96, 'There''s a lot you can gain
+by learning a language.', 145.107, 147.551, NULL),
+  (7587, 96, '"Oh Tim, I''m sorry,
+That''s all the time we have."', 147.551, 149.895, NULL),
+  (7588, 96, '(Laughter)', 149.895, 151.428, NULL),
+  (7589, 96, '(Applause)', 151.428, 153.772, NULL),
+  (7590, 96, '"Now why don''t you to tell our audience', 157.506, 159.507, NULL),
+  (7591, 96, '''Goodbye'' in Turkish', 159.507, 160.668, NULL),
+  (7592, 96, 'and we will be over here?"', 160.668, 162.249, NULL),
+  (7593, 96, '"You know we haven''t talk
+about anything substantive."', 162.249, 164.908, NULL),
+  (7594, 96, '"But Turkish please."', 164.908, 166.612, NULL),
+  (7595, 96, '(Turkish)', 166.612, 171.767, NULL),
+  (7596, 96, '"How about that kid, right,', 171.767, 173.089, NULL),
+  (7597, 96, 'wonder if he gets any girls...', 173.089, 174.937, NULL),
+  (7598, 96, '(Laughter)', 174.937, 178.502, NULL),
+  (7599, 96, 'Now stay with us because up next,', 178.502, 181.017, NULL),
+  (7600, 96, 'a skateboarding bulldog
+in a bathing suit."', 181.017, 183.255, NULL),
+  (7601, 96, '(Laughter)', 183.255, 185.250, NULL),
+  (7602, 96, '(Applause)', 185.250, 190.742, NULL),
+  (7603, 96, 'So, as funny as that was,', 190.742, 193.997, NULL),
+  (7604, 96, 'it highlighted two pretty major problems', 193.997, 196.081, NULL),
+  (7605, 96, 'in the way my story was covered.', 196.081, 197.698, NULL),
+  (7606, 96, 'On a personal level,', 197.698, 199.554, NULL),
+  (7607, 96, 'I felt that language learning was now 
+becoming like a bit of a task, almost.', 200.164, 204.468, NULL),
+  (7608, 96, 'It felt like something that was suddenly
+had to be rigidly organized.', 204.468, 209.364, NULL),
+  (7609, 96, 'Something that had to be 
+compartmentalized, rationalized,', 209.364, 212.261, NULL),
+  (7610, 96, 'expressed in a concrete number.', 212.261, 213.929, NULL),
+  (7611, 96, 'I speak X languages.', 213.929, 214.925, NULL),
+  (7612, 96, 'I know Y languages.', 214.925, 216.581, NULL),
+  (7613, 96, 'As opposed to what I''d always done,', 216.581, 218.519, NULL),
+  (7614, 96, 'which was just learning languages
+for the fun of it.', 218.519, 220.976, NULL),
+  (7615, 96, 'Learning to communicate with people,', 220.976, 222.759, NULL),
+  (7616, 96, 'learning about foreign cultures.', 222.759, 224.457, NULL),
+  (7617, 96, 'And on a bigger level, it''s cheapened
+what it meant to speak a language,', 224.457, 227.951, NULL),
+  (7618, 96, 'or to know a language.', 227.959, 229.235, NULL),
+  (7619, 96, 'Now if I can impart you
+with anything today at TEDxTeen,', 229.235, 232.041, NULL),
+  (7620, 96, 'it''s that knowing a language', 232.041, 233.724, NULL),
+  (7621, 96, 'is a lot more than knowing
+a couple of words out of a dictionary.', 233.724, 236.885, NULL),
+  (7622, 96, 'It''s a lot more that being able', 236.885, 238.481, NULL),
+  (7623, 96, 'to ask someone where the bathroom is,', 238.481, 240.361, NULL),
+  (7624, 96, 'or telling them the time of day.', 240.361, 242.068, NULL),
+  (7625, 96, 'But, I''m getting ahead of myself.', 242.068, 244.105, NULL),
+  (7626, 96, 'So for those of you
+who aren''t familiar with my story,', 244.945, 247.681, NULL),
+  (7627, 96, 'maybe a lot of you here
+don''t know what the word polyglot is,', 247.685, 250.627, NULL),
+  (7628, 96, 'and it''s a pretty weird one.', 250.627, 252.576, NULL),
+  (7629, 96, 'I started here.', 254.496, 255.774, NULL),
+  (7630, 96, 'So this little tot is me, circa 2001,', 256.754, 259.736, NULL),
+  (7631, 96, 'and this is the beginning
+of my language learning journey.', 259.736, 262.551, NULL),
+  (7632, 96, 'I actually was a child actor ', 262.551, 264.146, NULL),
+  (7633, 96, 'before I''d learned any languages.', 264.146, 265.877, NULL),
+  (7634, 96, 'And I always had a little bit of a gift
+for accent.', 265.877, 268.508, NULL),
+  (7635, 96, 'So I''m going to auditions
+for radio commercials,', 268.508, 270.765, NULL),
+  (7636, 96, 'or for TV commercials,', 270.765, 272.062, NULL),
+  (7637, 96, 'and I''d do an Austin Powers impression.', 272.062, 274.152, NULL),
+  (7638, 96, 'I''m not going to do one now.', 274.152, 276.138, NULL),
+  (7639, 96, '(Laughter)', 276.738, 279.768, NULL),
+  (7640, 96, 'Or maybe I would do ', 279.768, 281.196, NULL),
+  (7641, 96, 'Apu from the Simpsons.', 281.196, 282.624, NULL),
+  (7642, 96, 'In fact there was actually
+one time an audition', 282.624, 284.862, NULL),
+  (7643, 96, 'which I was asked to leave,', 284.862, 286.304, NULL),
+  (7644, 96, 'because they told me to speak
+like a little kid with a lisp,', 286.304, 289.264, NULL),
+  (7645, 96, 'and I wanted to do
+Darth Vader in a French accent.', 289.264, 291.819, NULL),
+  (7646, 96, '(Laughter)', 291.819, 293.496, NULL),
+  (7647, 96, 'But, that taught me the basics of', 293.496, 295.919, NULL),
+  (7648, 96, 'of how to breakdown sound.', 295.919, 297.895, NULL),
+  (7649, 96, 'How to pick up a foreign accent,', 297.895, 299.817, NULL),
+  (7650, 96, 'or foreign speech patterns,', 299.817, 301.292, NULL),
+  (7651, 96, 'and really live with it.', 301.292, 302.769, NULL),
+  (7652, 96, 'Now fast forward a little bit,', 302.769, 304.587, NULL),
+  (7653, 96, 'I''m now in about third grade,', 305.245, 306.769, NULL),
+  (7654, 96, 'and I''ve just started French
+for the first time.', 306.769, 309.110, NULL),
+  (7655, 96, 'But six months into a year,', 309.110, 310.515, NULL),
+  (7656, 96, 'into even two years later,', 310.515, 311.760, NULL),
+  (7657, 96, 'I can''t converse with anybody.', 311.760, 313.265, NULL),
+  (7658, 96, 'French is just another subject in school,', 313.265, 315.272, NULL),
+  (7659, 96, 'and even though I can tell you words ', 315.272, 317.263, NULL),
+  (7660, 96, 'for elbow, knee bone, shoelace.', 317.263, 319.255, NULL),
+  (7661, 96, 'I couldn''t really have
+a fluent conversation with anybody.', 319.509, 322.522, NULL),
+  (7662, 96, 'Fast forward a little bit more.', 323.522, 325.510, NULL),
+  (7663, 96, 'In seventh grade, I started Latin.', 325.510, 327.200, NULL),
+  (7664, 96, 'So Latin of course is a dead language,', 327.200, 329.016, NULL),
+  (7665, 96, 'and in learning Latin, you really learn', 329.016, 331.107, NULL),
+  (7666, 96, 'how to breakdown language,', 331.107, 332.351, NULL),
+  (7667, 96, 'to see language as a system', 332.351, 333.753, NULL),
+  (7668, 96, 'with rules, and as a bit of a puzzle.', 333.753, 336.128, NULL),
+  (7669, 96, 'So that was great,', 336.128, 337.270, NULL),
+  (7670, 96, 'but I still didn''t feel
+like language was for me.', 337.270, 339.621, NULL),
+  (7671, 96, 'So, forward a little bit more.', 340.493, 342.508, NULL),
+  (7672, 96, 'About 13,', 342.508, 343.515, NULL),
+  (7673, 96, 'and I''ve been interested in learning more ', 343.515, 345.536, NULL),
+  (7674, 96, 'about the Israeli-Palestinian conflict,', 345.536, 347.447, NULL),
+  (7675, 96, 'I started studying Hebrew.', 347.447, 348.868, NULL),
+  (7676, 96, 'Now, I had no way of doing it.', 348.868, 350.429, NULL),
+  (7677, 96, 'I had no idea
+what I was supposed to be doing,', 350.429, 352.647, NULL),
+  (7678, 96, 'so I listen to a lot of Rap music.', 352.647, 354.478, NULL),
+  (7679, 96, 'I memorize lyrics,
+I''d spit them back out,', 354.478, 357.011, NULL),
+  (7680, 96, 'and I would just try to chat
+with native speakers,', 357.011, 359.479, NULL),
+  (7681, 96, 'once a week, once a month,', 359.479, 361.261, NULL),
+  (7682, 96, 'and I''ve got that incrementally,', 361.261, 363.600, NULL),
+  (7683, 96, 'I started to understand a lot more.', 363.006, 364.751, NULL),
+  (7684, 96, 'Now I didn''t sound like a native speaker,', 364.751, 366.797, NULL),
+  (7685, 96, 'I couldn''t speak very articulately and', 366.797, 368.756, NULL),
+  (7686, 96, 'I certainly didn''t know the grammar.', 368.756, 370.712, NULL),
+  (7687, 96, 'but I had done what I''d never
+managed to do in school,', 370.712, 373.396, NULL),
+  (7688, 96, 'which was to pick up
+the basics of a language', 373.396, 375.548, NULL),
+  (7689, 96, 'all on my own.', 375.548, 376.829, NULL),
+  (7690, 96, 'Forward a little bit more.', 376.829, 378.544, NULL),
+  (7691, 96, 'I started taking Arabic when I was 14 ', 378.544, 380.592, NULL),
+  (7692, 96, 'in a summer program going into 9th grade.', 380.592, 382.614, NULL),
+  (7693, 96, 'This is summer of 2010.', 382.614, 383.776, NULL),
+  (7694, 96, 'After a month I found
+that I could read and write', 383.776, 386.233, NULL),
+  (7695, 96, 'without a problem.', 386.233, 387.550, NULL),
+  (7696, 96, 'I''d learned the basics 
+of the formal language', 387.550, 389.780, NULL),
+  (7697, 96, 'and one of its major dialects.', 389.780, 391.600, NULL),
+  (7698, 96, 'And it turned me onto the fact that I
+could really pursue languages as a hobby.', 391.600, 395.470, NULL),
+  (7699, 96, 'So, it finally came to March 24th 2011.', 395.470, 399.515, NULL),
+  (7700, 96, 'So I''ve pretty vicious insomnia,', 399.515, 401.241, NULL),
+  (7701, 96, 'and as I was studying more languages', 401.241, 403.317, NULL),
+  (7702, 96, 'using grammar books or watching TV shows,', 403.317, 405.871, NULL),
+  (7703, 96, 'and let''s say Arabic or Hebrew,
+became one way of focusing my time.', 405.871, 409.470, NULL),
+  (7704, 96, 'So on that night, while I was 
+awake till some ungodly hour,', 410.425, 416.026, NULL),
+  (7705, 96, 'I recorded myself speaking Arabic
+into my computer screen,', 416.026, 418.738, NULL),
+  (7706, 96, 'subtitled it,', 418.738, 419.754, NULL),
+  (7707, 96, 'and I uploaded it to YouTube', 419.754, 421.263, NULL),
+  (7708, 96, 'under the title, "Tim speaks Arabic."', 421.263, 423.198, NULL),
+  (7709, 96, '(Arabic)', 423.198, 425.037, NULL),
+  (7710, 96, 'Next day I did the same thing,', 425.037, 426.513, NULL);
 
--- Reconstruir search_vector con config 'simple'
+INSERT INTO subtitle_segment (id, video_id, text, start_seconds, end_seconds, search_vector) VALUES
+  (7711, 96, '(In Hebrew)', 426.513, 427.520, NULL),
+  (7712, 96, 'Tim speaks Hebrew.', 427.520, 428.757, NULL),
+  (7713, 96, 'And the comments,
+when they trickled in, were fantastic.', 428.757, 431.747, NULL),
+  (7714, 96, 'I got things like,', 431.747, 432.746, NULL),
+  (7715, 96, '"Wow, I''ve never seen
+an American speak Arabic before."', 432.746, 435.899, NULL),
+  (7716, 96, '(Laughter)', 435.899, 439.980, NULL),
+  (7717, 96, 'You blame them?', 439.980, 441.808, NULL),
+  (7718, 96, 'In addition to that I got things like,', 442.688, 444.613, NULL),
+  (7719, 96, '"Wow, maybe you should 
+fix your vowels here."', 444.613, 447.013, NULL),
+  (7720, 96, 'Or "maybe this word 
+is pronounced this way."', 447.013, 449.231, NULL),
+  (7721, 96, 'So suddenly language learning had gone', 449.231, 451.121, NULL),
+  (7722, 96, 'from the solitary pages of a book,', 451.121, 452.901, NULL),
+  (7723, 96, 'or my computer screen,', 452.901, 454.533, NULL),
+  (7724, 96, 'into the wide world.', 454.533, 455.987, NULL),
+  (7725, 96, 'After that I was hooked.', 455.987, 457.499, NULL),
+  (7726, 96, 'I had a community of speakers
+to interact with,', 457.499, 460.525, NULL),
+  (7727, 96, 'and essentially had a teacher 
+or conversation partners', 460.525, 463.247, NULL),
+  (7728, 96, 'for any language that I wanted to do.', 463.247, 465.231, NULL),
+  (7729, 96, 'So I''ll show you a quick montage of that.', 465.231, 467.770, NULL),
+  (7730, 96, 'Video: (Arabic) I started studying 
+Arabic roughly, 6 months ago.', 467.946, 472.699, NULL),
+  (7731, 96, '(Indonesian)
+This started... one, two, three, four...', 474.140, 477.124, NULL),
+  (7732, 96, 'maybe four days ago.', 478.765, 480.286, NULL),
+  (7733, 96, '(Hebrew) I actually feel', 480.751, 483.103, NULL),
+  (7734, 96, 'that reading and writing
+are easier in Arabic', 483.103, 486.187, NULL),
+  (7735, 96, '(Ojibwe)
+I certainly find Ojibwe difficult!', 486.624, 490.261, NULL),
+  (7736, 96, '(Swahili) But I came home
+the day before yesterday.', 490.415, 494.204, NULL),
+  (7737, 96, '(Pashto) How is my pronunciation?
+Thanks so much!', 494.536, 498.145, NULL),
+  (7738, 96, 'Have a great day. Goodbye!', 498.905, 501.750, NULL),
+  (7739, 96, '(Applause)', 504.014, 507.874, NULL),
+  (7740, 96, 'Tim Doner: That became my way', 508.260, 509.909, NULL),
+  (7741, 96, 'of reaching out to the world.', 509.909, 511.528, NULL),
+  (7742, 96, 'But as I was learning all these languages,', 511.528, 513.643, NULL),
+  (7743, 96, 'I faced a number of obstacles.', 513.643, 515.203, NULL),
+  (7744, 96, 'So number one,
+I had no idea how to teach myself.', 515.203, 517.565, NULL),
+  (7745, 96, 'In fact, I''m sure many of you
+if you were told', 517.565, 519.768, NULL),
+  (7746, 96, 'you have to learn Pashto by next month,', 519.768, 521.700, NULL),
+  (7747, 96, 'you wouldn''t know what to do.', 521.700, 523.185, NULL),
+  (7748, 96, 'So I experimented.', 523.185, 524.254, NULL),
+  (7749, 96, 'Here''s one thing.', 524.254, 525.618, NULL),
+  (7750, 96, 'So in my Latin class, I read about
+something that Cicero described,', 525.618, 528.864, NULL),
+  (7751, 96, 'called, "Method of Loci."', 528.864, 530.520, NULL),
+  (7752, 96, 'technically locorum.', 530.520, 531.762, NULL),
+  (7753, 96, 'But it''s a technique 
+in which you take mnemonics.', 531.762, 535.244, NULL),
+  (7754, 96, 'So let''s say you want to learn ', 535.244, 536.805, NULL),
+  (7755, 96, '10 vocabulary words on a list.', 536.805, 538.328, NULL),
+  (7756, 96, 'You take each of those words and', 538.328, 539.912, NULL),
+  (7757, 96, 'instead of memorizing them in blocks.', 539.912, 541.744, NULL),
+  (7758, 96, 'you integrate them
+into your spatial memory.', 541.744, 544.068, NULL),
+  (7759, 96, 'So here''s what I mean.', 544.068, 545.165, NULL),
+  (7760, 96, 'This is Union Square.', 545.165, 546.513, NULL),
+  (7761, 96, 'It''s a place I go every day.', 546.513, 548.003, NULL),
+  (7762, 96, 'If I close my eyes', 548.003, 549.200, NULL),
+  (7763, 96, 'I can imagine it very, very vividly', 549.200, 551.079, NULL),
+  (7764, 96, 'So I imagine myself 
+walking down Union Square,', 551.079, 553.343, NULL),
+  (7765, 96, 'and in each spot in my mind
+that has resonance,', 553.343, 555.663, NULL),
+  (7766, 96, 'I associate it with a vocab word.', 555.663, 558.376, NULL),
+  (7767, 96, 'I''ll show you right now.', 559.076, 560.280, NULL),
+  (7768, 96, 'I''m walking down Park Avenue,', 560.280, 561.926, NULL),
+  (7769, 96, 'and in Japanese "to walk" is "iku"', 561.926, 563.632, NULL),
+  (7770, 96, 'I go a little bit further, turn right,', 563.632, 565.520, NULL),
+  (7771, 96, 'sit on the stairs where I can "Suwaru".', 565.520, 567.772, NULL),
+  (7772, 96, 'Directly north of there
+is a statue George Washington', 567.772, 570.276, NULL),
+  (7773, 96, 'which I used to think was a fountain,', 570.276, 572.170, NULL),
+  (7774, 96, 'so that''s "nomu", "to drink".', 572.170, 573.750, NULL),
+  (7775, 96, 'Right next,
+there''s a tree that you can "Kiru", "cut".', 573.750, 576.385, NULL),
+  (7776, 96, 'If you want to go north
+for Barnes & Noble,', 576.385, 578.434, NULL),
+  (7777, 96, 'you can "Yomu", "to read".', 578.434, 579.851, NULL),
+  (7778, 96, 'Or if I''m hungry and I want to go
+to my favorite Falafel place,', 579.851, 582.860, NULL),
+  (7779, 96, 'I can go one block west of there,
+so I can "Taberu", "to eat".', 582.860, 585.870, NULL),
+  (7780, 96, 'I missed one.', 585.870, 586.849, NULL),
+  (7781, 96, 'Alright. So 8 out of 10!
+Not bad!', 586.849, 589.377, NULL),
+  (7782, 96, 'So I found that most of the time', 589.516, 591.216, NULL),
+  (7783, 96, 'by experimenting with methods like these,', 591.216, 593.359, NULL),
+  (7784, 96, 'it made language learning
+a much more interactive experience.', 593.359, 596.290, NULL),
+  (7785, 96, 'It made it something
+that I can remember much better.', 596.290, 598.844, NULL),
+  (7786, 96, 'and I had a lot of fun with.', 598.844, 600.415, NULL),
+  (7787, 96, 'Maybe that''s not for you.', 600.415, 601.626, NULL),
+  (7788, 96, 'Here''s another one.', 601.626, 602.746, NULL),
+  (7789, 96, 'So a lot of people often ask me,', 602.746, 604.381, NULL),
+  (7790, 96, 'if you''re studying so many languages
+at the same time,', 604.381, 606.977, NULL),
+  (7791, 96, 'how do you not confuse them?', 606.977, 608.417, NULL),
+  (7792, 96, 'Or how do you learn
+so many vocabulary words?', 608.417, 610.664, NULL),
+  (7793, 96, 'In Spanish I learn a word for table ', 610.664, 612.416, NULL),
+  (7794, 96, 'and the word for book
+goes out the other ear.', 612.416, 614.630, NULL),
+  (7795, 96, 'What I do is I embrace those.', 614.630, 616.020, NULL),
+  (7796, 96, 'So for example,', 616.020, 617.519, NULL),
+  (7797, 96, 'take these three words in Indonesian.', 617.519, 619.320, NULL),
+  (7798, 96, 'These were actually among 
+the first 50 words that I learned.', 619.320, 622.274, NULL),
+  (7799, 96, '"Kepala", "Kabar", "Kantor".', 622.274, 623.688, NULL),
+  (7800, 96, 'Lexically there''re unrelated
+to each other.', 623.688, 625.699, NULL),
+  (7801, 96, '"Kepala" is a head. "Kabar" is news.
+"Kantor" is an office.', 625.699, 628.501, NULL),
+  (7802, 96, 'But they all sound similar "K", "A". 
+Right?', 628.501, 630.667, NULL),
+  (7803, 96, 'So what I would do,', 630.667, 631.842, NULL),
+  (7804, 96, 'is I would memorize vocab
+in batches of sounds that were similar.', 631.842, 635.066, NULL),
+  (7805, 96, 'So if I hear the word "Kepala"
+in Indonesian,', 635.066, 637.291, NULL),
+  (7806, 96, 'I automatically think 
+the words "Kebar" and "Kentor".', 637.291, 639.923, NULL),
+  (7807, 96, 'Same in Arabic, "Iktissad", 
+"Istiklal", "Sokot".', 639.923, 642.310, NULL),
+  (7808, 96, 'These three words are unrelated.', 642.310, 643.899, NULL),
+  (7809, 96, 'One is economy,
+one is independence, one is downfall.', 643.899, 646.382, NULL),
+  (7810, 96, 'But if I hear one, it triggers...
+(Laughter)', 646.382, 648.652, NULL),
+  (7811, 96, '(Laughter)', 648.652, 651.262, NULL),
+  (7812, 96, 'it triggers the rest.', 651.262, 652.774, NULL),
+  (7813, 96, 'Same thing in Hebrew.', 653.494, 654.536, NULL),
+  (7814, 96, '(Hebrew)', 654.536, 656.011, NULL),
+  (7815, 96, 'Even that those are 
+return, remember and to shine.', 656.011, 658.516, NULL),
+  (7816, 96, 'Or in Farsi in which they are related.', 658.516, 661.006, NULL),
+  (7817, 96, 'So for me if I hear the word "Pedar",', 661.006, 662.891, NULL),
+  (7818, 96, 'which means father,', 662.891, 663.970, NULL),
+  (7819, 96, 'I automatically think in the words,', 663.970, 665.689, NULL),
+  (7820, 96, '"Mada", "Barodar", "Dokhtar".', 665.689, 667.263, NULL),
+  (7821, 96, 'Mother, brother, daughter.', 667.263, 668.509, NULL),
+  (7822, 96, 'So again this is one method,', 668.509, 670.268, NULL),
+  (7823, 96, 'and I''m not saying this will 
+make you fluent in a language,', 670.268, 673.304, NULL),
+  (7824, 96, 'but it has been one of my ways ', 673.304, 674.896, NULL),
+  (7825, 96, 'of overcoming those obstacles.', 674.896, 676.845, NULL),
+  (7826, 96, 'So you may be wondering,', 676.845, 678.697, NULL),
+  (7827, 96, 'what''s the point in doing this?', 678.697, 680.909, NULL),
+  (7828, 96, 'Why learn Pashto or Ojibwe', 680.909, 682.932, NULL),
+  (7829, 96, 'when you live in New York?', 682.932, 684.344, NULL),
+  (7830, 96, 'And there''s a point to that.', 684.344, 686.529, NULL),
+  (7831, 96, 'In fact,
+I''ve lived in New York my entire life,', 687.165, 689.512, NULL),
+  (7832, 96, 'and I''m always blown away
+by the number of languages', 689.512, 692.027, NULL),
+  (7833, 96, 'you can hear on a given day.', 692.027, 694.094, NULL),
+  (7834, 96, 'Walking at a street,
+I see billboards in Chinese or in Spanish.', 694.094, 697.217, NULL),
+  (7835, 96, 'I see Russian bookstores,
+Indian restaurants, Turkish bath houses.', 697.217, 700.362, NULL),
+  (7836, 96, 'Yet for all that linguistic diversity,', 700.362, 702.220, NULL),
+  (7837, 96, 'mainstream American culture ', 702.220, 703.748, NULL),
+  (7838, 96, 'remains decidedly monolingual.', 703.748, 705.366, NULL),
+  (7839, 96, 'And if you don''t think that''s true,', 705.366, 707.174, NULL),
+  (7840, 96, 'look at the reactions
+to Coca-Cola Super Bowl video.', 707.174, 709.925, NULL),
+  (7841, 96, 'So as I started to play around more
+with language learning,', 711.015, 715.264, NULL),
+  (7842, 96, 'I found that I had my own community', 715.264, 717.048, NULL),
+  (7843, 96, 'of learners here in New York.', 717.048, 718.502, NULL),
+  (7844, 96, 'I''d go to outer boroughs,', 718.502, 720.068, NULL),
+  (7845, 96, 'and for lack of a better word,
+embarrass myself.', 720.068, 722.462, NULL),
+  (7846, 96, 'I try to talk to people all day,', 722.462, 724.121, NULL),
+  (7847, 96, 'get their views on things,', 724.121, 725.461, NULL),
+  (7848, 96, 'and use my new found language skills.', 725.461, 727.361, NULL),
+  (7849, 96, 'Video: (Russian) What''s your name?
+- Natan.', 727.361, 729.719, NULL),
+  (7850, 96, 'Natan.
+- Good day.', 729.719, 730.938, NULL),
+  (7851, 96, 'What''s your name?', 730.938, 731.984, NULL),
+  (7852, 96, 'I''m Tim.', 731.984, 733.770, NULL),
+  (7853, 96, 'Pleased to meet you.', 734.150, 735.611, NULL),
+  (7854, 96, 'Pleased to meet you.', 735.611, 737.099, NULL),
+  (7855, 96, 'Where are you from?', 737.099, 738.387, NULL),
+  (7856, 96, '(Urdu) This book is written by', 738.387, 740.135, NULL),
+  (7857, 96, 'Qudratullah Shanab himself.', 740.135, 742.251, NULL),
+  (7858, 96, 'What is ''nawist''?', 743.735, 745.655, NULL),
+  (7859, 96, 'It means the writer has written...', 745.655, 748.795, NULL),
+  (7860, 96, 'Oh okay, Khod-Nawist (self-write).', 751.282, 753.036, NULL),
+  (7861, 96, 'From khod-nevashtan in Persian!', 753.036, 754.728, NULL),
+  (7862, 96, 'TD: So maybe you have to use
+a lot of English,', 754.728, 756.909, NULL),
+  (7863, 96, 'maybe you''re not really', 756.909, 758.250, NULL),
+  (7864, 96, 'that particularly interesting
+when you talk,', 758.250, 760.336, NULL),
+  (7865, 96, 'but the point is you''re getting out there ', 760.336, 762.381, NULL),
+  (7866, 96, 'and you''re getting exposure.', 762.381, 763.822, NULL),
+  (7867, 96, 'So I don''t speak Urdu that well,', 763.822, 765.438, NULL),
+  (7868, 96, 'it was kind of an awkward conversation,', 765.438, 767.379, NULL),
+  (7869, 96, 'but just from that,
+I''ve learned a new word: "Khod-Nawist".', 767.379, 770.407, NULL),
+  (7870, 96, 'I''m not going to forget it now.', 770.407, 771.977, NULL),
+  (7871, 96, 'So moving on, you may wonder again ', 771.977, 773.740, NULL),
+  (7872, 96, 'what''s the point in doing this?', 773.740, 775.513, NULL),
+  (7873, 96, 'And I try to explain to people a lot', 775.513, 777.342, NULL),
+  (7874, 96, 'what my various motivations are,', 777.342, 778.994, NULL),
+  (7875, 96, 'but I often feel that this quote
+from Nelson Mandela', 778.994, 781.491, NULL),
+  (7876, 96, 'is the best expression of that.', 781.491, 783.101, NULL),
+  (7877, 96, '"If you talk to a man
+in a language he understands,', 783.101, 785.532, NULL),
+  (7878, 96, 'that goes to his head.', 785.532, 787.159, NULL),
+  (7879, 96, 'If you talk to him in his language
+that goes to his heart."', 787.159, 790.005, NULL),
+  (7880, 96, 'So as I began to see,', 790.005, 791.256, NULL),
+  (7881, 96, 'there''s an enormous connection ', 791.256, 792.717, NULL),
+  (7882, 96, 'between language and culture,', 792.717, 794.158, NULL),
+  (7883, 96, 'language and thought.', 794.158, 795.520, NULL),
+  (7884, 96, 'And quite honestly
+if you want to learn Persian for example,', 795.520, 799.015, NULL),
+  (7885, 96, 'you pick up a dictionary, you say,
+"I know how to say ''thank you'',', 799.015, 802.221, NULL),
+  (7886, 96, 'I know how to say ''how much is this?'',', 802.221, 804.091, NULL),
+  (7887, 96, 'and I know how to say ''goodbye''.', 804.091, 805.653, NULL),
+  (7888, 96, 'Oh, I speak Persian."', 805.653, 807.313, NULL),
+  (7889, 96, 'Probably not, let''s see actually.', 807.313, 809.015, NULL),
+  (7890, 96, 'In fact, if you want to buy something
+in a Persian bookstore,', 809.015, 812.022, NULL),
+  (7891, 96, 'you might ask someone ''how much is this?''.', 812.022, 814.067, NULL),
+  (7892, 96, 'Generally, he will tell you this:', 814.067, 815.733, NULL),
+  (7893, 96, '"Ghabeli nadaareh."', 815.733, 817.013, NULL),
+  (7894, 96, 'Which means, ''it''s worthless''.', 817.013, 818.596, NULL),
+  (7895, 96, '(Laughter)', 818.596, 819.775, NULL),
+  (7896, 96, 'So in fact this is an ingrained
+cultural practice called, "Taaraf",', 819.775, 823.150, NULL),
+  (7897, 96, 'in which two people having a conversation,', 823.150, 825.389, NULL),
+  (7898, 96, 'both try to behave
+more humble than the other.', 825.389, 827.760, NULL),
+  (7899, 96, 'So if I go to buy a book,', 827.760, 829.264, NULL),
+  (7900, 96, 'it''s rude for that person to tell me
+''it''s five bucks''.', 829.264, 831.906, NULL),
+  (7901, 96, 'He has to say "it''s worthless, please.', 831.906, 833.853, NULL),
+  (7902, 96, 'You''re so good-looking,
+you''re so talented,', 833.853, 835.917, NULL),
+  (7903, 96, '(Laughter)', 835.917, 836.745, NULL),
+  (7904, 96, 'Take it for free,
+I''m so humble, take it for free."', 836.745, 839.224, NULL),
+  (7905, 96, '(Laughter)', 839.224, 840.767, NULL),
+  (7906, 96, 'Or you might find something
+like this phrase:', 840.767, 844.276, NULL),
+  (7907, 96, 'if you want to thank somebody,', 844.276, 845.752, NULL),
+  (7908, 96, 'if you want to show your gratitude
+towards them,', 845.752, 848.029, NULL),
+  (7909, 96, 'or say ''nice to meet you'',', 848.029, 849.370, NULL),
+  (7910, 96, 'I could say, "Well,
+I know how to say ''thank you'' in Farsi.', 849.370, 852.230, NULL);
+
+INSERT INTO subtitle_segment (id, video_id, text, start_seconds, end_seconds, search_vector) VALUES
+  (7911, 96, 'I speak Farsi."
+Maybe not though.', 852.230, 853.815, NULL),
+  (7912, 96, 'In fact I''ve often heard this phrase
+when I talk with Iranians,', 853.815, 856.776, NULL),
+  (7913, 96, '"Ghorbanet beram."', 856.776, 857.852, NULL),
+  (7914, 96, 'Which literally means,', 857.852, 858.910, NULL),
+  (7915, 96, '"May I sacrifice my life for you."
+(Laughter)', 858.910, 862.770, NULL),
+  (7916, 96, 'So again, it''s poetic,', 862.770, 864.771, NULL),
+  (7917, 96, 'you might call it melodramatic.', 864.771, 866.723, NULL),
+  (7918, 96, 'but this is something you really
+have to understand the culture to get.', 867.833, 871.598, NULL),
+  (7919, 96, 'I don''t want to exoticize this,', 872.536, 874.263, NULL),
+  (7920, 96, 'because, think about it,
+we have this in English all the time.', 874.263, 877.266, NULL),
+  (7921, 96, 'If you ask somebody ''how are you?'',', 877.266, 879.006, NULL),
+  (7922, 96, 'what you''re expecting to hear?', 879.006, 880.451, NULL),
+  (7923, 96, '''I''m fine''.', 880.451, 881.209, NULL),
+  (7924, 96, 'If you tell me anything else,
+I''m not interested.', 881.209, 883.535, NULL),
+  (7925, 96, '(Laughter)', 883.535, 884.896, NULL),
+  (7926, 96, 'But we do it anyway.', 884.896, 886.035, NULL),
+  (7927, 96, 'We say ''bless you'',', 886.035, 887.217, NULL),
+  (7928, 96, 'even though that has no real
+religious connotations now,', 887.217, 889.870, NULL),
+  (7929, 96, 'when people sneeze, right?', 889.870, 891.527, NULL),
+  (7930, 96, 'So, it''s interesting we think
+about the fact', 891.527, 894.123, NULL),
+  (7931, 96, 'that most linguists believe', 894.123, 895.533, NULL),
+  (7932, 96, 'language doesn''t inherently
+affect the way you think.', 895.533, 898.501, NULL),
+  (7933, 96, 'Right. There''s no language
+that will make you a math genius.', 898.501, 901.444, NULL),
+  (7934, 96, 'There''s no language that will make', 901.444, 903.152, NULL),
+  (7935, 96, 'logic problems impossible to understand.', 903.152, 905.563, NULL),
+  (7936, 96, 'But there''s a real tie
+between language and culture.', 905.563, 908.034, NULL),
+  (7937, 96, 'There''re so much language can tell you', 908.034, 909.868, NULL),
+  (7938, 96, 'about one culture''s mindset.', 909.868, 911.604, NULL),
+  (7939, 96, 'And in fact on planet Earth,', 911.604, 913.079, NULL),
+  (7940, 96, 'every two weeks, another language dies.', 913.079, 916.228, NULL),
+  (7941, 96, 'No more people are speaking it.', 916.228, 917.750, NULL),
+  (7942, 96, 'Because of war, because of famine,', 917.750, 919.774, NULL),
+  (7943, 96, 'oftentimes just because of assimilation.', 919.774, 921.730, NULL),
+  (7944, 96, 'Maybe it easier for me
+not to speak my village language', 921.730, 924.483, NULL),
+  (7945, 96, 'but to speak, Arabic let''s say.', 924.483, 926.245, NULL),
+  (7946, 96, 'Or maybe I''m from a tribe in the Amazon,', 926.245, 928.763, NULL),
+  (7947, 96, 'my habitat is cut down', 928.763, 930.070, NULL),
+  (7948, 96, 'and it just makes more sense for me
+to learn Portuguese', 930.070, 932.819, NULL),
+  (7949, 96, 'and lose my culture.', 932.819, 934.874, NULL),
+  (7950, 96, 'So think about that.', 934.874, 936.064, NULL),
+  (7951, 96, 'Two months from today is April 1st.', 936.064, 938.264, NULL),
+  (7952, 96, 'For many of you that day maybe stressful', 938.264, 940.349, NULL),
+  (7953, 96, 'because you have a paper due,', 940.349, 941.864, NULL),
+  (7954, 96, 'or the rent is due.', 941.864, 942.780, NULL),
+  (7955, 96, 'But for two groups of people
+around the world,', 942.780, 945.105, NULL),
+  (7956, 96, 'for two cultures that means
+the death of their language.', 945.105, 947.860, NULL),
+  (7957, 96, 'The death of their mythology,
+their history, their folklore.', 947.860, 950.745, NULL),
+  (7958, 96, 'Their understanding of the world.', 950.745, 952.495, NULL),
+  (7959, 96, 'Now again, you,
+brushing up on your Spanish,', 952.495, 954.684, NULL),
+  (7960, 96, 'going to Japanese class,', 954.684, 956.496, NULL),
+  (7961, 96, 'is not going to stop language death.', 956.496, 958.788, NULL),
+  (7962, 96, 'But what is does do,
+is begin to open up your mind to the idea', 959.228, 962.770, NULL),
+  (7963, 96, 'that language in its sense, in essence,', 962.770, 965.517, NULL),
+  (7964, 96, 'represents a cultural world view.', 965.517, 968.743, NULL),
+  (7965, 96, 'And if I can impart you
+with anything today at TEDxTeen,', 968.743, 971.490, NULL),
+  (7966, 96, 'it''s this:', 971.490, 973.003, NULL),
+  (7967, 96, 'you can translate words easily', 973.003, 974.983, NULL),
+  (7968, 96, 'but you can''t quite translate meaning.', 974.983, 977.377, NULL),
+  (7969, 96, 'Thank you.', 977.377, 978.382, NULL),
+  (7970, 96, '(Cheers)', 978.382, 979.858, NULL),
+  (7971, 97, 'Transcriber: Aura Raducan
+Reviewer: Ido Dekkers', 0.000, 7.000, NULL),
+  (7972, 97, 'Maya Angelou once said,', 12.811, 14.956, NULL),
+  (7973, 97, '"A solitary fantasy can transform a million realities."', 14.956, 19.446, NULL),
+  (7974, 97, 'What dream or vision do you want to turn into reality?', 20.923, 26.207, NULL),
+  (7975, 97, 'I always wanted to go into business for myself.', 26.900, 28.992, NULL),
+  (7976, 97, 'I could be a consultant.', 28.992, 31.204, NULL),
+  (7977, 97, 'I''m going to go gluten free, right after I eat that last piece of chocolate cake.', 31.204, 36.180, NULL),
+  (7978, 97, '(Laughter)', 36.180, 38.185, NULL),
+  (7979, 97, 'You know, one day I''m going to stand up to that crabby boss.', 38.185, 42.704, NULL),
+  (7980, 97, 'I look good on paper, I should feel great.', 42.719, 46.165, NULL),
+  (7981, 97, 'I just know there''s more.', 46.165, 48.622, NULL),
+  (7982, 97, 'You know it because you feel it.', 49.469, 52.296, NULL),
+  (7983, 97, 'You lie awake at night. You talk about your dreams with your partner', 52.604, 56.515, NULL),
+  (7984, 97, 'and your friends, but more often than not,', 56.515, 58.927, NULL),
+  (7985, 97, 'you continue to do those same behaviors that keep you from making the change.', 58.927, 64.629, NULL),
+  (7986, 97, 'You ask yourself, "How can I make it happen?"', 64.629, 68.925, NULL),
+  (7987, 97, 'Research shows, the odds against you making a change in your life --', 69.884, 75.138, NULL),
+  (7988, 97, '-- 9 to 1.', 75.138, 76.576, NULL),
+  (7989, 97, '9 to 1, even if you''re facing a life-threatening illness.', 77.499, 82.282, NULL),
+  (7990, 97, 'But let me show you how to beat those odds.', 82.897, 86.434, NULL),
+  (7991, 97, 'You can live the life you desire. It''s right there in front of you.', 86.511, 91.175, NULL),
+  (7992, 97, 'But in order to achieve it, you must first see it, then believe it,', 91.175, 96.201, NULL),
+  (7993, 97, 'and then you must graciously ask and train your brain to help you', 96.201, 102.657, NULL),
+  (7994, 97, 'execute your vision.', 102.657, 105.219, NULL),
+  (7995, 97, 'So how do we see our vision?', 105.757, 107.999, NULL),
+  (7996, 97, 'Through a picture.', 108.029, 110.089, NULL),
+  (7997, 97, 'A picture can create movement.', 110.089, 112.681, NULL),
+  (7998, 97, 'A picture...', 112.681, 114.566, NULL),
+  (7999, 97, 'can unite nations,', 115.854, 118.170, NULL),
+  (8000, 97, 'a picture can pull at your heart', 118.170, 121.100, NULL),
+  (8001, 97, 'and fill you with a deep desire to do something.', 121.100, 125.090, NULL),
+  (8002, 97, 'At Roche Pharmaceutical, the president asked us to create a picture', 125.228, 128.635, NULL),
+  (8003, 97, 'of his vision.', 128.635, 129.719, NULL),
+  (8004, 97, 'Prior to having one, less than 40 percent of the employees understood', 129.719, 135.580, NULL),
+  (8005, 97, 'the company''s vision and strategy.', 135.580, 137.433, NULL),
+  (8006, 97, 'After seeing this picture, 96 percent understood it, and 84 percent', 137.433, 144.938, NULL),
+  (8007, 97, 'understood how what they did everyday align to that picture.', 144.938, 150.493, NULL),
+  (8008, 97, 'So how can you use a picture to get what you want?', 150.509, 155.370, NULL),
+  (8009, 97, 'By simply drawing one.', 155.678, 158.183, NULL),
+  (8010, 97, 'You don''t have to be an artist or know how to draw.', 158.183, 161.386, NULL),
+  (8011, 97, 'As naive as your drawings might be, when you draw where you are,', 161.401, 168.336, NULL),
+  (8012, 97, 'your current state, and where you want to be,', 168.520, 173.024, NULL),
+  (8013, 97, 'your desired new reality.', 173.024, 176.703, NULL),
+  (8014, 97, 'Suddenly, you have a road map for change.', 181.149, 185.061, NULL),
+  (8015, 97, 'So what is your current state?', 185.061, 187.300, NULL),
+  (8016, 97, 'Well, let''s say you''re Joe.', 187.315, 189.535, NULL),
+  (8017, 97, 'Joe has a good job.', 190.381, 192.517, NULL),
+  (8018, 97, 'Joe has a lovely wife, Amy.', 194.163, 198.279, NULL),
+  (8019, 97, 'Joe makes good money,', 200.033, 203.321, NULL),
+  (8020, 97, 'but like many of us, Joe wants more from life.', 204.644, 208.402, NULL),
+  (8021, 97, 'And he''d like to get rid of a couple of things.', 208.402, 211.015, NULL),
+  (8022, 97, 'Maybe that intense workload, maybe that negative boss.', 211.984, 216.729, NULL),
+  (8023, 97, 'Maybe Joe has a higher purpose; he''s just not sure how to get there.', 219.206, 224.394, NULL),
+  (8024, 97, 'So, now, Joe''s current state is visual.', 225.487, 228.225, NULL),
+  (8025, 97, 'We remember things better when they''re attached to a picture.', 228.609, 231.536, NULL),
+  (8026, 97, '65 percent better to be exact.', 231.536, 234.602, NULL),
+  (8027, 97, 'So now let''s imagine that Joe wants to change something in his current state.', 235.756, 240.953, NULL),
+  (8028, 97, 'He wants to build that desired new reality that he dreams about.', 240.969, 246.178, NULL),
+  (8029, 97, 'In order for Joe to freely dream,', 247.439, 249.431, NULL),
+  (8030, 97, 'he must first...', 249.431, 251.319, NULL),
+  (8031, 97, '...trick his brain.', 253.857, 256.184, NULL),
+  (8032, 97, 'Because the left side of your brain, as you know, houses the critic,', 256.199, 259.444, NULL),
+  (8033, 97, 'who is forever trying to keep you safe from harm, make sure you', 259.460, 261.633, NULL),
+  (8034, 97, 'don''t do anything dangerous or stupid.', 261.633, 264.659, NULL),
+  (8035, 97, 'So let''s have Joe tell the critic that he''s just going to use his imagination.', 264.751, 270.185, NULL),
+  (8036, 97, 'Using your imagination activates the right side of your brain,', 270.646, 274.317, NULL),
+  (8037, 97, 'which makes you creative and filled with possibility.', 274.317, 277.690, NULL),
+  (8038, 97, 'So now, let''s dream Joe''s new life.', 278.598, 281.806, NULL),
+  (8039, 97, 'In the best case scenario,', 282.791, 284.320, NULL),
+  (8040, 97, 'one year from today, what is Joe''s life like?', 284.320, 288.008, NULL),
+  (8041, 97, 'Hey, Joe has a new job. Great.', 288.900, 292.498, NULL),
+  (8042, 97, 'Joe has a new boss, himself.', 293.452, 297.686, NULL),
+  (8043, 97, 'Joe has a couple of great collaborators,', 298.978, 302.237, NULL),
+  (8044, 97, 'and Joe is just bursting with creativity and ideas,', 302.237, 306.680, NULL),
+  (8045, 97, 'and all of those things we dream about.', 306.680, 310.007, NULL),
+  (8046, 97, 'Connection,', 310.007, 312.019, NULL),
+  (8047, 97, 'and purpose,', 313.434, 315.461, NULL),
+  (8048, 97, 'and freedom,', 316.938, 318.995, NULL),
+  (8049, 97, 'and love.', 321.795, 323.316, NULL),
+  (8050, 97, 'Now I''m drawing this picture as the favor to Joe today.', 327.346, 330.166, NULL),
+  (8051, 97, 'But in real life, he''d have to draw his own picture.', 330.166, 333.394, NULL),
+  (8052, 97, 'Because he can''t afford me.', 334.747, 336.721, NULL),
+  (8053, 97, '(Laughter)', 336.721, 338.779, NULL),
+  (8054, 97, 'Actually, because you get the most power when you paint your own picture.', 338.979, 343.920, NULL),
+  (8055, 97, 'So now, Joe has his drawing,', 343.935, 345.982, NULL),
+  (8056, 97, 'so now he''s got to soak it in.', 345.982, 348.764, NULL),
+  (8057, 97, 'He has to fill it with color.', 348.764, 351.441, NULL),
+  (8058, 97, 'He has to fill it with emotion.', 352.626, 355.230, NULL),
+  (8059, 97, 'He has to get inside of it, as if he''s on the inside, looking out.', 357.876, 363.541, NULL),
+  (8060, 97, 'Your brain actually emits serotonin and Oxytocin when you draw and dream.', 365.572, 372.786, NULL),
+  (8061, 97, 'So you feel happy.', 373.540, 375.697, NULL),
+  (8062, 97, 'Capable, creative.', 377.681, 379.993, NULL),
+  (8063, 97, 'You feel cool.', 380.762, 382.325, NULL),
+  (8064, 97, 'So now, we have Joe''s current state and Joe''s desired new reality.', 383.079, 387.209, NULL),
+  (8065, 97, 'So how can Joe get from here to there', 387.209, 391.101, NULL),
+  (8066, 97, 'in just three bold steps?', 392.993, 395.239, NULL),
+  (8067, 97, 'Three bold steps?', 395.593, 397.146, NULL),
+  (8068, 97, 'If I knew how to get from here to there in three bold steps,', 397.146, 399.423, NULL),
+  (8069, 97, 'I would have done it 25 years ago', 399.423, 401.211, NULL),
+  (8070, 97, 'when I had a mullet.', 401.211, 402.706, NULL),
+  (8071, 97, '(Laughter)', 402.906, 405.511, NULL),
+  (8072, 97, 'Here is where the magic begins. Your brain knows you.', 405.788, 409.842, NULL),
+  (8073, 97, 'It''s cataloged everything you''ve ever seen, heard, experienced,', 409.842, 414.216, NULL),
+  (8074, 97, 'real, or imagined.', 414.216, 416.419, NULL),
+  (8075, 97, 'You just have to ask it to put the pieces together for you.', 416.419, 419.297, NULL),
+  (8076, 97, 'It as simple as that.', 419.297, 421.194, NULL),
+  (8077, 97, 'We live in a three-dimensional world,', 422.317, 424.828, NULL),
+  (8078, 97, 'but the light falls on the retina in', 424.828, 427.360, NULL),
+  (8079, 97, 'a two-dimensional fashion, and the brain, it has to cope with it.', 427.360, 431.460, NULL),
+  (8080, 97, 'So how does it deal with this extra dimension?', 432.168, 434.508, NULL),
+  (8081, 97, 'It guesses.', 437.831, 439.775, NULL),
+  (8082, 97, 'It guesses!', 439.775, 441.143, NULL),
+  (8083, 97, 'And just as it can guess where your cup of coffee is when', 441.143, 443.624, NULL),
+  (8084, 97, 'it goes to pick it up, it can correctly guess', 443.624, 446.841, NULL),
+  (8085, 97, 'what the three bold steps are that you should take.', 446.841, 450.421, NULL),
+  (8086, 97, 'All you have to do is look at your picture and then close your eyes.', 450.421, 455.303, NULL),
+  (8087, 97, 'This allows the brain to recycle what it sees and reconstruct it,', 456.426, 461.563, NULL),
+  (8088, 97, 'add to it everything you''ve ever seen, heard, experienced,', 461.563, 465.451, NULL),
+  (8089, 97, 'or fantasized about, and then it will serve you up', 465.451, 469.606, NULL),
+  (8090, 97, 'with the best possible solution.', 469.606, 471.743, NULL),
+  (8091, 97, 'If you just relax and you ask it,', 471.743, 475.385, NULL),
+  (8092, 97, 'now what''s the boldest thing I could do to get from here to there?', 475.385, 481.261, NULL),
+  (8093, 97, 'Boom, immediately it will tell you.', 481.446, 483.576, NULL),
+  (8094, 97, 'See it,', 483.791, 485.481, NULL),
+  (8095, 97, 'believe it,', 487.189, 488.701, NULL),
+  (8096, 97, 'act on it.', 491.178, 492.827, NULL),
+  (8097, 97, 'Now, the danger is, if any of those three bold steps are too scary,', 493.673, 497.438, NULL),
+  (8098, 97, 'this instinctual rational side of your brain', 497.438, 499.580, NULL),
+  (8099, 97, 'is going to try to talk you out of this.', 499.580, 501.807, NULL),
+  (8100, 97, 'Oh, no, no, no, I don''t want to do that...', 501.807, 504.073, NULL),
+  (8101, 97, 'Oh, that desk it''s not too small, my legs aren''t cramped under there.', 504.104, 507.910, NULL),
+  (8102, 97, 'Oh, 20,000 a year, oh, that''s a decent salary.', 508.956, 513.882, NULL),
+  (8103, 97, 'Oh, that boss, he''s not that mean to me.', 515.282, 517.699, NULL),
+  (8104, 97, 'You know what, I''m just going to stay right here.', 517.699, 520.288, NULL),
+  (8105, 97, 'I feel really comfortable here.', 520.288, 522.324, NULL),
+  (8106, 97, 'So how can you get yourself to do the boldest thing?', 526.401, 529.914, NULL),
+  (8107, 97, 'By drawing the most compelling picture, so when you look here,', 529.929, 533.224, NULL),
+  (8108, 97, 'you''re in pain, it hurts.', 533.224, 535.393, NULL),
+  (8109, 97, 'When you''re here, you''re ecstatic,', 535.393, 538.081, NULL),
+  (8110, 97, 'it''s fantastic, you''re already living inside that', 538.081, 541.669, NULL);
+
+INSERT INTO subtitle_segment (id, video_id, text, start_seconds, end_seconds, search_vector) VALUES
+  (8111, 97, 'connected and free life you drew.', 541.669, 544.019, NULL),
+  (8112, 97, 'So, everyday, you get up, you soak in your picture, you step into the possibility,', 544.019, 551.378, NULL),
+  (8113, 97, 'and this is the most important part, you act on it.', 551.393, 554.823, NULL),
+  (8114, 97, 'You do one small thing.', 554.823, 557.374, NULL),
+  (8115, 97, 'You call up that friend you know who started her own business,', 557.805, 560.406, NULL),
+  (8116, 97, 'you ask her "How did you do it?"', 560.406, 562.381, NULL),
+  (8117, 97, 'You ask Amy, "Will you support me in my vision?"', 562.381, 565.452, NULL),
+  (8118, 97, 'You go to your boss and you ask him for a raise.', 565.452, 568.408, NULL),
+  (8119, 97, 'And you become that one person out of ten to make change happen.', 568.993, 574.534, NULL),
+  (8120, 97, 'Now, I put this template on your chairs,', 576.088, 579.220, NULL),
+  (8121, 97, 'so that you can do for yourself what I just did for Joe.', 579.220, 582.367, NULL),
+  (8122, 97, 'You''ve seen some fantastic ideas today that', 583.136, 586.398, NULL),
+  (8123, 97, 'have inspired your dream.', 586.398, 587.989, NULL),
+  (8124, 97, 'I dare you to draw that dream into that template.', 589.112, 592.817, NULL),
+  (8125, 97, 'I double dare you to choose a symbol in your drawing', 593.786, 598.577, NULL),
+  (8126, 97, 'that represents that desired new reality, take a picture', 598.577, 601.787, NULL),
+  (8127, 97, 'of it with your phone and send it to us at TEDxRainier.', 601.787, 605.202, NULL),
+  (8128, 97, 'Maya Angelou said, "A solitary fantasy can transform a million realities."', 606.664, 612.779, NULL),
+  (8129, 97, 'Just three bold steps can transform one reality, yours.', 612.779, 619.193, NULL),
+  (8130, 97, 'Thank you.', 619.193, 620.797, NULL),
+  (8131, 97, '(Applause)', 620.936, 623.939, NULL),
+  (8132, 98, 'Transcriber: Eunice Tan', 0.000, 7.000, NULL),
+  (8133, 98, 'You may have noticed by now', 16.513, 19.623, NULL),
+  (8134, 98, 'that I''m really fat.', 19.623, 21.714, NULL),
+  (8135, 98, 'And that''s okay;', 21.714, 22.739, NULL),
+  (8136, 98, 'you wouldn''t be the first.', 22.739, 24.584, NULL),
+  (8137, 98, 'Back in 1997, when I was in seventh grade,', 24.584, 27.265, NULL),
+  (8138, 98, 'I heard a question posed about me
+in the locker room of my middle school.', 27.265, 31.445, NULL),
+  (8139, 98, 'I sat hidden in a bathroom stall,', 31.445, 34.525, NULL),
+  (8140, 98, 'hunched over, not wanting
+to give myself away,', 34.525, 37.226, NULL),
+  (8141, 98, 'when I heard a girl ask,', 37.226, 39.145, NULL),
+  (8142, 98, '"When was the last time
+Whitney saw 90210?"', 39.145, 42.236, NULL),
+  (8143, 98, 'I was like more of
+a Saved by the Bell girl myself,', 43.676, 46.206, NULL),
+  (8144, 98, 'and I''d actually never seen
+an episode of 90210.', 46.206, 49.810, NULL),
+  (8145, 98, 'So I clenched my muscles and held my pee', 49.810, 51.717, NULL),
+  (8146, 98, 'and waited with bated breath
+for the answer.', 51.717, 54.187, NULL),
+  (8147, 98, 'And when it came -', 54.187, 55.872, NULL),
+  (8148, 98, '"When she stepped on the scale" -', 55.872, 58.227, NULL),
+  (8149, 98, 'the girls erupted into laughter,', 58.227, 59.918, NULL),
+  (8150, 98, 'and I felt the familiar sting
+of embarrassment seeping into my cheeks.', 59.918, 65.258, NULL),
+  (8151, 98, 'It took me back to my fifth-grade year,
+on the soccer field,', 65.258, 69.069, NULL),
+  (8152, 98, 'where the boys had taken to singing
+a song about me called "Baby Beluga"', 69.069, 72.449, NULL),
+  (8153, 98, 'that ended with
+"She''s got a whale of a tail."', 72.449, 75.529, NULL),
+  (8154, 98, 'You might be picturing now
+how fat I probably was.', 76.129, 80.840, NULL),
+  (8155, 98, 'It''s easy to conjure up a mental image', 80.840, 82.960, NULL),
+  (8156, 98, 'of an awkward girl
+spilling out of her shorts,', 82.960, 85.380, NULL),
+  (8157, 98, 'running up and down the sidelines
+like, "Hey, I''m open!"', 85.380, 88.310, NULL),
+  (8158, 98, 'But if you have that mental image,', 89.340, 92.120, NULL),
+  (8159, 98, 'you would be wrong.', 92.120, 93.741, NULL),
+  (8160, 98, 'Because in 1995, when I was 10 years old,', 94.361, 98.251, NULL),
+  (8161, 98, 'I looked like this.', 98.251, 99.911, NULL),
+  (8162, 98, 'When I look at that picture now,', 101.221, 102.842, NULL),
+  (8163, 98, 'my heart aches', 102.842, 103.847, NULL),
+  (8164, 98, 'because when I was just
+becoming aware that I had a body', 103.847, 107.462, NULL),
+  (8165, 98, 'and that other people
+had opinions about my body,', 107.462, 110.433, NULL),
+  (8166, 98, 'I became a statistic', 110.993, 113.052, NULL),
+  (8167, 98, 'like eight out of ten 10-year-olds
+who, today, are afraid of being fat.', 113.052, 118.503, NULL),
+  (8168, 98, '10-year-olds!', 118.503, 119.563, NULL),
+  (8169, 98, 'That''s a real statistic.', 119.563, 121.833, NULL),
+  (8170, 98, 'I bought the lie that diet culture
+sold me when I was 10 years old', 121.833, 126.124, NULL),
+  (8171, 98, 'that told me if I am thin,
+thinner, thin enough,', 126.124, 129.534, NULL),
+  (8172, 98, 'then I will be happy.', 129.534, 131.704, NULL),
+  (8173, 98, 'But at 10 years old,
+I felt the furthest thing from happy.', 132.184, 135.374, NULL),
+  (8174, 98, 'And so the emotion that I most connected
+with my body was shame.', 135.994, 140.794, NULL),
+  (8175, 98, 'After that,', 142.105, 143.506, NULL),
+  (8176, 98, 'shame followed me like a shadow.', 143.506, 145.655, NULL),
+  (8177, 98, 'And after the 90210 incident,', 145.655, 147.975, NULL),
+  (8178, 98, 'I knew I had to take action.', 147.975, 150.626, NULL),
+  (8179, 98, 'So I grabbed the handle
+of my father''s toothbrush', 150.626, 153.186, NULL),
+  (8180, 98, 'and shoved it down my throat
+until I vomited.', 153.186, 155.906, NULL),
+  (8181, 98, 'And thus began my nearly lifelong battle
+with eating disorders.', 155.906, 159.957, NULL),
+  (8182, 98, 'I continued to excel in school,
+to play sports, to dance.', 160.307, 165.377, NULL),
+  (8183, 98, 'Shame and I won
+lots of awards and trophies.', 165.377, 168.457, NULL),
+  (8184, 98, 'Sometimes, shame was like
+a really overbearing adult', 169.167, 172.490, NULL),
+  (8185, 98, 'begging for a piggyback ride.', 172.490, 174.458, NULL),
+  (8186, 98, 'And other times,', 174.458, 175.573, NULL),
+  (8187, 98, 'shame trailed a few feet behind me,
+dragging its leash', 175.573, 178.585, NULL),
+  (8188, 98, 'like a faithful dog
+never leaving my sight.', 178.585, 181.968, NULL),
+  (8189, 98, 'By the time I was 18 years old, in 2002,
+and becoming a young woman,', 183.269, 187.909, NULL),
+  (8190, 98, 'shame had solidified itself
+as my most faithful friend.', 188.479, 192.480, NULL),
+  (8191, 98, 'It accompanied me
+to every dance performance,', 192.480, 194.780, NULL),
+  (8192, 98, 'to every soccer tournament;', 194.780, 196.071, NULL),
+  (8193, 98, 'it was even there in the bathroom
+with me at my prom', 196.071, 198.730, NULL),
+  (8194, 98, 'as I hunched over a toilet
+and threw up my dinner', 198.730, 201.240, NULL),
+  (8195, 98, 'just minutes before being
+crowned prom princess.', 201.240, 204.751, NULL),
+  (8196, 98, 'When I moved to college that fall,', 205.841, 207.911, NULL),
+  (8197, 98, 'I brought shame along into my dorm room,', 207.911, 210.571, NULL),
+  (8198, 98, 'and I noticed that my body was changing.', 210.571, 213.401, NULL),
+  (8199, 98, 'By the time I went home
+for Christmas break,', 213.401, 215.446, NULL),
+  (8200, 98, 'I''d gained 50 pounds.', 215.446, 217.641, NULL),
+  (8201, 98, 'And I''m thinking, like,', 217.641, 218.751, NULL),
+  (8202, 98, '"Okay, I''m an overachiever,', 218.751, 220.092, NULL),
+  (8203, 98, 'so clearly the "freshman 15"
+is just not enough.', 220.092, 223.112, NULL),
+  (8204, 98, '(Laughter)', 223.112, 224.112, NULL),
+  (8205, 98, 'I was getting mysterious bruises
+all over my body, and I was like,', 224.802, 228.152, NULL),
+  (8206, 98, '"Why am I bumping
+into doorways and furniture?', 228.152, 230.564, NULL),
+  (8207, 98, 'When did I get so clumsy?"', 230.564, 232.652, NULL),
+  (8208, 98, 'But then I realized I wasn''t clumsy:', 233.092, 235.934, NULL),
+  (8209, 98, 'my body was expanding so quickly', 235.934, 237.875, NULL),
+  (8210, 98, 'that I had lost all
+kinesthetic awareness of it.', 237.875, 241.220, NULL),
+  (8211, 98, 'My body literally didn''t know
+how to fit in its physical space anymore,', 241.774, 245.315, NULL),
+  (8212, 98, 'and similarly, I didn''t know
+where I fit in the world.', 245.315, 248.895, NULL),
+  (8213, 98, 'To say that my weight gain was difficult
+would be an understatement.', 249.445, 253.765, NULL),
+  (8214, 98, 'By the time the second
+semester was finished,', 254.545, 257.085, NULL),
+  (8215, 98, 'I''d gained nearly 100 pounds.', 257.085, 259.575, NULL),
+  (8216, 98, 'There was the sympathy
+from the pretty girls', 259.575, 261.626, NULL),
+  (8217, 98, 'who asked me if I''d, like,
+ever had a boyfriend.', 261.626, 264.486, NULL),
+  (8218, 98, 'And there was that one frat boy', 265.456, 266.936, NULL),
+  (8219, 98, 'who''d taken me
+on a dinner date in August -', 266.936, 268.936, NULL),
+  (8220, 98, 'granted, it was to Ruby Tuesday,
+but it was a dinner date.', 268.936, 272.337, NULL),
+  (8221, 98, 'And when he saw me in March,', 273.397, 275.027, NULL),
+  (8222, 98, 'he looked right through me
+like I didn''t even exist.', 275.027, 278.177, NULL),
+  (8223, 98, 'It was like I''d been forced into
+some social experiment against my will,', 278.776, 282.622, NULL),
+  (8224, 98, 'to put on a fat suit
+and parade about in public.', 282.622, 285.746, NULL),
+  (8225, 98, 'The differences in the way', 286.187, 287.428, NULL),
+  (8226, 98, 'that people treated "average Whitney"
+and "fat Whitney" were striking.', 287.428, 292.449, NULL),
+  (8227, 98, 'Suddenly, I was assumed to be lazy,
+desperate, sloppy, stupid.', 292.449, 297.939, NULL),
+  (8228, 98, 'And with every single pound that I gained,', 297.939, 301.089, NULL),
+  (8229, 98, 'my self-worth continued
+to shrink further and further.', 301.089, 305.471, NULL),
+  (8230, 98, 'So I became a different person after that.', 306.161, 308.680, NULL),
+  (8231, 98, 'I quit my dance classes;', 309.210, 310.825, NULL),
+  (8232, 98, 'I failed a lot of my academic classes;', 310.825, 313.250, NULL),
+  (8233, 98, 'and in a world where it felt like
+being a fat woman was the biggest taboo,', 313.250, 317.071, NULL),
+  (8234, 98, 'I didn''t have anyone to talk to.', 317.071, 319.261, NULL),
+  (8235, 98, 'Sure, there were times
+where I pulled myself up by the bootstraps', 319.791, 322.841, NULL),
+  (8236, 98, 'and I said, "I''m going to go to the gym', 322.841, 324.696, NULL),
+  (8237, 98, 'or I''m going to venture
+out to this party."', 324.696, 326.742, NULL),
+  (8238, 98, 'But there was always a whisper,
+a dirty look, an insult', 326.742, 329.672, NULL),
+  (8239, 98, 'to remind me why I didn''t deserve
+to be in those spaces.', 329.672, 334.134, NULL),
+  (8240, 98, 'So I would come back home to my apartment', 334.572, 337.022, NULL),
+  (8241, 98, 'to the only friend
+that had never deserted me:', 337.022, 339.952, NULL),
+  (8242, 98, 'shame.', 339.952, 341.133, NULL),
+  (8243, 98, 'We would stay up late
+into the night commiserating,', 341.813, 344.194, NULL),
+  (8244, 98, 'getting drunk to numb our pain.', 344.194, 345.981, NULL),
+  (8245, 98, 'I''d order takeout for us both', 345.981, 348.264, NULL),
+  (8246, 98, 'and do anything to avoid going out
+in a world that didn''t want me.', 348.264, 354.084, NULL),
+  (8247, 98, 'And of course, all the things
+that I had done to cope', 354.084, 357.035, NULL),
+  (8248, 98, 'only compounded the problem,', 357.035, 358.750, NULL),
+  (8249, 98, 'and I continued gaining weight.', 358.750, 360.965, NULL),
+  (8250, 98, 'In 2005, I weighed 280 pounds.', 361.835, 364.855, NULL),
+  (8251, 98, 'And my nurse practitioner
+swiveled her stool', 364.855, 366.955, NULL),
+  (8252, 98, 'from in between my legs in the stirrups,', 366.955, 368.866, NULL),
+  (8253, 98, 'checking her chart', 368.866, 370.071, NULL),
+  (8254, 98, 'and announcing a little too cheerfully', 370.071, 372.876, NULL),
+  (8255, 98, 'that she thought I had PCOS.', 372.876, 375.876, NULL),
+  (8256, 98, 'Well!', 375.876, 376.876, NULL),
+  (8257, 98, 'My mind started reeling', 376.876, 378.386, NULL),
+  (8258, 98, 'because I did not remember
+learning about this STD', 378.386, 380.717, NULL),
+  (8259, 98, 'in my seventh-grade sex ed class.', 380.717, 382.386, NULL),
+  (8260, 98, '(Laughter)', 382.386, 383.556, NULL),
+  (8261, 98, 'But the more I learned', 384.426, 385.597, NULL),
+  (8262, 98, 'as I pored over the brochures
+and the pamphlets -', 385.597, 388.397, NULL),
+  (8263, 98, 'PCOS wasn''t an STD.', 388.397, 390.578, NULL),
+  (8264, 98, 'It was a syndrome,', 390.948, 391.953, NULL),
+  (8265, 98, 'a grouping of symptoms with no cure', 391.953, 393.658, NULL),
+  (8266, 98, 'that affects one out of every ten
+women in America', 393.658, 396.599, NULL),
+  (8267, 98, 'and is the leading cause of infertility.', 396.599, 399.568, NULL),
+  (8268, 98, 'And then, like putting together a puzzle,
+other stuff started to make sense.', 399.568, 403.628, NULL),
+  (8269, 98, 'The handfuls of hair
+that had come out in the shower,', 403.628, 406.119, NULL),
+  (8270, 98, 'the coarse dark hairs all over my face,', 406.119, 409.048, NULL),
+  (8271, 98, 'my period that had visited me only twice
+when I was 15 and never again,', 409.048, 414.040, NULL),
+  (8272, 98, 'and, of course,', 414.040, 415.040, NULL),
+  (8273, 98, 'my sudden and severe weight gain
+in my freshman year of college.', 415.040, 418.520, NULL),
+  (8274, 98, 'I didn''t have an explanation for it then,
+but I had an explanation for it now:', 418.520, 422.281, NULL),
+  (8275, 98, 'I was insulin resistant.', 422.281, 424.271, NULL),
+  (8276, 98, 'So would life with PCOS
+make it impossible to lose weight?', 424.620, 428.851, NULL),
+  (8277, 98, 'Absolutely not.', 428.851, 430.461, NULL),
+  (8278, 98, 'Would it be even harder?', 430.461, 432.436, NULL),
+  (8279, 98, 'Absolutely yes.', 432.436, 434.592, NULL),
+  (8280, 98, 'And for a woman who wanted
+anything but to be fat,', 434.592, 436.992, NULL),
+  (8281, 98, 'this felt like a death sentence.', 436.992, 439.472, NULL),
+  (8282, 98, 'And then I got pissed off.', 439.472, 441.652, NULL),
+  (8283, 98, 'I wondered,', 441.962, 442.962, NULL),
+  (8284, 98, '"Why have I never heard of this thing?"', 442.962, 445.383, NULL),
+  (8285, 98, 'I wanted to know', 445.383, 446.383, NULL),
+  (8286, 98, 'why I''d always been dismissed
+when I went to the doctors,', 446.383, 449.048, NULL),
+  (8287, 98, 'told that I was "young and irregular"
+or I was drinking or I was on Prozac.', 449.048, 453.083, NULL),
+  (8288, 98, 'But out of all those emotions that I felt,', 453.483, 455.668, NULL),
+  (8289, 98, 'the one I felt the most of was shame.', 455.668, 459.664, NULL),
+  (8290, 98, 'So after college,', 460.274, 461.614, NULL),
+  (8291, 98, 'I packed two suitcases -', 461.614, 463.724, NULL),
+  (8292, 98, 'my clothes and shame -', 463.724, 465.945, NULL),
+  (8293, 98, 'and I set off for Korea to teach English.', 465.945, 468.865, NULL),
+  (8294, 98, 'I got promotion after promotion,', 468.865, 470.885, NULL),
+  (8295, 98, 'and I traveled the world.', 470.885, 472.905, NULL),
+  (8296, 98, 'Shame and I made it all the way
+to the top of the Great Wall of China;', 472.905, 477.365, NULL),
+  (8297, 98, 'we ate sushi together in Tokyo;', 477.365, 479.420, NULL),
+  (8298, 98, 'we vacationed in Malaysia and Vietnam;', 479.420, 482.456, NULL),
+  (8299, 98, 'we even sunbathed in Bali.', 482.456, 484.496, NULL),
+  (8300, 98, 'But all of these experiences
+that should have been so wonderful', 485.216, 488.167, NULL),
+  (8301, 98, 'were tinged with that
+disgusting, insidious shame', 488.167, 491.187, NULL),
+  (8302, 98, 'that sucked the life and the color
+out of my memories', 491.187, 494.298, NULL),
+  (8303, 98, 'and left me nothing but black and white', 494.298, 497.187, NULL),
+  (8304, 98, 'and a never-ending wish to be thin
+so that I could really start my life.', 497.187, 501.648, NULL),
+  (8305, 98, 'Now, living abroad wasn''t all bad -', 502.998, 504.668, NULL),
+  (8306, 98, 'I had some of the best experiences there.', 504.668, 507.058, NULL),
+  (8307, 98, 'But the discrimination I faced', 507.058, 508.598, NULL),
+  (8308, 98, 'was so much more overt
+than anything I''d had at home.', 508.598, 512.428, NULL),
+  (8309, 98, 'I got laughed at, pointed at,
+and called a pig every single day', 512.428, 515.609, NULL),
+  (8310, 98, 'in the street, in the store,
+in the nightclub.', 515.609, 518.539, NULL);
+
+INSERT INTO subtitle_segment (id, video_id, text, start_seconds, end_seconds, search_vector) VALUES
+  (8311, 98, 'I''ll never forget when I got in a taxi', 518.539, 520.350, NULL),
+  (8312, 98, 'and the driver snorted
+at me for every mile', 520.350, 522.420, NULL),
+  (8313, 98, 'until we reached our destination.', 522.420, 524.790, NULL),
+  (8314, 98, 'There was the guy that swerved his bicycle
+dangerously close to me on the street,', 524.790, 528.865, NULL),
+  (8315, 98, 'stopped pedaling,', 528.865, 530.200, NULL),
+  (8316, 98, 'looked at me, said "pig,"', 530.200, 531.995, NULL),
+  (8317, 98, 'and then spit.', 531.995, 533.411, NULL),
+  (8318, 98, 'I chased him,', 535.361, 536.366, NULL),
+  (8319, 98, 'which was a futile effort
+because he was on a bike,', 536.366, 538.901, NULL),
+  (8320, 98, 'and I hurled every Korean insult
+that I could remember', 538.901, 542.391, NULL),
+  (8321, 98, 'until I saw him vanish in the dark.', 542.391, 545.110, NULL),
+  (8322, 98, 'And then I headed back
+to my apartment to cry.', 545.110, 548.550, NULL),
+  (8323, 98, 'But it wasn''t until ...', 550.584, 552.223, NULL),
+  (8324, 98, 'I was assaulted in a bar -', 552.923, 554.573, NULL),
+  (8325, 98, 'a man raced up behind me', 554.573, 556.562, NULL),
+  (8326, 98, 'to start punching me
+in the back of the head -', 556.562, 559.102, NULL),
+  (8327, 98, 'that I realized,', 559.102, 560.558, NULL),
+  (8328, 98, '"Hold up.', 560.558, 561.896, NULL),
+  (8329, 98, 'I don''t deserve this."', 562.936, 565.314, NULL),
+  (8330, 98, 'It took such an aggressive, abusive action', 565.314, 568.639, NULL),
+  (8331, 98, 'to jolt me into the realization
+that I was a fat human,', 568.639, 572.784, NULL),
+  (8332, 98, 'but I was human.', 572.784, 574.474, NULL),
+  (8333, 98, 'And I told myself,', 575.015, 576.600, NULL),
+  (8334, 98, '"I''m going to go back home to the States,', 576.600, 578.555, NULL),
+  (8335, 98, 'and I''m going to prevent this
+from ever happening to me again.', 578.555, 581.865, NULL),
+  (8336, 98, 'I''m going to lose weight."', 581.865, 583.745, NULL),
+  (8337, 98, 'So I moved back home in 2011.', 584.575, 588.036, NULL),
+  (8338, 98, 'In 2011,', 591.006, 592.896, NULL),
+  (8339, 98, 'I weighed 329 pounds.', 592.896, 597.547, NULL),
+  (8340, 98, 'And I lost 100 pounds in eight months.', 597.547, 600.917, NULL),
+  (8341, 98, 'I worked out for 12
+to 15 hours every week;', 600.917, 604.297, NULL),
+  (8342, 98, 'I counted my calories;', 604.297, 605.667, NULL),
+  (8343, 98, 'I obsessed;', 605.667, 606.898, NULL),
+  (8344, 98, 'and I hid my shame
+from my personal trainer', 606.898, 609.688, NULL),
+  (8345, 98, 'and from my family and from my friends,', 609.688, 611.918, NULL),
+  (8346, 98, 'even from strangers who said,', 611.918, 613.998, NULL),
+  (8347, 98, '"You''re remarkable.', 613.998, 615.849, NULL),
+  (8348, 98, 'This is the hardest thing
+that anybody could ever do,', 615.849, 618.459, NULL),
+  (8349, 98, 'and look at you doing it.', 618.459, 619.868, NULL),
+  (8350, 98, 'I''ve never been more proud of you
+since the day you were born!"', 619.868, 623.901, NULL),
+  (8351, 98, 'Pretty soon, I was eating
+500 to 1,000 calories a day,', 626.278, 631.519, NULL),
+  (8352, 98, 'and I was throwing up everything
+I ate on Friday, which was my "cheat day,"', 631.519, 635.570, NULL),
+  (8353, 98, 'and my eating disorder
+had returned in full force.', 635.570, 639.091, NULL),
+  (8354, 98, 'One day, I walked out of the gym,
+having run a few miles on the treadmill,', 640.231, 643.701, NULL),
+  (8355, 98, 'and a car drove by slowly
+and lowered the windows,', 643.701, 647.131, NULL),
+  (8356, 98, 'and they yelled at me,', 647.131, 648.811, NULL),
+  (8357, 98, '"Fat ass!"', 649.421, 650.722, NULL),
+  (8358, 98, 'When I climbed into my own car,
+dripping with sweat,', 652.222, 655.392, NULL),
+  (8359, 98, 'what happened next was nothing
+short of a nervous breakdown.', 655.392, 658.319, NULL),
+  (8360, 98, 'I had literally been working my ass off', 658.319, 660.173, NULL),
+  (8361, 98, 'to do the one thing
+that everybody told me would fix it,', 660.173, 663.262, NULL),
+  (8362, 98, 'the one thing that everybody told me
+would make me worthy.', 663.262, 666.942, NULL),
+  (8363, 98, 'But that guy in
+the parking lot didn''t care;', 666.942, 668.993, NULL),
+  (8364, 98, 'he didn''t know who, why, where I was
+or what I had done to change.', 668.993, 672.763, NULL),
+  (8365, 98, 'And I fantasized about losing
+the rest of my hundred pounds', 672.763, 675.674, NULL),
+  (8366, 98, 'and thinking about my goal weight.', 675.674, 677.294, NULL),
+  (8367, 98, 'But then all I could see
+were sagging breasts and loose skin', 677.294, 680.735, NULL),
+  (8368, 98, 'and crow''s feet around my eyes.', 680.735, 683.335, NULL),
+  (8369, 98, 'And I knew, intellectually,', 683.335, 684.625, NULL),
+  (8370, 98, 'that as long as I let my self-worth
+be determined in the eyes of others,', 684.625, 688.932, NULL),
+  (8371, 98, 'I would never be content.', 688.932, 691.174, NULL),
+  (8372, 98, 'But I could not disengage from the belief
+that I had to be thin to be happy.', 691.174, 696.756, NULL),
+  (8373, 98, 'And so in that moment,
+all of my hope was extinguished.', 696.756, 701.306, NULL),
+  (8374, 98, 'I had grown tired of the calorie counting,', 701.956, 705.267, NULL),
+  (8375, 98, 'of the weight loss,', 705.267, 706.537, NULL),
+  (8376, 98, 'of the obsession with everything
+food and exercise.', 706.537, 710.428, NULL),
+  (8377, 98, 'I wanted something more to live for.', 710.428, 713.357, NULL),
+  (8378, 98, 'So, naturally, I got a job in radio', 713.947, 715.988, NULL),
+  (8379, 98, 'where I had to wake up at four
+in the morning every day for minimum wage.', 715.988, 719.558, NULL),
+  (8380, 98, '(Laughter)', 719.558, 720.838, NULL),
+  (8381, 98, 'And like the vast majority of people', 721.638, 723.988, NULL),
+  (8382, 98, 'who lose a substantial amount
+of weight in their life,', 723.988, 726.508, NULL),
+  (8383, 98, 'I started to gain it back.', 726.508, 727.748, NULL),
+  (8384, 98, 'And within a year and a half,
+I was the heaviest I''d ever been.', 727.748, 731.159, NULL),
+  (8385, 98, 'I was 350 pounds', 731.159, 733.468, NULL),
+  (8386, 98, 'and in the deepest place
+of depression I''d ever known.', 733.468, 736.798, NULL),
+  (8387, 98, 'I didn''t have any money
+to pay my own rent,', 737.590, 739.610, NULL),
+  (8388, 98, 'so I''d moved back in with my parents.', 739.610, 741.380, NULL),
+  (8389, 98, 'And on my 29th birthday,
+I found myself sobbing in my mother''s lap,', 741.380, 745.750, NULL),
+  (8390, 98, 'lamenting about the dismal direction
+of both my professional and personal life.', 746.388, 750.691, NULL),
+  (8391, 98, 'And I asked her,', 750.691, 751.691, NULL),
+  (8392, 98, '"Mom, how can anything ever change?"', 751.691, 755.251, NULL),
+  (8393, 98, 'And my mother produced a pendant,', 755.801, 758.262, NULL),
+  (8394, 98, 'and on it were the words', 758.462, 760.227, NULL),
+  (8395, 98, '"Something good is going to happen."', 760.227, 762.962, NULL),
+  (8396, 98, 'But in my misery, I was hyperfocused
+on one detail and one detail only:', 762.962, 768.166, NULL),
+  (8397, 98, 'when?', 768.972, 770.233, NULL),
+  (8398, 98, 'So I started to reevaluate my life.', 770.813, 772.482, NULL),
+  (8399, 98, 'I thought back to when I was
+10 years old and 90 pounds,', 772.482, 775.603, NULL),
+  (8400, 98, 'and now I''m almost 30 and over 300,', 775.603, 777.733, NULL),
+  (8401, 98, 'and it hadn''t mattered.', 777.733, 779.493, NULL),
+  (8402, 98, 'I''d never been happy;', 779.493, 780.663, NULL),
+  (8403, 98, 'I''d never loved myself;', 780.663, 782.214, NULL),
+  (8404, 98, 'I''d always carry the weight of shame.', 782.214, 785.104, NULL),
+  (8405, 98, 'So I decided to try an experiment,
+and I made a promise.', 785.104, 787.734, NULL),
+  (8406, 98, 'I said, "Whitney, if there is something
+that you get asked to do', 787.734, 791.975, NULL),
+  (8407, 98, 'and your only reason
+for declining is to say,', 791.975, 794.435, NULL),
+  (8408, 98, '''because I''m fat,''', 794.435, 796.385, NULL),
+  (8409, 98, 'then you are going to do
+that thing anyway."', 796.385, 798.885, NULL),
+  (8410, 98, 'The universe was listening', 799.965, 801.675, NULL),
+  (8411, 98, 'because you''d better believe -', 801.675, 803.105, NULL),
+  (8412, 98, 'three days later,', 803.105, 804.745, NULL),
+  (8413, 98, 'I got a message from a local photographer', 804.745, 806.696, NULL),
+  (8414, 98, 'who told me she wanted to take
+some boudoir photographs of me for free.', 806.696, 810.866, NULL),
+  (8415, 98, 'I wrote back to her immediately:', 812.356, 813.877, NULL),
+  (8416, 98, '"Sister, I would never in a million years
+take my clothes off in front of a camera.', 813.877, 819.137, NULL),
+  (8417, 98, 'So when should I meet you?"', 819.137, 820.958, NULL),
+  (8418, 98, '(Laughter)', 820.958, 822.338, NULL),
+  (8419, 98, 'A bottle of wine
+and a designated driver later,', 823.658, 826.918, NULL),
+  (8420, 98, '(Laughter)', 826.918, 828.118, NULL),
+  (8421, 98, 'I got an unexpected result.', 828.118, 830.888, NULL),
+  (8422, 98, 'When I looked at this picture,', 830.888, 833.018, NULL),
+  (8423, 98, 'for the first time in my entire life,', 836.708, 839.370, NULL),
+  (8424, 98, 'I didn''t dissect every flaw,', 839.370, 841.720, NULL),
+  (8425, 98, 'I didn''t cringe,', 841.720, 842.720, NULL),
+  (8426, 98, 'and in fact, I thought I was beautiful.', 842.720, 845.960, NULL),
+  (8427, 98, 'So I decided to keep the experiment going.', 846.540, 849.480, NULL),
+  (8428, 98, 'My co-workers at the radio station
+were trying to ask me to do a dance video', 850.071, 854.251, NULL),
+  (8429, 98, 'and call it "A Fat Girl Dancing"', 854.251, 855.775, NULL),
+  (8430, 98, 'and put it on YouTube.', 855.775, 857.010, NULL),
+  (8431, 98, 'And at first, my reaction
+was "absolutely not"', 857.010, 859.881, NULL),
+  (8432, 98, 'because no one has seen me
+dance since I was 18 -', 859.881, 862.242, NULL),
+  (8433, 98, 'fat girls don''t get to do that -', 862.242, 863.982, NULL),
+  (8434, 98, 'and I''m still balking at the word "fat."', 863.982, 866.582, NULL),
+  (8435, 98, 'And I had to ask myself,', 867.002, 868.362, NULL),
+  (8436, 98, '"Whitney, of anyone on the planet,', 868.362, 870.603, NULL),
+  (8437, 98, 'don''t you know that being fat', 870.603, 873.123, NULL),
+  (8438, 98, 'isn''t synonymous with worthless,
+lazy, stupid, undeserving?"', 873.123, 877.123, NULL),
+  (8439, 98, 'I wasn''t sure that I knew,', 877.773, 880.158, NULL),
+  (8440, 98, 'but I wanted to find out if I did,', 880.158, 881.923, NULL),
+  (8441, 98, 'so I said yes.', 881.923, 883.464, NULL),
+  (8442, 98, 'And I posted this video onto the internet,', 883.774, 888.694, NULL),
+  (8443, 98, 'and a few days later,
+I started getting a lot of phone calls.', 889.614, 893.265, NULL),
+  (8444, 98, 'But they weren''t normal calls', 893.705, 895.090, NULL),
+  (8445, 98, 'like from my dad asking me
+if I had toilet paper and stuff.', 895.090, 897.855, NULL),
+  (8446, 98, 'It was like Steve Harvey and CNN,
+Good Morning America, and the Today Show,', 898.535, 903.455, NULL),
+  (8447, 98, 'and they all told me they wanted me
+to come on their programs,', 903.455, 906.605, NULL),
+  (8448, 98, 'talk about my dance video,', 906.605, 908.165, NULL),
+  (8449, 98, 'and explain this new lifestyle,', 908.165, 909.886, NULL),
+  (8450, 98, 'this new "body positive" lifestyle
+that I was leading.', 909.886, 913.247, NULL),
+  (8451, 98, 'And I couldn''t understand -', 914.107, 915.396, NULL),
+  (8452, 98, 'like what is so special or subversive
+about a fat woman dancing?', 915.396, 919.686, NULL),
+  (8453, 98, 'But I went on the shows,', 919.686, 921.281, NULL),
+  (8454, 98, 'and I did my little dance.', 921.281, 923.377, NULL),
+  (8455, 98, 'And then the letters started coming in.', 923.867, 926.237, NULL),
+  (8456, 98, 'I got an email from a boy,
+a teenage boy in Lebanon, and he said,', 926.237, 929.878, NULL),
+  (8457, 98, '"Whitney, it''s illegal to be gay here,', 929.878, 932.173, NULL),
+  (8458, 98, 'and I''m gay.', 932.173, 933.759, NULL),
+  (8459, 98, 'But when I watch your videos,
+I feel like my life is going to be okay."', 933.759, 938.410, NULL),
+  (8460, 98, 'And I said,', 939.019, 940.479, NULL),
+  (8461, 98, '"Okay."', 942.439, 943.436, NULL),
+  (8462, 98, '(Laughs)', 943.436, 944.746, NULL),
+  (8463, 98, 'Then after that, some more letters
+started pouring in.', 946.029, 948.550, NULL),
+  (8464, 98, 'This one was from TLC, and they asked me
+if I would consider doing a reality show.', 948.550, 952.400, NULL),
+  (8465, 98, 'I mulled it over and thought about how
+it could ruin my life and reputation', 952.400, 955.917, NULL),
+  (8466, 98, 'and all the ways it still might.', 955.917, 957.591, NULL),
+  (8467, 98, 'But then I thought
+about that boy in Lebanon,', 958.241, 961.551, NULL),
+  (8468, 98, 'and for every other person', 961.551, 962.841, NULL),
+  (8469, 98, 'who had never turned on a TV
+and seen someone who looked like them,', 962.841, 965.981, NULL),
+  (8470, 98, 'who struggled like them,', 965.981, 967.441, NULL),
+  (8471, 98, 'and so I said yes.', 967.441, 969.582, NULL),
+  (8472, 98, 'It wasn''t before long
+that even more letters started pouring in.', 971.722, 975.862, NULL),
+  (8473, 98, 'And many of them were from fat women,
+but just as many of them weren''t.', 975.862, 979.363, NULL),
+  (8474, 98, 'I was talking to little girls,', 979.363, 980.903, NULL),
+  (8475, 98, 'anorexic women,', 980.903, 981.903, NULL),
+  (8476, 98, 'people with different abilities,', 981.903, 983.443, NULL),
+  (8477, 98, 'grandfathers that had always
+hated their noses.', 983.443, 986.364, NULL),
+  (8478, 98, 'And then I realized, like,
+it''s not about the fact that I''m fat;', 987.483, 991.223, NULL),
+  (8479, 98, 'it''s about the fact
+that I am living a shame-free life', 991.223, 993.834, NULL),
+  (8480, 98, 'in spite of a society
+that tells me I don''t deserve to.', 993.834, 997.164, NULL),
+  (8481, 98, 'We all have something that society
+tells us we should feel shame about.', 998.114, 1002.715, NULL),
+  (8482, 98, 'For me, it''s visible', 1002.715, 1004.560, NULL),
+  (8483, 98, 'in a world where thinness
+is championed above all else,', 1004.560, 1008.226, NULL),
+  (8484, 98, 'where we tell women in no uncertain terms,', 1008.226, 1010.465, NULL),
+  (8485, 98, '"If you are not young enough,
+thin enough, and pretty enough,', 1010.465, 1013.336, NULL),
+  (8486, 98, 'you''re disposable"', 1013.336, 1015.726, NULL),
+  (8487, 98, 'Living in that world,', 1016.156, 1018.026, NULL),
+  (8488, 98, 'deciding to love my body
+had become a radical act.', 1018.506, 1023.387, NULL),
+  (8489, 98, 'And doing what I loved in that body
+had become powerful.', 1023.387, 1027.247, NULL),
+  (8490, 98, 'And then came the inevitable
+questions from everybody:', 1027.877, 1031.297, NULL),
+  (8491, 98, '"How is this doable?"', 1031.297, 1033.687, NULL),
+  (8492, 98, 'I never used to know
+how to answer this question,', 1033.687, 1035.977, NULL),
+  (8493, 98, 'because I didn''t know
+how to tell someone to be like me.', 1035.977, 1039.128, NULL),
+  (8494, 98, 'But now I think I know how to tell people
+to be more like them.', 1039.528, 1043.257, NULL),
+  (8495, 98, 'We think that we have to magically
+have confidence before we do something,', 1043.257, 1046.949, NULL),
+  (8496, 98, 'but this is backwards.', 1046.949, 1048.930, NULL),
+  (8497, 98, 'Confidence is a product of action,
+not the other way around.', 1049.569, 1052.548, NULL),
+  (8498, 98, 'If I had to wait to have the confidence,
+I''d never get out of bed to do anything.', 1052.548, 1056.540, NULL),
+  (8499, 98, 'I had to do the hard stuff -', 1057.720, 1059.275, NULL),
+  (8500, 98, 'in my case, posing
+half-naked and dancing -', 1059.275, 1062.370, NULL),
+  (8501, 98, 'and then the confidence came as a reward,', 1062.370, 1064.960, NULL),
+  (8502, 98, 'and the confidence
+came as a building block.', 1064.960, 1067.611, NULL),
+  (8503, 98, 'But living authentically shame-free
+is not sunshine and roses.', 1068.181, 1072.361, NULL),
+  (8504, 98, 'Every day on the internet
+and in my real life,', 1072.361, 1074.501, NULL),
+  (8505, 98, 'I''m told that I am disgusting, delusional,', 1074.501, 1077.673, NULL),
+  (8506, 98, 'and should hurry up and have
+that heart attack I''m bound to have', 1077.673, 1080.672, NULL),
+  (8507, 98, 'so the world will be rid of me.', 1080.672, 1082.332, NULL),
+  (8508, 98, 'But living shame-free', 1083.332, 1084.622, NULL),
+  (8509, 98, 'has also brought more joy into my life
+than I ever could believe existed.', 1084.622, 1090.463, NULL),
+  (8510, 98, 'It has connected me', 1090.463, 1091.465, NULL);
+
+INSERT INTO subtitle_segment (id, video_id, text, start_seconds, end_seconds, search_vector) VALUES
+  (8511, 98, 'with millions of people
+I''d have never met face-to-face', 1091.465, 1094.033, NULL),
+  (8512, 98, 'and injected the color
+and happiness back into my life.', 1094.033, 1097.503, NULL),
+  (8513, 98, 'Now, I often think
+of one of my favorite quotes', 1098.003, 1100.474, NULL),
+  (8514, 98, 'from my favorite feminist, Audre Lorde.', 1100.474, 1102.554, NULL),
+  (8515, 98, 'She said, "I am deliberate
+and afraid of nothing."', 1102.554, 1106.964, NULL),
+  (8516, 98, 'And then I think
+back to this picture - 1989.', 1106.964, 1110.954, NULL),
+  (8517, 98, 'Five years old,
+before my first dance recital,', 1111.725, 1113.865, NULL),
+  (8518, 98, 'this little girl was deliberate
+and afraid of nothing,', 1113.865, 1116.384, NULL),
+  (8519, 98, 'serving up all the face
+and sass in the world,', 1116.384, 1119.875, NULL),
+  (8520, 98, 'completely unapologetic about what
+she knew she was put on this earth to do.', 1119.875, 1123.726, NULL),
+  (8521, 98, 'I think we get discouraged
+because we''ve all been that little girl', 1124.286, 1127.378, NULL),
+  (8522, 98, 'but then the world
+beats and breaks us down.', 1127.378, 1130.246, NULL),
+  (8523, 98, 'We think that being confident, being happy', 1130.246, 1132.916, NULL),
+  (8524, 98, 'should be as easy as putting
+on a light switch, right?', 1132.916, 1135.707, NULL),
+  (8525, 98, 'Just do it, just be happy,
+just love yourself.', 1135.707, 1139.457, NULL),
+  (8526, 98, 'But it isn''t that easy, and I know that.', 1139.457, 1142.588, NULL),
+  (8527, 98, 'It''s not like a light switch.', 1142.588, 1144.128, NULL),
+  (8528, 98, 'Living authentically free of shame', 1144.128, 1145.839, NULL),
+  (8529, 98, 'is more like stumbling toward
+a motion sensor light in the dark.', 1145.839, 1150.186, NULL),
+  (8530, 98, 'You have to advance forward
+to a target that you can''t see', 1151.088, 1155.478, NULL),
+  (8531, 98, 'but trust that you''ll
+ultimately get there.', 1155.478, 1157.599, NULL),
+  (8532, 98, 'And the universe is funny', 1157.599, 1158.789, NULL),
+  (8533, 98, 'because the only thing
+that will turn that light on', 1158.789, 1161.169, NULL),
+  (8534, 98, 'is your movement and your action.', 1161.169, 1164.060, NULL),
+  (8535, 98, 'And if you live this way -', 1164.060, 1165.425, NULL),
+  (8536, 98, 'if you know that every time you''re
+stumbling and spinning and scrambling,', 1165.425, 1169.470, NULL),
+  (8537, 98, 'you are actually doing the hard part,', 1169.470, 1171.630, NULL),
+  (8538, 98, 'you are actually doing the work
+even if you can''t pinpoint your progress -', 1171.630, 1175.761, NULL),
+  (8539, 98, 'if you make a commitment
+to live a shame-free life', 1175.761, 1178.441, NULL),
+  (8540, 98, 'and know that it''s an undertaking
+that you have to do every single day,', 1178.441, 1181.771, NULL),
+  (8541, 98, 'day in and day out,', 1181.771, 1183.091, NULL),
+  (8542, 98, 'and you are deliberate
+about choosing that life -', 1183.091, 1186.922, NULL),
+  (8543, 98, 'you will find yourself illuminated.', 1186.922, 1189.792, NULL),
+  (8544, 98, 'And if you''re like me,', 1189.792, 1191.472, NULL),
+  (8545, 98, 'it''ll probably be
+when you least expect it.', 1191.472, 1194.344, NULL),
+  (8546, 98, 'Thank you.', 1194.344, 1195.344, NULL),
+  (8547, 98, '(Applause)', 1195.344, 1197.743, NULL),
+  (8548, 99, 'Reviewer: Denise RQ', 0.000, 7.000, NULL),
+  (8549, 99, 'War is a nightmare.', 16.326, 20.636, NULL),
+  (8550, 99, 'War is awful.', 21.985, 23.655, NULL),
+  (8551, 99, 'It is indifferent,
+and devastating, and evil.', 24.765, 29.945, NULL),
+  (8552, 99, 'War is hell.', 32.326, 34.936, NULL),
+  (8553, 99, 'But war is also an incredible teacher,', 39.314, 43.546, NULL),
+  (8554, 99, 'a brutal teacher.', 44.746, 46.686, NULL),
+  (8555, 99, 'And it teaches you lessons
+that you will not forget.', 47.506, 51.636, NULL),
+  (8556, 99, 'In war, you are forced', 55.624, 58.833, NULL),
+  (8557, 99, 'to see humanity at its absolute worst,', 58.834, 64.114, NULL),
+  (8558, 99, 'and you are also blessed', 66.074, 68.540, NULL),
+  (8559, 99, 'to see humanity
+in its most glorious moments.', 69.463, 74.013, NULL),
+  (8560, 99, 'War teaches you about
+sorrow, and loss, and pain.', 76.543, 82.833, NULL),
+  (8561, 99, 'And it teaches you about the preciousness', 85.126, 88.156, NULL),
+  (8562, 99, 'and the fragility of human life.', 89.479, 93.249, NULL),
+  (8563, 99, 'And in that fragility,', 95.229, 97.509, NULL),
+  (8564, 99, 'war teaches you about death.', 99.132, 101.602, NULL),
+  (8565, 99, 'But war also teaches you', 105.972, 108.693, NULL),
+  (8566, 99, 'about brotherhood, and honor,', 109.477, 113.157, NULL),
+  (8567, 99, 'and humility, and leadership.', 113.783, 117.433, NULL),
+  (8568, 99, 'And unfortunately, war teaches you
+the most when things go wrong.', 120.013, 125.663, NULL),
+  (8569, 99, 'And for me,', 128.469, 129.967, NULL),
+  (8570, 99, 'one of the most impactful lessons
+that I learned from war', 129.969, 133.648, NULL),
+  (8571, 99, 'was in the spring of 2006', 134.358, 137.648, NULL),
+  (8572, 99, 'in the city of Ramadi, Iraq,', 138.679, 141.138, NULL),
+  (8573, 99, 'which at the time,
+was the epicenter of the insurgency', 141.139, 145.349, NULL),
+  (8574, 99, 'where brutal and determined terrorists
+ruled the streets', 146.443, 151.253, NULL),
+  (8575, 99, 'with torture and rape and murder.', 152.326, 158.456, NULL),
+  (8576, 99, 'It was in one neighborhood of that city', 161.042, 164.152, NULL),
+  (8577, 99, 'during an operation
+that I was in charge of', 165.095, 168.165, NULL),
+  (8578, 99, 'when all hell broke loose.', 169.205, 171.735, NULL),
+  (8579, 99, 'We had multiple units out
+on the battlefield fighting the enemy.', 172.500, 177.709, NULL),
+  (8580, 99, 'We had friendly Iraqi soldiers,', 177.710, 179.879, NULL),
+  (8581, 99, 'we had US Army soldiers and US Marines,', 180.299, 183.091, NULL),
+  (8582, 99, 'along with small elements of my SEAL team.', 183.092, 186.482, NULL),
+  (8583, 99, 'And then the fog of war rolled in', 188.585, 191.805, NULL),
+  (8584, 99, 'with its confusion, and chaos, and mayhem,', 193.460, 197.000, NULL),
+  (8585, 99, 'and with its gunfire, and enemy attacks,', 199.489, 203.259, NULL),
+  (8586, 99, 'and screaming men, and blood, and death;', 203.757, 207.887, NULL),
+  (8587, 99, 'and in that fog of war,', 211.209, 214.309, NULL),
+  (8588, 99, 'through a series of mistakes,
+and human error,', 216.223, 220.763, NULL),
+  (8589, 99, 'and poor judgment, and Murphy''s law,
+and just plain bad luck,', 220.771, 225.601, NULL),
+  (8590, 99, 'a horrendous fire fight broke out.', 226.562, 230.132, NULL),
+  (8591, 99, 'But this fire fight', 231.938, 234.088, NULL),
+  (8592, 99, 'wasn''t between us and the enemy;', 235.417, 239.007, NULL),
+  (8593, 99, 'this fire fight, tragically,', 240.472, 243.492, NULL),
+  (8594, 99, 'was between us and us,', 244.031, 248.651, NULL),
+  (8595, 99, 'friendly forces against friendly forces;', 250.200, 253.629, NULL),
+  (8596, 99, 'fratricide -', 253.630, 255.380, NULL),
+  (8597, 99, 'the mortal sin of combat', 256.072, 258.973, NULL),
+  (8598, 99, 'and the most horrific part of war.', 259.437, 262.927, NULL),
+  (8599, 99, 'And when it was over,
+and the fog of war lifted,', 265.849, 271.009, NULL),
+  (8600, 99, 'one friendly Iraqi soldier was dead,
+two more were wounded,', 271.816, 277.946, NULL),
+  (8601, 99, 'one of my men was wounded,', 278.398, 280.797, NULL),
+  (8602, 99, 'the rest of my SEALs were badly shaken,', 280.798, 283.268, NULL),
+  (8603, 99, 'and it was only through a miracle
+that no one else was killed.', 283.279, 286.559, NULL),
+  (8604, 99, 'And it was reported up the chain
+of command what had happened.', 289.013, 292.993, NULL),
+  (8605, 99, 'That we had fought, and wounded,
+and killed each other.', 294.526, 299.656, NULL),
+  (8606, 99, 'And when we got back to base,
+things didn''t get much better.', 303.153, 306.943, NULL),
+  (8607, 99, 'There was a message waiting for me
+from my commanding officer,', 307.512, 311.742, NULL),
+  (8608, 99, 'and it said, "Shut down all operations."', 313.260, 316.520, NULL),
+  (8609, 99, 'It said that the commanding officer,', 317.776, 319.635, NULL),
+  (8610, 99, 'the master chief,
+and the investigating officer', 319.636, 322.625, NULL),
+  (8611, 99, 'were inbound to my location.', 322.626, 325.246, NULL),
+  (8612, 99, 'And they told me to prepare
+a debrief to explain', 326.750, 331.488, NULL),
+  (8613, 99, 'exactly what had happened on the operation
+and what had gone wrong.', 332.168, 337.378, NULL),
+  (8614, 99, 'Now, I knew what this meant.', 341.426, 344.256, NULL),
+  (8615, 99, 'It meant that somebody had to pay.', 346.143, 347.772, NULL),
+  (8616, 99, 'It meant that somebody
+had to be held accountable.', 347.773, 351.122, NULL),
+  (8617, 99, 'It meant that somebody had to get fired
+for what had happened.', 351.123, 354.913, NULL),
+  (8618, 99, 'So, I began to prepare my debrief.', 357.077, 361.317, NULL),
+  (8619, 99, 'And in it,', 362.719, 363.969, NULL),
+  (8620, 99, 'I detailed every mistake
+that was made and who made it.', 364.474, 370.384, NULL),
+  (8621, 99, 'And I pointed out every failure', 371.260, 374.039, NULL),
+  (8622, 99, 'in the planning, and the preparation,
+and the execution in the operation,', 374.040, 379.220, NULL),
+  (8623, 99, 'and I pointed out
+who was responsible for that failure.', 379.750, 384.350, NULL),
+  (8624, 99, 'There was plenty of blame to go around.', 385.906, 389.486, NULL),
+  (8625, 99, 'There were so many people
+that I could incriminate with guilt.', 390.303, 395.203, NULL),
+  (8626, 99, 'But something wasn''t right.', 398.410, 401.340, NULL),
+  (8627, 99, 'For some reason,
+I just couldn''t put my finger', 402.427, 407.947, NULL),
+  (8628, 99, 'on who was at fault', 408.466, 411.005, NULL),
+  (8629, 99, 'and who specifically I should blame for
+what had happened.', 411.006, 415.176, NULL),
+  (8630, 99, 'And I sat,', 417.075, 418.825, NULL),
+  (8631, 99, 'and I went over it again and again,
+and I struggled for an answer.', 419.507, 424.457, NULL),
+  (8632, 99, 'And then, when I was about ten minutes
+from starting the debrief,', 426.804, 431.244, NULL),
+  (8633, 99, 'that answer came,', 431.934, 433.894, NULL),
+  (8634, 99, 'and it hit me like a slap in the face.', 434.173, 437.023, NULL),
+  (8635, 99, 'And I realized', 437.801, 439.150, NULL),
+  (8636, 99, 'that there was only one person
+to blame for the confusion,', 439.151, 442.690, NULL),
+  (8637, 99, 'only one person to blame for
+the wounded men,', 442.691, 446.210, NULL),
+  (8638, 99, 'and only one person to blame for
+the dead Iraqi soldier.', 446.211, 450.011, NULL),
+  (8639, 99, 'And I knew exactly who that person was.', 450.518, 452.918, NULL),
+  (8640, 99, 'And with that knowledge,
+I walked into the debriefing room', 454.487, 458.387, NULL),
+  (8641, 99, 'with my commanding officer', 458.791, 460.630, NULL),
+  (8642, 99, 'and the master chief,
+and the investigating officer', 460.631, 463.530, NULL),
+  (8643, 99, 'were sitting there waiting for me,
+along with the rest of my men,', 463.531, 467.340, NULL),
+  (8644, 99, 'including my SEAL who had been wounded,', 467.341, 469.310, NULL),
+  (8645, 99, 'who was sitting in the back of the room', 469.311, 471.544, NULL),
+  (8646, 99, 'with his head and his face
+all bandaged up.', 471.545, 474.345, NULL),
+  (8647, 99, 'And I stood up before them,
+and I asked them one simple question,', 476.421, 480.971, NULL),
+  (8648, 99, '"Who''s fault was this?"', 482.711, 485.381, NULL),
+  (8649, 99, 'One of my SEALs raised his hand.', 488.225, 490.025, NULL),
+  (8650, 99, 'And he said, "It was my fault.', 490.457, 492.207, NULL),
+  (8651, 99, 'I didn''t keep control of
+the Iraqi soldiers I was with.', 492.697, 496.607, NULL),
+  (8652, 99, 'And they left their designated sector,', 496.891, 499.180, NULL),
+  (8653, 99, 'and that was the root
+of all these problems."', 499.181, 501.991, NULL),
+  (8654, 99, 'And I said, "No, it wasn''t your fault."', 503.026, 505.085, NULL),
+  (8655, 99, 'And then another SEAL raised his hand
+and said, "It was my fault.', 505.086, 508.300, NULL),
+  (8656, 99, 'I didn''t pass our location
+over the radio fast enough', 509.280, 513.188, NULL),
+  (8657, 99, 'so no one knew what building we were in,
+and that''s what caused all this confusion.', 513.190, 517.111, NULL),
+  (8658, 99, 'It was my fault."', 517.113, 518.363, NULL),
+  (8659, 99, 'And I said, "No, it wasn''t
+your fault either."', 519.172, 521.792, NULL),
+  (8660, 99, 'And then another SEAL
+raised his hand, and he said,', 523.135, 526.504, NULL),
+  (8661, 99, '"Boss, this was my fault.', 526.505, 529.615, NULL),
+  (8662, 99, 'I didn''t properly identify my target,', 530.828, 534.128, NULL),
+  (8663, 99, 'and I shot and killed
+that friendly Iraqi soldier.', 535.521, 539.071, NULL),
+  (8664, 99, 'This was my fault."', 540.053, 541.152, NULL),
+  (8665, 99, 'And I said, "No, this wasn''t
+your fault either.', 541.153, 544.353, NULL),
+  (8666, 99, 'And it wasn''t yours, or yours, or yours,"', 544.837, 547.616, NULL),
+  (8667, 99, 'I said as I pointed to the rest
+of the SEALs in the room.', 547.617, 550.517, NULL),
+  (8668, 99, 'And then I told them', 551.927, 553.446, NULL),
+  (8669, 99, 'that there was only one person
+at fault for what had happened.', 553.447, 557.756, NULL),
+  (8670, 99, 'There was only one person to blame.', 557.757, 560.085, NULL),
+  (8671, 99, 'And that person was me.', 562.315, 564.895, NULL),
+  (8672, 99, 'I am the commander,', 566.449, 567.959, NULL),
+  (8673, 99, 'I am the senior man on the battlefield,', 568.774, 571.183, NULL),
+  (8674, 99, 'and I am responsible for
+everything that happens;', 571.184, 575.184, NULL),
+  (8675, 99, 'everything.', 576.764, 578.454, NULL),
+  (8676, 99, 'And then I went on to explain to them', 580.881, 583.741, NULL),
+  (8677, 99, 'some new tactics,
+techniques, and procedures', 583.763, 586.863, NULL),
+  (8678, 99, 'that we were going to implement', 586.873, 588.793, NULL),
+  (8679, 99, 'to ensure that this kind of travesty
+never happened again.', 588.794, 592.574, NULL),
+  (8680, 99, 'And I will tell you something: it hurt.', 595.789, 598.839, NULL),
+  (8681, 99, 'It hurt my ego.', 600.303, 602.602, NULL),
+  (8682, 99, 'It hurt my pride to take the blame.', 602.603, 605.504, NULL),
+  (8683, 99, 'But I also knew,', 607.233, 609.323, NULL),
+  (8684, 99, 'I knew that to maintain my integrity
+as a leader and as a man,', 610.264, 617.264, NULL),
+  (8685, 99, 'I had to take responsibility.', 619.186, 621.045, NULL),
+  (8686, 99, 'And in order to do that,', 621.046, 622.235, NULL),
+  (8687, 99, 'I had to control my ego
+so that my ego did not control me.', 622.236, 627.236, NULL),
+  (8688, 99, 'And you know what?', 629.939, 631.459, NULL),
+  (8689, 99, 'I didn''t get fired.', 632.723, 633.943, NULL),
+  (8690, 99, 'In fact, my commanding officer,', 635.419, 638.759, NULL),
+  (8691, 99, 'who had expected excuses
+and finger-pointing,', 639.619, 643.619, NULL),
+  (8692, 99, 'when I took responsibility,
+when I took ownership,', 644.237, 647.376, NULL),
+  (8693, 99, 'he now trusted me even more.', 647.377, 650.467, NULL),
+  (8694, 99, 'And my men', 652.937, 654.477, NULL),
+  (8695, 99, 'didn''t lose respect for me.', 656.406, 659.176, NULL),
+  (8696, 99, 'Instead, they realized', 660.947, 663.537, NULL),
+  (8697, 99, 'that I would never shirk responsibility,', 663.719, 667.719, NULL),
+  (8698, 99, 'and I would never pass', 668.180, 670.549, NULL),
+  (8699, 99, 'that heavy burden of command
+down the chain and onto them.', 670.550, 676.210, NULL),
+  (8700, 99, 'And you know what?', 679.666, 681.266, NULL),
+  (8701, 99, 'They had the same attitude.', 681.589, 683.899, NULL),
+  (8702, 99, 'Unlike a team where no one
+takes ownership of the problems,', 685.197, 691.116, NULL),
+  (8703, 99, 'and therefore, the problems
+never get solved,', 691.117, 693.826, NULL),
+  (8704, 99, 'with us, everyone took ownership
+of their mistakes,', 693.827, 698.176, NULL),
+  (8705, 99, 'everyone took ownership of the problems.', 698.177, 700.994, NULL),
+  (8706, 99, 'And when a team
+takes ownership of it''s problems,', 702.344, 706.583, NULL),
+  (8707, 99, 'the problems get solved.', 706.584, 709.334, NULL),
+  (8708, 99, 'And that is true on the battlefield,', 711.745, 715.745, NULL),
+  (8709, 99, 'it is true in business,
+and it is true in life.', 716.051, 720.161, NULL),
+  (8710, 99, 'So I say, take ownership;', 723.893, 728.942, NULL);
+
+INSERT INTO subtitle_segment (id, video_id, text, start_seconds, end_seconds, search_vector) VALUES
+  (8711, 99, 'take extreme ownership.', 728.943, 731.495, NULL),
+  (8712, 99, 'Don''t make excuses,', 731.854, 733.423, NULL),
+  (8713, 99, 'don''t blame any other person
+or any other thing.', 733.424, 737.424, NULL),
+  (8714, 99, 'Get control of your ego.', 740.026, 742.526, NULL),
+  (8715, 99, 'Don''t hide your delicate pride
+from the truth.', 743.604, 749.984, NULL),
+  (8716, 99, 'Take ownership
+of everything in your world,', 751.774, 755.493, NULL),
+  (8717, 99, 'the good and the bad.', 755.494, 757.404, NULL),
+  (8718, 99, 'Take ownership of your mistakes,
+take ownership of your shortfalls,', 759.316, 764.395, NULL),
+  (8719, 99, 'take ownership of your problems,', 764.396, 766.125, NULL),
+  (8720, 99, 'and then take ownership of the solutions
+that will get those problems solved.', 766.126, 771.866, NULL),
+  (8721, 99, 'Take ownership of your mission.', 775.570, 779.480, NULL),
+  (8722, 99, 'Take ownership of your job,
+of your team, of your future,', 780.035, 784.824, NULL),
+  (8723, 99, 'and take ownership of your life.', 784.825, 788.055, NULL),
+  (8724, 99, 'And lead.', 792.418, 793.788, NULL),
+  (8725, 99, 'Lead.', 796.098, 797.258, NULL),
+  (8726, 99, 'Lead yourself,', 799.938, 802.018, NULL),
+  (8727, 99, 'and your team,
+and the people in your life;', 802.766, 807.155, NULL),
+  (8728, 99, 'lead them all', 807.156, 809.034, NULL),
+  (8729, 99, 'to victory.', 811.690, 813.150, NULL),
+  (8730, 99, 'Thank you.', 815.270, 816.379, NULL),
+  (8731, 99, '(Applause)', 816.380, 817.550, NULL),
+  (8732, 100, 'So in college,', 12.645, 14.015, NULL),
+  (8733, 100, 'I was a government major,', 15.349, 16.913, NULL),
+  (8734, 100, 'which means I had to write
+a lot of papers.', 16.937, 19.399, NULL),
+  (8735, 100, 'Now, when a normal student writes a paper,', 19.423, 21.471, NULL),
+  (8736, 100, 'they might spread the work out
+a little like this.', 21.495, 23.868, NULL),
+  (8737, 100, 'So, you know --', 23.892, 25.043, NULL),
+  (8738, 100, '(Laughter)', 25.067, 26.724, NULL),
+  (8739, 100, 'you get started maybe a little slowly,', 26.748, 28.575, NULL),
+  (8740, 100, 'but you get enough done in the first week', 28.599, 30.567, NULL),
+  (8741, 100, 'that, with some heavier days later on,', 30.591, 32.422, NULL),
+  (8742, 100, 'everything gets done, things stay civil.', 32.446, 34.603, NULL),
+  (8743, 100, '(Laughter)', 34.627, 35.829, NULL),
+  (8744, 100, 'And I would want to do that like that.', 35.853, 38.124, NULL),
+  (8745, 100, 'That would be the plan.', 38.148, 39.342, NULL),
+  (8746, 100, 'I would have it all ready to go,', 39.366, 41.856, NULL),
+  (8747, 100, 'but then, actually, the paper
+would come along,', 41.880, 44.374, NULL),
+  (8748, 100, 'and then I would kind of do this.', 44.398, 46.339, NULL),
+  (8749, 100, '(Laughter)', 46.363, 48.733, NULL),
+  (8750, 100, 'And that would happen every single paper.', 48.757, 50.900, NULL),
+  (8751, 100, 'But then came my 90-page senior thesis,', 51.638, 55.520, NULL),
+  (8752, 100, 'a paper you''re supposed
+to spend a year on.', 55.544, 57.831, NULL),
+  (8753, 100, 'And I knew for a paper like that,
+my normal work flow was not an option.', 57.855, 61.474, NULL),
+  (8754, 100, 'It was way too big a project.', 61.498, 62.899, NULL),
+  (8755, 100, 'So I planned things out,', 62.923, 64.076, NULL),
+  (8756, 100, 'and I decided I kind of had
+to go something like this.', 64.100, 67.305, NULL),
+  (8757, 100, 'This is how the year would go.', 67.781, 69.233, NULL),
+  (8758, 100, 'So I''d start off light,', 69.257, 71.224, NULL),
+  (8759, 100, 'and I''d bump it up in the middle months,', 71.248, 73.566, NULL),
+  (8760, 100, 'and then at the end,
+I would kick it up into high gear', 73.590, 76.216, NULL),
+  (8761, 100, 'just like a little staircase.', 76.240, 77.679, NULL),
+  (8762, 100, 'How hard could it be
+to walk up the stairs?', 77.703, 79.765, NULL),
+  (8763, 100, 'No big deal, right?', 80.233, 81.552, NULL),
+  (8764, 100, 'But then, the funniest thing happened.', 83.090, 84.900, NULL),
+  (8765, 100, 'Those first few months?', 84.924, 86.235, NULL),
+  (8766, 100, 'They came and went,', 86.791, 87.958, NULL),
+  (8767, 100, 'and I couldn''t quite do stuff.', 87.982, 89.567, NULL),
+  (8768, 100, 'So we had an awesome new revised plan.', 89.591, 91.440, NULL),
+  (8769, 100, '(Laughter)', 91.464, 92.631, NULL),
+  (8770, 100, 'And then --', 92.655, 93.814, NULL),
+  (8771, 100, '(Laughter)', 93.838, 95.720, NULL),
+  (8772, 100, 'But then those middle months
+actually went by,', 95.744, 98.528, NULL),
+  (8773, 100, 'and I didn''t really write words,', 98.552, 100.734, NULL),
+  (8774, 100, 'and so we were here.', 100.758, 102.593, NULL),
+  (8775, 100, 'And then two months turned into one month,', 103.500, 106.076, NULL),
+  (8776, 100, 'which turned into two weeks.', 106.100, 107.725, NULL),
+  (8777, 100, 'And one day I woke up', 107.749, 109.058, NULL),
+  (8778, 100, 'with three days until the deadline,', 109.724, 112.343, NULL),
+  (8779, 100, 'still not having written a word,', 113.502, 115.433, NULL),
+  (8780, 100, 'and so I did the only thing I could:', 115.457, 117.516, NULL),
+  (8781, 100, 'I wrote 90 pages over 72 hours,', 117.540, 120.147, NULL),
+  (8782, 100, 'pulling not one but two all-nighters --', 120.171, 122.447, NULL),
+  (8783, 100, 'humans are not supposed to pull
+two all-nighters --', 122.471, 125.040, NULL),
+  (8784, 100, 'sprinted across campus,', 126.373, 128.366, NULL),
+  (8785, 100, 'dove in slow motion,', 128.390, 129.876, NULL),
+  (8786, 100, 'and got it in just at the deadline.', 129.900, 131.956, NULL),
+  (8787, 100, 'I thought that was the end of everything.', 131.980, 134.004, NULL),
+  (8788, 100, 'But a week later I get a call,', 134.028, 135.587, NULL),
+  (8789, 100, 'and it''s the school.', 135.611, 137.097, NULL),
+  (8790, 100, 'And they say, "Is this Tim Urban?"', 137.757, 139.396, NULL),
+  (8791, 100, 'And I say, "Yeah."', 139.420, 140.888, NULL),
+  (8792, 100, 'And they say, "We need
+to talk about your thesis."', 140.912, 143.252, NULL),
+  (8793, 100, 'And I say, "OK."', 143.276, 144.531, NULL),
+  (8794, 100, 'And they say,', 145.468, 146.690, NULL),
+  (8795, 100, '"It''s the best one we''ve ever seen."', 147.230, 149.126, NULL),
+  (8796, 100, '(Laughter)', 149.150, 150.855, NULL),
+  (8797, 100, '(Applause)', 152.014, 154.704, NULL),
+  (8798, 100, 'That did not happen.', 156.945, 158.247, NULL),
+  (8799, 100, '(Laughter)', 158.271, 160.409, NULL),
+  (8800, 100, 'It was a very, very bad thesis.', 160.433, 163.056, NULL),
+  (8801, 100, '(Laughter)', 163.080, 165.354, NULL),
+  (8802, 100, 'I just wanted to enjoy that one moment
+when all of you thought,', 165.378, 169.478, NULL),
+  (8803, 100, '"This guy is amazing!"', 169.502, 171.407, NULL),
+  (8804, 100, '(Laughter)', 171.431, 172.779, NULL),
+  (8805, 100, 'No, no, it was very, very bad.', 172.803, 174.470, NULL),
+  (8806, 100, 'Anyway, today I''m a writer-blogger guy.', 175.343, 178.751, NULL),
+  (8807, 100, 'I write the blog Wait But Why.', 178.775, 180.518, NULL),
+  (8808, 100, 'And a couple of years ago,
+I decided to write about procrastination.', 180.542, 184.278, NULL),
+  (8809, 100, 'My behavior has always perplexed
+the non-procrastinators around me,', 184.302, 187.586, NULL),
+  (8810, 100, 'and I wanted to explain
+to the non-procrastinators of the world', 187.610, 191.298, NULL),
+  (8811, 100, 'what goes on in the heads
+of procrastinators,', 191.322, 193.429, NULL),
+  (8812, 100, 'and why we are the way we are.', 193.453, 194.893, NULL),
+  (8813, 100, 'Now, I had a hypothesis', 194.917, 196.073, NULL),
+  (8814, 100, 'that the brains of procrastinators
+were actually different', 196.097, 198.952, NULL),
+  (8815, 100, 'than the brains of other people.', 198.976, 200.933, NULL),
+  (8816, 100, 'And to test this, I found an MRI lab', 201.698, 203.889, NULL),
+  (8817, 100, 'that actually let me scan both my brain', 203.913, 206.345, NULL),
+  (8818, 100, 'and the brain of a proven
+non-procrastinator,', 206.369, 209.024, NULL),
+  (8819, 100, 'so I could compare them.', 209.048, 210.483, NULL),
+  (8820, 100, 'I actually brought them here
+to show you today.', 210.507, 212.708, NULL),
+  (8821, 100, 'I want you to take a look carefully
+to see if you can notice a difference.', 212.732, 216.269, NULL),
+  (8822, 100, 'I know that if you''re not
+a trained brain expert,', 216.293, 218.607, NULL),
+  (8823, 100, 'it''s not that obvious,
+but just take a look, OK?', 218.631, 220.894, NULL),
+  (8824, 100, 'So here''s the brain
+of a non-procrastinator.', 220.918, 223.046, NULL),
+  (8825, 100, '(Laughter)', 223.835, 226.109, NULL),
+  (8826, 100, 'Now ...', 226.133, 227.284, NULL),
+  (8827, 100, 'here''s my brain.', 228.325, 229.639, NULL),
+  (8828, 100, '(Laughter)', 230.280, 233.006, NULL),
+  (8829, 100, 'There is a difference.', 235.713, 237.277, NULL),
+  (8830, 100, 'Both brains have a Rational
+Decision-Maker in them,', 237.904, 240.292, NULL),
+  (8831, 100, 'but the procrastinator''s brain', 240.316, 241.968, NULL),
+  (8832, 100, 'also has an Instant Gratification Monkey.', 241.992, 244.978, NULL),
+  (8833, 100, 'Now, what does this mean
+for the procrastinator?', 245.002, 247.304, NULL),
+  (8834, 100, 'Well, it means everything''s fine
+until this happens.', 247.328, 249.769, NULL),
+  (8835, 100, '[This is a perfect time
+to get some work done.] [Nope!]', 249.793, 252.415, NULL),
+  (8836, 100, 'So the Rational Decision-Maker
+will make the rational decision', 252.439, 255.372, NULL),
+  (8837, 100, 'to do something productive,', 255.396, 257.292, NULL),
+  (8838, 100, 'but the Monkey doesn''t like that plan,', 257.316, 259.266, NULL),
+  (8839, 100, 'so he actually takes the wheel,', 259.290, 260.798, NULL),
+  (8840, 100, 'and he says, "Actually, let''s read
+the entire Wikipedia page', 260.822, 263.703, NULL),
+  (8841, 100, 'of the Nancy Kerrigan/
+Tonya Harding scandal,', 263.727, 265.863, NULL),
+  (8842, 100, 'because I just remembered
+that that happened.', 265.887, 268.018, NULL),
+  (8843, 100, '(Laughter)', 268.042, 269.058, NULL),
+  (8844, 100, 'Then --', 269.082, 270.240, NULL),
+  (8845, 100, '(Laughter)', 270.264, 271.527, NULL),
+  (8846, 100, 'Then we''re going to go over to the fridge,', 271.551, 273.589, NULL),
+  (8847, 100, 'to see if there''s anything new
+in there since 10 minutes ago.', 273.613, 276.479, NULL),
+  (8848, 100, 'After that, we''re going to go
+on a YouTube spiral', 276.503, 279.141, NULL),
+  (8849, 100, 'that starts with videos
+of Richard Feynman talking about magnets', 279.165, 282.415, NULL),
+  (8850, 100, 'and ends much, much later
+with us watching interviews', 282.439, 285.155, NULL),
+  (8851, 100, 'with Justin Bieber''s mom.', 285.179, 287.059, NULL),
+  (8852, 100, '(Laughter)', 287.083, 289.271, NULL),
+  (8853, 100, '"All of that''s going to take a while,', 289.295, 291.058, NULL),
+  (8854, 100, 'so we''re not going to really have room
+on the schedule for any work today.', 291.082, 294.584, NULL),
+  (8855, 100, 'Sorry!"', 294.608, 295.771, NULL),
+  (8856, 100, '(Sigh)', 295.795, 296.960, NULL),
+  (8857, 100, 'Now, what is going on here?', 298.325, 301.694, NULL),
+  (8858, 100, 'The Instant Gratification Monkey
+does not seem like a guy', 303.481, 306.172, NULL),
+  (8859, 100, 'you want behind the wheel.', 306.196, 307.450, NULL),
+  (8860, 100, 'He lives entirely in the present moment.', 307.474, 309.419, NULL),
+  (8861, 100, 'He has no memory of the past,
+no knowledge of the future,', 309.443, 312.271, NULL),
+  (8862, 100, 'and he only cares about two things:', 312.295, 313.992, NULL),
+  (8863, 100, 'easy and fun.', 314.016, 315.699, NULL),
+  (8864, 100, 'Now, in the animal world, that works fine.', 316.338, 319.430, NULL),
+  (8865, 100, 'If you''re a dog', 319.454, 320.662, NULL),
+  (8866, 100, 'and you spend your whole life doing
+nothing other than easy and fun things,', 320.686, 324.257, NULL),
+  (8867, 100, 'you''re a huge success!', 324.281, 325.446, NULL),
+  (8868, 100, '(Laughter)', 325.470, 327.381, NULL),
+  (8869, 100, 'And to the Monkey,', 327.405, 328.691, NULL),
+  (8870, 100, 'humans are just another animal species.', 329.969, 332.063, NULL),
+  (8871, 100, 'You have to keep well-slept, well-fed
+and propagating into the next generation,', 332.087, 336.593, NULL),
+  (8872, 100, 'which in tribal times
+might have worked OK.', 336.617, 338.903, NULL),
+  (8873, 100, 'But, if you haven''t noticed,
+now we''re not in tribal times.', 338.927, 341.777, NULL),
+  (8874, 100, 'We''re in an advanced civilization,
+and the Monkey does not know what that is.', 341.801, 345.934, NULL),
+  (8875, 100, 'Which is why we have
+another guy in our brain,', 345.958, 348.239, NULL),
+  (8876, 100, 'the Rational Decision-Maker,', 348.263, 350.628, NULL),
+  (8877, 100, 'who gives us the ability to do things
+no other animal can do.', 350.652, 353.679, NULL),
+  (8878, 100, 'We can visualize the future.', 353.703, 355.624, NULL),
+  (8879, 100, 'We can see the big picture.', 355.648, 357.400, NULL),
+  (8880, 100, 'We can make long-term plans.', 357.424, 358.774, NULL),
+  (8881, 100, 'And he wants to take
+all of that into account.', 358.798, 361.281, NULL),
+  (8882, 100, 'And he wants to just have us do', 362.138, 363.829, NULL),
+  (8883, 100, 'whatever makes sense
+to be doing right now.', 363.853, 366.801, NULL),
+  (8884, 100, 'Now, sometimes it makes sense', 366.825, 368.214, NULL),
+  (8885, 100, 'to be doing things that are easy and fun,', 368.238, 370.267, NULL),
+  (8886, 100, 'like when you''re having dinner
+or going to bed', 370.291, 372.442, NULL),
+  (8887, 100, 'or enjoying well-earned leisure time.', 372.466, 374.294, NULL),
+  (8888, 100, 'That''s why there''s an overlap.', 374.318, 375.768, NULL),
+  (8889, 100, 'Sometimes they agree.', 375.792, 377.536, NULL),
+  (8890, 100, 'But other times, it makes much more sense', 377.560, 380.382, NULL),
+  (8891, 100, 'to be doing things that are harder
+and less pleasant,', 380.406, 384.008, NULL),
+  (8892, 100, 'for the sake of the big picture.', 384.032, 385.572, NULL),
+  (8893, 100, 'And that''s when we have a conflict.', 385.596, 387.485, NULL),
+  (8894, 100, 'And for the procrastinator,', 388.017, 389.332, NULL),
+  (8895, 100, 'that conflict tends to end
+a certain way every time,', 389.356, 391.865, NULL),
+  (8896, 100, 'leaving him spending a lot of time
+in this orange zone,', 391.889, 395.609, NULL),
+  (8897, 100, 'an easy and fun place that''s entirely
+out of the Makes Sense circle.', 395.633, 399.960, NULL),
+  (8898, 100, 'I call it the Dark Playground.', 399.984, 402.263, NULL),
+  (8899, 100, '(Laughter)', 402.287, 403.911, NULL),
+  (8900, 100, 'Now, the Dark Playground is a place', 403.935, 407.063, NULL),
+  (8901, 100, 'that all of you procrastinators
+out there know very well.', 407.087, 410.279, NULL),
+  (8902, 100, 'It''s where leisure activities happen', 410.892, 412.696, NULL),
+  (8903, 100, 'at times when leisure activities
+are not supposed to be happening.', 412.720, 416.030, NULL),
+  (8904, 100, 'The fun you have in the Dark Playground', 416.418, 418.308, NULL),
+  (8905, 100, 'isn''t actually fun,
+because it''s completely unearned,', 418.332, 420.815, NULL),
+  (8906, 100, 'and the air is filled with guilt,
+dread, anxiety, self-hatred --', 420.839, 424.054, NULL),
+  (8907, 100, 'all of those good procrastinator feelings.', 424.078, 426.196, NULL),
+  (8908, 100, 'And the question is, in this situation,
+with the Monkey behind the wheel,', 426.703, 430.179, NULL),
+  (8909, 100, 'how does the procrastinator ever get
+himself over here to this blue zone,', 430.203, 433.796, NULL),
+  (8910, 100, 'a less pleasant place, but where
+really important things happen?', 433.820, 437.101, NULL);
+
+INSERT INTO subtitle_segment (id, video_id, text, start_seconds, end_seconds, search_vector) VALUES
+  (8911, 100, 'Well, turns out the procrastinator
+has a guardian angel,', 437.125, 442.162, NULL),
+  (8912, 100, 'someone who''s always looking
+down on him and watching over him', 442.186, 445.394, NULL),
+  (8913, 100, 'in his darkest moments --', 445.418, 446.848, NULL),
+  (8914, 100, 'someone called the Panic Monster.', 446.872, 448.967, NULL),
+  (8915, 100, '(Laughter)', 448.991, 452.069, NULL),
+  (8916, 100, 'Now, the Panic Monster
+is dormant most of the time,', 454.386, 459.246, NULL),
+  (8917, 100, 'but he suddenly wakes up
+anytime a deadline gets too close', 459.270, 463.172, NULL),
+  (8918, 100, 'or there''s danger of public embarrassment,', 463.196, 465.241, NULL),
+  (8919, 100, 'a career disaster or some other
+scary consequence.', 465.265, 467.776, NULL),
+  (8920, 100, 'And importantly, he''s the only thing
+the Monkey is terrified of.', 467.800, 471.972, NULL),
+  (8921, 100, 'Now, he became very relevant
+in my life pretty recently,', 471.996, 476.574, NULL),
+  (8922, 100, 'because the people of TED
+reached out to me about six months ago', 476.598, 479.844, NULL),
+  (8923, 100, 'and invited me to do a TED Talk.', 479.868, 481.889, NULL),
+  (8924, 100, '(Laughter)', 481.913, 484.341, NULL),
+  (8925, 100, 'Now, of course, I said yes.', 487.058, 488.965, NULL),
+  (8926, 100, 'It''s always been a dream of mine
+to have done a TED Talk in the past.', 488.989, 492.794, NULL),
+  (8927, 100, '(Laughter)', 492.818, 496.790, NULL),
+  (8928, 100, '(Applause)', 496.814, 500.511, NULL),
+  (8929, 100, 'But in the middle of all this excitement,', 504.203, 506.172, NULL),
+  (8930, 100, 'the Rational Decision-Maker seemed
+to have something else on his mind.', 506.196, 509.497, NULL),
+  (8931, 100, 'He was saying, "Are we clear
+on what we just accepted?', 509.521, 512.069, NULL),
+  (8932, 100, 'Do we get what''s going to be now
+happening one day in the future?', 512.093, 515.342, NULL),
+  (8933, 100, 'We need to sit down
+and work on this right now."', 515.366, 517.633, NULL),
+  (8934, 100, 'And the Monkey said, "Totally agree,
+but let''s just open Google Earth', 517.657, 520.922, NULL),
+  (8935, 100, 'and zoom in to the bottom of India,
+like 200 feet above the ground,', 520.946, 524.106, NULL),
+  (8936, 100, 'and scroll up for two and a half hours
+til we get to the top of the country,', 524.130, 527.751, NULL),
+  (8937, 100, 'so we can get a better feel for India."', 527.775, 529.753, NULL),
+  (8938, 100, '(Laughter)', 529.777, 534.212, NULL),
+  (8939, 100, 'So that''s what we did that day.', 535.149, 536.634, NULL),
+  (8940, 100, '(Laughter)', 536.658, 539.328, NULL),
+  (8941, 100, 'As six months turned into four
+and then two and then one,', 540.604, 544.500, NULL),
+  (8942, 100, 'the people of TED decided
+to release the speakers.', 544.524, 547.619, NULL),
+  (8943, 100, 'And I opened up the website,
+and there was my face', 547.643, 550.255, NULL),
+  (8944, 100, 'staring right back at me.', 550.279, 551.635, NULL),
+  (8945, 100, 'And guess who woke up?', 551.659, 553.259, NULL),
+  (8946, 100, '(Laughter)', 553.283, 556.398, NULL),
+  (8947, 100, 'So the Panic Monster
+starts losing his mind,', 557.430, 559.880, NULL),
+  (8948, 100, 'and a few seconds later,
+the whole system''s in mayhem.', 559.904, 562.650, NULL),
+  (8949, 100, '(Laughter)', 562.674, 565.120, NULL),
+  (8950, 100, 'And the Monkey -- remember,
+he''s terrified of the Panic Monster --', 567.511, 570.612, NULL),
+  (8951, 100, 'boom, he''s up the tree!', 570.636, 571.794, NULL),
+  (8952, 100, 'And finally,', 571.818, 572.969, NULL),
+  (8953, 100, 'finally, the Rational Decision-Maker
+can take the wheel', 572.993, 575.589, NULL),
+  (8954, 100, 'and I can start working on the talk.', 575.613, 577.331, NULL),
+  (8955, 100, 'Now, the Panic Monster explains', 577.355, 579.643, NULL),
+  (8956, 100, 'all kinds of pretty insane
+procrastinator behavior,', 579.667, 583.148, NULL),
+  (8957, 100, 'like how someone like me
+could spend two weeks', 583.172, 585.506, NULL),
+  (8958, 100, 'unable to start the opening
+sentence of a paper,', 585.530, 589.374, NULL),
+  (8959, 100, 'and then miraculously find
+the unbelievable work ethic', 589.398, 592.169, NULL),
+  (8960, 100, 'to stay up all night
+and write eight pages.', 592.193, 595.289, NULL),
+  (8961, 100, 'And this entire situation,
+with the three characters --', 596.385, 599.367, NULL),
+  (8962, 100, 'this is the procrastinator''s system.', 599.391, 601.411, NULL),
+  (8963, 100, 'It''s not pretty, but in the end, it works.', 602.096, 605.521, NULL),
+  (8964, 100, 'This is what I decided to write about
+on the blog a couple of years ago.', 605.545, 609.607, NULL),
+  (8965, 100, 'When I did, I was amazed by the response.', 609.631, 612.602, NULL),
+  (8966, 100, 'Literally thousands of emails came in,', 612.626, 614.779, NULL),
+  (8967, 100, 'from all different kinds of people
+from all over the world,', 614.803, 617.580, NULL),
+  (8968, 100, 'doing all different kinds of things.', 617.604, 619.342, NULL),
+  (8969, 100, 'These are people who were nurses,
+bankers, painters, engineers', 619.366, 622.332, NULL),
+  (8970, 100, 'and lots and lots of PhD students.', 622.356, 624.678, NULL),
+  (8971, 100, '(Laughter)', 624.702, 626.703, NULL),
+  (8972, 100, 'And they were all writing,
+saying the same thing:', 626.727, 629.015, NULL),
+  (8973, 100, '"I have this problem too."', 629.039, 630.991, NULL),
+  (8974, 100, 'But what struck me was the contrast
+between the light tone of the post', 631.015, 634.844, NULL),
+  (8975, 100, 'and the heaviness of these emails.', 634.868, 636.963, NULL),
+  (8976, 100, 'These people were writing
+with intense frustration', 636.987, 640.070, NULL),
+  (8977, 100, 'about what procrastination
+had done to their lives,', 640.094, 642.856, NULL),
+  (8978, 100, 'about what this Monkey had done to them.', 642.880, 644.910, NULL),
+  (8979, 100, 'And I thought about this, and I said,', 646.902, 649.868, NULL),
+  (8980, 100, 'well, if the procrastinator''s system
+works, then what''s going on?', 649.892, 653.004, NULL),
+  (8981, 100, 'Why are all of these people
+in such a dark place?', 653.028, 655.514, NULL),
+  (8982, 100, 'Well, it turns out that there''s
+two kinds of procrastination.', 655.538, 658.836, NULL),
+  (8983, 100, 'Everything I''ve talked about today,
+the examples I''ve given,', 659.987, 662.821, NULL),
+  (8984, 100, 'they all have deadlines.', 662.845, 663.996, NULL),
+  (8985, 100, 'And when there''s deadlines,', 664.020, 665.318, NULL),
+  (8986, 100, 'the effects of procrastination
+are contained to the short term', 665.342, 668.267, NULL),
+  (8987, 100, 'because the Panic Monster gets involved.', 668.291, 670.204, NULL),
+  (8988, 100, 'But there''s a second kind
+of procrastination', 670.228, 672.282, NULL),
+  (8989, 100, 'that happens in situations
+when there is no deadline.', 672.306, 674.793, NULL),
+  (8990, 100, 'So if you wanted a career
+where you''re a self-starter --', 674.817, 677.507, NULL),
+  (8991, 100, 'something in the arts,
+something entrepreneurial --', 677.531, 679.944, NULL),
+  (8992, 100, 'there''s no deadlines on those things
+at first, because nothing''s happening,', 679.968, 683.493, NULL),
+  (8993, 100, 'not until you''ve gone out
+and done the hard work', 683.517, 685.761, NULL),
+  (8994, 100, 'to get momentum, get things going.', 685.785, 687.411, NULL),
+  (8995, 100, 'There''s also all kinds of important things
+outside of your career', 687.435, 690.513, NULL),
+  (8996, 100, 'that don''t involve any deadlines,', 690.537, 692.142, NULL),
+  (8997, 100, 'like seeing your family or exercising
+and taking care of your health,', 692.166, 695.431, NULL),
+  (8998, 100, 'working on your relationship', 695.455, 696.859, NULL),
+  (8999, 100, 'or getting out of a relationship
+that isn''t working.', 696.883, 699.564, NULL),
+  (9000, 100, 'Now if the procrastinator''s only mechanism
+of doing these hard things', 699.588, 704.736, NULL),
+  (9001, 100, 'is the Panic Monster, that''s a problem,', 704.760, 706.645, NULL),
+  (9002, 100, 'because in all of these
+non-deadline situations,', 706.669, 709.469, NULL),
+  (9003, 100, 'the Panic Monster doesn''t show up.', 709.493, 711.121, NULL),
+  (9004, 100, 'He has nothing to wake up for,', 711.145, 712.597, NULL),
+  (9005, 100, 'so the effects of procrastination,
+they''re not contained;', 712.621, 715.319, NULL),
+  (9006, 100, 'they just extend outward forever.', 715.343, 717.083, NULL),
+  (9007, 100, 'And it''s this long-term
+kind of procrastination', 717.953, 720.693, NULL),
+  (9008, 100, 'that''s much less visible
+and much less talked about', 720.717, 723.798, NULL),
+  (9009, 100, 'than the funnier, short-term
+deadline-based kind.', 723.822, 726.723, NULL),
+  (9010, 100, 'It''s usually suffered
+quietly and privately.', 726.747, 729.850, NULL),
+  (9011, 100, 'And it can be the source', 730.816, 731.970, NULL),
+  (9012, 100, 'of a huge amount of long-term
+unhappiness, and regrets.', 731.994, 735.729, NULL),
+  (9013, 100, 'And I thought, that''s why
+those people are emailing,', 736.576, 739.448, NULL),
+  (9014, 100, 'and that''s why they''re
+in such a bad place.', 739.472, 741.974, NULL),
+  (9015, 100, 'It''s not that they''re cramming
+for some project.', 741.998, 744.742, NULL),
+  (9016, 100, 'It''s that long-term procrastination
+has made them feel like a spectator,', 744.766, 748.187, NULL),
+  (9017, 100, 'at times, in their own lives.', 748.211, 750.250, NULL),
+  (9018, 100, 'The frustration is not
+that they couldn''t achieve their dreams;', 750.594, 753.576, NULL),
+  (9019, 100, 'it''s that they weren''t even
+able to start chasing them.', 753.600, 756.689, NULL),
+  (9020, 100, 'So I read these emails
+and I had a little bit of an epiphany --', 756.713, 760.896, NULL),
+  (9021, 100, 'that I don''t think
+non-procrastinators exist.', 762.182, 765.582, NULL),
+  (9022, 100, 'That''s right -- I think all of you
+are procrastinators.', 765.979, 769.215, NULL),
+  (9023, 100, 'Now, you might not all be a mess,', 769.898, 771.812, NULL),
+  (9024, 100, 'like some of us,', 771.836, 773.186, NULL),
+  (9025, 100, '(Laughter)', 773.210, 774.739, NULL),
+  (9026, 100, 'and some of you may have
+a healthy relationship with deadlines,', 774.763, 778.079, NULL),
+  (9027, 100, 'but remember: the Monkey''s sneakiest trick', 778.103, 780.627, NULL),
+  (9028, 100, 'is when the deadlines aren''t there.', 780.651, 782.491, NULL),
+  (9029, 100, 'Now, I want to show you one last thing.', 783.249, 785.281, NULL),
+  (9030, 100, 'I call this a Life Calendar.', 785.305, 787.678, NULL),
+  (9031, 100, 'That''s one box for every week
+of a 90-year life.', 788.352, 792.631, NULL),
+  (9032, 100, 'That''s not that many boxes,', 793.345, 794.934, NULL),
+  (9033, 100, 'especially since we''ve already
+used a bunch of those.', 794.958, 797.932, NULL),
+  (9034, 100, 'So I think we need to all take a long,
+hard look at that calendar.', 798.607, 803.739, NULL),
+  (9035, 100, 'We need to think about what
+we''re really procrastinating on,', 804.977, 807.990, NULL),
+  (9036, 100, 'because everyone is procrastinating
+on something in life.', 808.014, 811.379, NULL),
+  (9037, 100, 'We need to stay aware
+of the Instant Gratification Monkey.', 812.782, 815.812, NULL),
+  (9038, 100, 'That''s a job for all of us.', 817.455, 819.947, NULL),
+  (9039, 100, 'And because there''s not
+that many boxes on there,', 820.669, 822.969, NULL),
+  (9040, 100, 'it''s a job that should
+probably start today.', 822.993, 825.283, NULL),
+  (9041, 100, 'Well, maybe not today, but ...', 825.307, 828.307, NULL),
+  (9042, 100, '(Laughter)', 828.331, 829.972, NULL),
+  (9043, 100, 'You know.', 829.996, 831.146, NULL),
+  (9044, 100, 'Sometime soon.', 831.576, 832.726, NULL),
+  (9045, 100, 'Thank you.', 833.393, 834.602, NULL),
+  (9046, 100, '(Applause)', 834.626, 842.624, NULL),
+  (9047, 101, 'Translator: Bob Prottas
+Reviewer: Leonardo Silva', 0.000, 7.000, NULL),
+  (9048, 101, 'This is all of the trash
+that I''ve produced in the past 3 years.', 8.456, 15.012, NULL),
+  (9049, 101, 'When I say that, people think
+that I''m crazy, or that I''m lying,', 21.382, 27.442, NULL),
+  (9050, 101, 'or they''ll ask me questions like:', 27.442, 29.742, NULL),
+  (9051, 101, '"Hey. So, how do you wipe your butt?"', 29.742, 33.302, NULL),
+  (9052, 101, '(Laughter)', 33.302, 35.774, NULL),
+  (9053, 101, 'I live a zero waste lifestyle,', 36.374, 38.949, NULL),
+  (9054, 101, 'and I have for the past 3 years.', 38.949, 42.509, NULL),
+  (9055, 101, 'Now, zero waste,
+that''s a pretty big idea. Right?', 42.509, 45.957, NULL),
+  (9056, 101, 'So let me define it for you.', 45.957, 48.722, NULL),
+  (9057, 101, 'To me living zero waste means
+that I don''t make any trash.', 48.722, 52.959, NULL),
+  (9058, 101, 'So no sending anything to landfill,
+no sending anything in a garbage can,', 52.959, 57.667, NULL),
+  (9059, 101, 'and no spitting gum on the ground,
+and walking away.', 57.667, 60.586, NULL),
+  (9060, 101, 'Right? No trash.', 60.586, 62.239, NULL),
+  (9061, 101, 'This is a big concept,
+and this all started', 62.239, 65.665, NULL),
+  (9062, 101, 'when I was an environmental
+study student at NYU.', 65.665, 69.444, NULL),
+  (9063, 101, 'My senior year, I was
+taking a course called:', 69.444, 71.763, NULL),
+  (9064, 101, '"The Environmental Studies
+Capstone course",', 71.763, 74.026, NULL),
+  (9065, 101, 'which is the culminating course that all
+environmental study students need to take', 74.026, 78.398, NULL),
+  (9066, 101, 'in order to go out into the world,
+and make it a more sustainable place.', 78.408, 82.365, NULL),
+  (9067, 101, 'Well, there was a girl in this class,', 82.365, 84.768, NULL),
+  (9068, 101, 'and every class she would have
+this big plastic bag,', 84.768, 88.388, NULL),
+  (9069, 101, 'with a plastic clamshell full of food,', 88.388, 90.209, NULL),
+  (9070, 101, 'a plastic fork and knife,
+a plastic water bottle,', 90.209, 93.306, NULL),
+  (9071, 101, 'and a plastic bag a chips,', 93.306, 95.176, NULL),
+  (9072, 101, 'and she would eat all of this,', 95.176, 96.882, NULL),
+  (9073, 101, 'and then class after class,
+would just throw it in the trash.', 96.882, 100.242, NULL),
+  (9074, 101, 'This was really frustrating,
+because here we were', 100.242, 102.646, NULL),
+  (9075, 101, 'these environmental study students
+trying to make the world a better place,', 102.646, 106.944, NULL),
+  (9076, 101, 'and there she was, throwing
+all this stuff into the garbage.', 106.944, 110.492, NULL),
+  (9077, 101, 'One day after class,', 110.492, 112.195, NULL),
+  (9078, 101, 'feeling still particularly upset about
+watching her throw everything away,', 112.195, 116.655, NULL),
+  (9079, 101, 'I went home to make dinner,', 116.655, 118.795, NULL),
+  (9080, 101, 'and I opened my fridge,', 118.795, 120.485, NULL),
+  (9081, 101, 'and noticed something
+that I had never seen before.', 120.485, 123.965, NULL),
+  (9082, 101, 'Every single thing in my fridge was
+in one way or another packaged in plastic,', 123.965, 130.341, NULL),
+  (9083, 101, 'and I couldn''t believe it.', 130.341, 131.841, NULL),
+  (9084, 101, 'You know I was getting so mad at this girl
+for making so much plastic trash,', 131.841, 136.153, NULL),
+  (9085, 101, 'and it turns out that I was just as bad.', 136.153, 138.654, NULL),
+  (9086, 101, 'I was that girl, and so I made
+a decision in that moment.', 138.654, 143.555, NULL),
+  (9087, 101, 'I was going to stop using plastic.', 143.555, 146.224, NULL),
+  (9088, 101, 'Well, quitting plastic --', 147.084, 149.803, NULL),
+  (9089, 101, '(Laughter)', 149.803, 151.133, NULL),
+  (9090, 101, 'not so easy of a thing. Right?', 151.133, 154.071, NULL),
+  (9091, 101, 'When you think about your everyday life,', 154.071, 156.321, NULL),
+  (9092, 101, 'when you wake up in the morning, go into
+the bathroom, and you brush your teeth.', 156.321, 160.341, NULL),
+  (9093, 101, 'What is your toothbrush made out of?', 160.341, 162.857, NULL),
+  (9094, 101, '(Audience softly) Plastic.
+LS: Plastic.', 162.857, 165.043, NULL),
+  (9095, 101, 'What is your toothpaste
+probably packaged in?', 165.043, 167.749, NULL),
+  (9096, 101, '(Audience) Plastic.', 167.749, 169.560, NULL),
+  (9097, 101, 'LS: Your face wash, your moisturizer,
+your contact solution.', 169.560, 173.390, NULL),
+  (9098, 101, 'So many things that are in our
+everyday lives come packaged in plastic,', 173.390, 177.662, NULL),
+  (9099, 101, 'and so I realized that if I was
+going to move away from plastic,', 177.662, 181.446, NULL),
+  (9100, 101, 'the only way that I was going to do that', 181.446, 183.746, NULL),
+  (9101, 101, 'was to learn how to make
+my products myself.', 183.746, 186.395, NULL),
+  (9102, 101, 'Well, I don''t know about you,', 187.405, 189.365, NULL),
+  (9103, 101, 'but I certainly didn''t know
+how to make deodorant.', 189.365, 193.121, NULL),
+  (9104, 101, 'I didn''t have the recipe just
+hanging out in my back pocket,', 193.121, 196.706, NULL),
+  (9105, 101, 'and so I realized that I had
+to do some research,', 196.706, 199.440, NULL),
+  (9106, 101, 'and while I was doing research online,
+I came across a blog called', 199.440, 202.942, NULL),
+  (9107, 101, 'the "Zero Waste Home" started
+by a woman named Bea Johnson', 202.942, 206.560, NULL),
+  (9108, 101, 'who is a wife, and mother of 2 kids,
+out in Mill Valley, California,', 206.560, 210.540, NULL),
+  (9109, 101, 'and the 4 of them live
+a completely zero waste life.', 210.540, 214.713, NULL),
+  (9110, 101, 'When I learned about Bea, and her family,
+my mind was completely blown.', 214.713, 219.567, NULL);
+
+INSERT INTO subtitle_segment (id, video_id, text, start_seconds, end_seconds, search_vector) VALUES
+  (9111, 101, 'I thought that I was doing the best
+thing for the planet', 220.487, 223.158, NULL),
+  (9112, 101, 'by not using any plastic.', 223.158, 225.194, NULL),
+  (9113, 101, 'But the idea that I didn''t
+have to produce any trash,', 225.194, 228.963, NULL),
+  (9114, 101, 'was so empowering, and so inspiring,', 228.963, 232.333, NULL),
+  (9115, 101, 'and it made perfect sense. Right?', 232.333, 234.090, NULL),
+  (9116, 101, 'Because I was this
+Environmental Studies student,', 234.090, 236.505, NULL),
+  (9117, 101, 'I cared about the environment,
+studied sustainability,', 236.505, 239.099, NULL),
+  (9118, 101, 'talked about sustainability,
+protested for sustainability.', 239.099, 242.203, NULL),
+  (9119, 101, 'But I realized, that I wasn''t actually
+implementing any of those values', 242.203, 246.626, NULL),
+  (9120, 101, 'into my day-to-day life, and so
+I made the decision to go zero waste.', 246.626, 251.402, NULL),
+  (9121, 101, 'Let me break it down for you,
+and tell you some of the things', 251.402, 254.272, NULL),
+  (9122, 101, 'that I did in order to make
+this transition a little easier.', 254.272, 257.648, NULL),
+  (9123, 101, 'The first thing that I did
+was I stopped buying packaged food.', 258.498, 261.983, NULL),
+  (9124, 101, 'So instead of going to the store,
+and buying things packaged', 261.983, 264.893, NULL),
+  (9125, 101, 'in paper, and glass, and plastic,
+I started bringing my own jars,', 264.893, 268.890, NULL),
+  (9126, 101, 'and bags to the store to fill
+with bulk, or package-free items.', 268.890, 272.537, NULL),
+  (9127, 101, 'I also started buying my fruit,
+and vegetables from the farmer''s market.', 272.537, 276.297, NULL),
+  (9128, 101, 'So, package-free.', 276.297, 278.454, NULL),
+  (9129, 101, 'The second thing that I started doing', 278.454, 280.490, NULL),
+  (9130, 101, 'was I started making
+all of my own products.', 280.490, 284.045, NULL),
+  (9131, 101, 'Before I started living this lifestyle,
+my boyfriend at the time,', 284.045, 288.026, NULL),
+  (9132, 101, 'used to brush his teeth using baking soda,', 288.026, 291.697, NULL),
+  (9133, 101, 'and I thought he was probably the grossest
+person in the entire world. Right?', 291.697, 296.773, NULL),
+  (9134, 101, 'There''s no way that you
+can get your teeth clean', 296.773, 299.358, NULL),
+  (9135, 101, 'using something like
+baking soda, it''s gross.', 299.358, 302.132, NULL),
+  (9136, 101, 'Well fast-forward, and it turns out
+that the first product that I made', 302.132, 306.529, NULL),
+  (9137, 101, 'was toothpaste, made with baking soda.', 306.529, 310.348, NULL),
+  (9138, 101, 'So overtime I started making
+all of my own products.', 312.208, 315.485, NULL),
+  (9139, 101, 'When I would run out of something,
+instead of going to the store,', 315.485, 318.576, NULL),
+  (9140, 101, 'and buying a new one,
+I would learn how to make it myself.', 318.576, 321.377, NULL),
+  (9141, 101, 'So when I would run out of lotion,
+I learned how to make it myself.', 321.377, 324.811, NULL),
+  (9142, 101, 'Run out of deodorant,
+learn how to make it myself.', 324.811, 327.315, NULL),
+  (9143, 101, 'Over time, all of the things
+I had previously purchased,', 327.315, 330.460, NULL),
+  (9144, 101, 'were now, ones that I made myself.', 330.460, 333.657, NULL),
+  (9145, 101, 'The third thing that I started doing,
+was shopping second-hand.', 333.657, 337.885, NULL),
+  (9146, 101, 'So instead of buying new clothing,', 337.885, 339.765, NULL),
+  (9147, 101, 'and putting new waste
+into the waste cycle,', 339.765, 342.404, NULL),
+  (9148, 101, 'I would buy things that were
+totally recycled, second-hand.', 342.404, 345.931, NULL),
+  (9149, 101, 'So not making any new trash.', 345.931, 348.609, NULL),
+  (9150, 101, 'The fourth thing that I did
+was I downsized.', 348.609, 351.487, NULL),
+  (9151, 101, 'So I focused on having only
+the things that were truly necessary,', 351.487, 354.644, NULL),
+  (9152, 101, 'and that I really needed.', 354.644, 356.439, NULL),
+  (9153, 101, 'Well this was really, really hard', 356.439, 358.267, NULL),
+  (9154, 101, 'because I''m the kind of person
+who''s really sentimental,', 358.267, 361.111, NULL),
+  (9155, 101, 'and I can tell you as to why
+a toothpick needs to be in my life.', 361.111, 365.597, NULL),
+  (9156, 101, 'But after I really got through
+that process, and I completely downsized,', 366.307, 370.324, NULL),
+  (9157, 101, 'I realized that I had so many
+fewer things in my life,', 370.324, 373.331, NULL),
+  (9158, 101, 'my home was less cluttered,
+and everything with easier to clean.', 373.331, 376.859, NULL),
+  (9159, 101, 'And when you have fewer things', 376.859, 379.079, NULL),
+  (9160, 101, 'you realize that you take
+better care of them. Right?', 379.079, 382.999, NULL),
+  (9161, 101, 'When you take better care of your
+things you don''t have this mentality like:', 382.999, 386.611, NULL),
+  (9162, 101, '"If I don''t want this anymore I''ll just
+throw it out and I get a new thing later."', 386.611, 391.106, NULL),
+  (9163, 101, 'No, I only had a few things
+and so I took care of them,', 391.106, 394.684, NULL),
+  (9164, 101, 'and wasn''t sending anything
+to the landfill.', 394.684, 398.003, NULL),
+  (9165, 101, 'All this must sound
+pretty difficult. Right?', 398.003, 400.443, NULL),
+  (9166, 101, 'I assure you, it''s not that hard.', 400.443, 403.085, NULL),
+  (9167, 101, 'I''m just an average, lazy person,', 403.085, 405.836, NULL),
+  (9168, 101, 'and I wouldn''t live this lifestyle
+if it was difficult.', 405.836, 409.980, NULL),
+  (9169, 101, 'In fact the benefits
+of living this lifestyle', 409.980, 412.737, NULL),
+  (9170, 101, 'far outweigh any of the negatives
+that you can imagine.', 412.737, 416.295, NULL),
+  (9171, 101, 'The first benefit is that I save money.', 416.295, 419.709, NULL),
+  (9172, 101, 'So I save money when I buy my food,', 419.709, 421.796, NULL),
+  (9173, 101, 'and the products, and when
+I make my own products,', 421.796, 424.255, NULL),
+  (9174, 101, 'because I''m not paying
+for the embedded cost a packaging,', 424.255, 427.160, NULL),
+  (9175, 101, 'so things are cheaper.', 427.160, 428.980, NULL),
+  (9176, 101, 'I''m also saving money by shopping
+completely second-hand,', 428.980, 432.128, NULL),
+  (9177, 101, 'because second-hand clothing is usually
+less expensive than new clothing.', 432.128, 436.831, NULL),
+  (9178, 101, 'I''m also saving money
+because I''ve downsized.', 436.831, 439.291, NULL),
+  (9179, 101, 'I don''t go shopping all the time now', 439.291, 441.211, NULL),
+  (9180, 101, 'and you know just buy things on impulse.', 441.211, 443.941, NULL),
+  (9181, 101, 'I only have what I really need.', 443.941, 446.768, NULL),
+  (9182, 101, 'The second benefit is that I eat better.', 446.768, 449.255, NULL),
+  (9183, 101, 'When I go shopping now I don''t have
+the option to buy processed food products,', 449.255, 454.119, NULL),
+  (9184, 101, 'package-free, and so now my diet consists
+of things like fresh fruit and vegetables,', 454.119, 459.285, NULL),
+  (9185, 101, 'or bulk greens, and nuts
+that I buy with my jars and my bags.', 459.285, 465.340, NULL),
+  (9186, 101, 'And so when you eat better,
+you feel better.', 465.340, 468.224, NULL),
+  (9187, 101, 'Over these past few years, I''ve noticed
+that my weight has stabilized,', 468.224, 473.105, NULL),
+  (9188, 101, 'I have more energy, I need less sleep,', 473.105, 476.166, NULL),
+  (9189, 101, 'and when you''re eating better,
+and you feel better,', 476.166, 478.919, NULL),
+  (9190, 101, 'and you save money, you''re happier.', 478.919, 481.648, NULL),
+  (9191, 101, 'But besides those things I''m happier,
+because for the first time in my life,', 481.648, 485.852, NULL),
+  (9192, 101, 'I''m living in direct
+alignment with my values.', 485.852, 489.124, NULL),
+  (9193, 101, 'And why is this important? Right? Waste.', 489.754, 493.375, NULL),
+  (9194, 101, 'Well, waste is a really big problem.', 493.375, 496.305, NULL),
+  (9195, 101, 'In fact the average American person', 496.305, 498.805, NULL),
+  (9196, 101, 'produces approximately 4.4 pounds
+of trash per person per day.', 498.805, 503.594, NULL),
+  (9197, 101, 'Over the course of a year, that''s like
+taking 8.5 of your best friends,', 504.474, 508.579, NULL),
+  (9198, 101, 'and throwing them in the trash.', 508.579, 510.505, NULL),
+  (9199, 101, '(Laughter)', 510.505, 512.164, NULL),
+  (9200, 101, 'Don''t do that, it''s not nice.', 512.164, 514.337, NULL),
+  (9201, 101, '(Laughter)', 514.337, 515.647, NULL),
+  (9202, 101, 'So, if you care about your friends,
+and you don''t throw them away,', 515.647, 519.891, NULL),
+  (9203, 101, 'and you think that it''s possible for you', 519.891, 521.831, NULL),
+  (9204, 101, 'to reduce how much trash you''re producing,', 521.831, 524.666, NULL),
+  (9205, 101, 'I have 3 simple steps for you.', 524.666, 527.316, NULL),
+  (9206, 101, 'The first step is to actually look
+at your trash, and understand what it is.', 527.316, 531.245, NULL),
+  (9207, 101, 'Because you can''t solve a problem
+of having a lot of waste', 531.245, 533.994, NULL),
+  (9208, 101, 'until you know what is it.', 533.994, 535.512, NULL),
+  (9209, 101, 'So when I did this exercise,', 535.512, 537.421, NULL),
+  (9210, 101, 'I realized that I had
+3 main sources of trash.', 537.421, 540.691, NULL),
+  (9211, 101, 'The first was food packaging,', 540.691, 542.605, NULL),
+  (9212, 101, 'and so I learned how to shop
+in bulk or package-free.', 542.605, 545.755, NULL),
+  (9213, 101, 'The second was product packaging,', 545.755, 547.532, NULL),
+  (9214, 101, 'and so I learned how to make
+all of my own products.', 547.532, 550.034, NULL),
+  (9215, 101, 'And the third was organic food waste,
+and so I learned how to compost.', 550.034, 553.969, NULL),
+  (9216, 101, 'And just by identifying those 3 sources
+of waste and eliminating them,', 553.969, 557.719, NULL),
+  (9217, 101, 'I have reduced my trash by about 90%.', 557.719, 561.160, NULL),
+  (9218, 101, 'The second thing that I''d like to suggest
+is picking at the low-hanging fruit.', 562.040, 566.020, NULL),
+  (9219, 101, 'So doing little things,
+one-time changes in your everyday life', 566.023, 569.215, NULL),
+  (9220, 101, 'that have a large-scale,
+and long-term positive impact.', 569.215, 573.102, NULL),
+  (9221, 101, 'This includes things like using a reusable
+bag instead of a plastic or paper bag.', 573.102, 578.632, NULL),
+  (9222, 101, 'Or using a stainless steel,
+or glass water bottle,', 578.632, 581.651, NULL),
+  (9223, 101, 'instead of buying plastic water bottles.', 581.651, 585.079, NULL),
+  (9224, 101, 'Over the course of however long,
+you realize that these little changes', 585.079, 589.751, NULL),
+  (9225, 101, 'actually add up,
+and make a big difference.', 589.751, 593.203, NULL),
+  (9226, 101, 'The third thing that I''d like
+to suggest is the DIY', 593.203, 595.962, NULL),
+  (9227, 101, 'or actually learning how
+to make your products yourself.', 595.962, 599.279, NULL),
+  (9228, 101, 'Now I absolutely love doing this
+because when you go to a store,', 599.279, 603.046, NULL),
+  (9229, 101, 'and you have to buy products
+you kind of have to settle,', 603.046, 606.605, NULL),
+  (9230, 101, 'and accept them as they are. Right?', 606.605, 608.792, NULL),
+  (9231, 101, 'If you don''t like the way
+they smell, too bad.', 608.792, 611.909, NULL),
+  (9232, 101, 'If you don''t like
+the way they feel, sorry.', 611.909, 614.580, NULL),
+  (9233, 101, 'If you don''t like what they''re
+packaged in, you don''t have a choice.', 614.580, 617.800, NULL),
+  (9234, 101, 'But for me, since I make
+all my own products,', 617.800, 620.217, NULL),
+  (9235, 101, 'If I don''t like the way they smell,
+I change the scent.', 620.217, 623.307, NULL),
+  (9236, 101, 'If I don''t like the ingredients
+in them, I change it.', 623.307, 626.148, NULL),
+  (9237, 101, 'If I don''t like the packaging,
+it''s my choice.', 626.148, 629.659, NULL),
+  (9238, 101, 'And so by making my own products
+I have complete control', 629.659, 633.882, NULL),
+  (9239, 101, 'over what I''m putting in my body.', 633.882, 637.053, NULL),
+  (9240, 101, 'Now I started living this lifestyle
+while I was still in college.', 637.053, 642.299, NULL),
+  (9241, 101, 'And when I graduated, I had a real job,
+a real-person job in sustainability,', 642.299, 647.523, NULL),
+  (9242, 101, 'which is exactly what you''d think
+I''d want to be doing. Right?', 647.523, 650.725, NULL),
+  (9243, 101, 'Well, at the same time I was still running
+my blog: "Trash is for tossers"', 650.725, 655.054, NULL),
+  (9244, 101, 'and I noticed that I was
+getting a recurring question,', 655.054, 658.908, NULL),
+  (9245, 101, 'and it went something like this:', 658.908, 661.506, NULL),
+  (9246, 101, '"Dear Lauren, I absolutely love
+the products that you''re making,', 661.506, 665.369, NULL),
+  (9247, 101, 'and I too want truly natural products.', 665.369, 668.686, NULL),
+  (9248, 101, 'But because of life, family,
+friends, blah, blah, blah, blah,', 668.686, 672.177, NULL),
+  (9249, 101, 'I just don''t have time
+to make them myself.', 672.177, 674.777, NULL),
+  (9250, 101, 'Do you have any product that I can
+buy that are equivalent?', 674.777, 677.917, NULL),
+  (9251, 101, 'Thanks for your help.
+Lots of love. Person XYZ."', 677.917, 681.169, NULL),
+  (9252, 101, 'So I went to stores,
+and I started looking at products,', 681.169, 685.400, NULL),
+  (9253, 101, 'and while I found that they
+were beauty products', 685.400, 687.676, NULL),
+  (9254, 101, 'that were reminiscent of the ones
+that I was making myself,', 687.676, 690.495, NULL),
+  (9255, 101, 'I didn''t notice the same trend
+for cleaning products.', 690.495, 693.753, NULL),
+  (9256, 101, 'When I looked at the ingredients
+of cleaning products,', 693.753, 696.352, NULL),
+  (9257, 101, 'even the "natural" cleaning products', 696.352, 698.789, NULL),
+  (9258, 101, 'contained ingredient
+that were really harmful.', 698.789, 701.479, NULL),
+  (9259, 101, 'Things that were carcinogenic,
+and endocrine-disruptive.', 701.479, 705.221, NULL),
+  (9260, 101, 'You know, when I looked into it further,', 705.221, 707.855, NULL),
+  (9261, 101, 'I learned that cleaning
+product manufacturers', 707.855, 710.072, NULL),
+  (9262, 101, 'aren''t even legally required', 710.072, 711.721, NULL),
+  (9263, 101, 'to disclose the ingredients
+of their products', 711.721, 713.903, NULL),
+  (9264, 101, 'on the product packaging,', 713.903, 715.943, NULL),
+  (9265, 101, 'and so when we go and buy a product,', 715.943, 718.081, NULL),
+  (9266, 101, 'we''re at the complete mercy
+of the company,', 718.081, 720.911, NULL),
+  (9267, 101, 'hoping that they have
+our best interest in mind.', 720.911, 723.913, NULL),
+  (9268, 101, 'I feel that we, as consumers, have a right
+to products that are transparent', 723.913, 728.419, NULL),
+  (9269, 101, 'and that aren''t bad for us,', 728.419, 731.010, NULL),
+  (9270, 101, 'and so I started thinking
+about my own products,', 731.010, 733.603, NULL),
+  (9271, 101, 'the ones that I''ve been making for years.', 733.603, 736.003, NULL),
+  (9272, 101, 'That are safe, and effective, and have
+ingredients that I use to do things', 736.003, 739.859, NULL),
+  (9273, 101, 'like brush my teeth,
+or make salad dressing.', 739.859, 743.471, NULL),
+  (9274, 101, 'And I realized that I had an opportunity,', 743.471, 745.586, NULL),
+  (9275, 101, 'and so I quit my job,
+and started a company.', 745.586, 749.230, NULL),
+  (9276, 101, 'Because I feel like we, as human beings,
+have a right to products that are safe', 749.230, 753.539, NULL),
+  (9277, 101, 'for our homes, and our bodies,
+and the environment.', 753.539, 756.940, NULL),
+  (9278, 101, 'I get comments all the time,
+that I''m doing this for attention.', 758.410, 762.954, NULL),
+  (9279, 101, 'But I live this lifestyle for myself.', 762.954, 765.605, NULL),
+  (9280, 101, 'I would never tell anyone how to live', 765.605, 768.345, NULL),
+  (9281, 101, 'or how much trash
+that they should produce.', 768.345, 770.770, NULL),
+  (9282, 101, 'I just want to provide tools,', 770.770, 772.875, NULL),
+  (9283, 101, 'through my blog and my business,', 772.875, 774.955, NULL),
+  (9284, 101, 'for people, who like me,', 774.955, 776.682, NULL),
+  (9285, 101, 'want to reduce how much
+trash they''re producing.', 776.682, 779.282, NULL),
+  (9286, 101, 'I live a zero waste lifestyle,
+because to me,', 779.282, 782.515, NULL),
+  (9287, 101, 'it''s the best way I know,
+how to live a life', 782.515, 784.625, NULL),
+  (9288, 101, 'that aligns with everything
+that I believe in.', 784.625, 787.765, NULL),
+  (9289, 101, 'And what''s the point. Right?', 787.765, 789.800, NULL),
+  (9290, 101, 'I''m just one person.
+What difference can I make?', 789.800, 793.728, NULL),
+  (9291, 101, 'The point is simple:', 793.728, 795.770, NULL),
+  (9292, 101, 'I want to be remembered for the things
+that I did while I was on this planet,', 795.770, 799.761, NULL),
+  (9293, 101, 'and not for the trash that I left behind.', 799.761, 803.500, NULL),
+  (9294, 101, 'Thank you.', 803.500, 805.029, NULL),
+  (9295, 101, '(Applause)', 805.029, 808.872, NULL),
+  (9296, 102, 'Transcriber: Yulia Kallistratova
+Reviewer: Denise RQ', 0.000, 7.000, NULL),
+  (9297, 102, 'On the last evening
+of my 25th college reunion,', 36.000, 40.918, NULL),
+  (9298, 102, 'there was a party in a tent', 41.992, 43.902, NULL),
+  (9299, 102, 'with dancing, and music, and noise.', 45.013, 48.123, NULL),
+  (9300, 102, 'So much noise that a lot of us
+started to drift out of the tent', 48.124, 52.262, NULL),
+  (9301, 102, 'so we could hear each other talk
+and catch up with classmates', 52.263, 55.393, NULL),
+  (9302, 102, 'that we had not seen
+in more than 2 decades.', 55.394, 57.864, NULL),
+  (9303, 102, 'As I talked with my friends
+I made an astounding discovery:', 59.515, 62.855, NULL),
+  (9304, 102, '80% of them were unhappy with their lives.', 63.976, 67.796, NULL),
+  (9305, 102, '"I feel as though I''ve wasted my life,
+and I''m half way through it," they said.', 69.587, 74.956, NULL),
+  (9306, 102, '"I don''t know what my life is all about."', 74.957, 77.626, NULL),
+  (9307, 102, 'I was privileged to go to Yale,', 78.910, 81.938, NULL),
+  (9308, 102, 'and we were standing on a summer evening
+in the middle of Yale''s old campus,', 81.939, 86.184, NULL),
+  (9309, 102, 'and the people that I was speaking with
+were privileged, and highly educated,', 86.185, 92.007, NULL),
+  (9310, 102, 'and financially well off,
+and in positions of power.', 92.008, 95.828, NULL);
+
+INSERT INTO subtitle_segment (id, video_id, text, start_seconds, end_seconds, search_vector) VALUES
+  (9311, 102, 'And they had the first house,
+and the second house,', 95.829, 99.460, NULL),
+  (9312, 102, 'and they had the first spouse,
+and the second spouse.', 99.461, 103.016, NULL),
+  (9313, 102, '(Laughter)', 103.017, 104.989, NULL),
+  (9314, 102, 'And 80% of them
+were unhappy with their lives.', 104.990, 107.919, NULL),
+  (9315, 102, 'Who was happy, the 20%?', 109.039, 112.218, NULL),
+  (9316, 102, 'Well, we had studied literature
+and Renaissance rhetoric,', 112.219, 117.290, NULL),
+  (9317, 102, 'and we were the theater people,
+and the history geeks.', 117.291, 120.862, NULL),
+  (9318, 102, 'We had studied classes
+for the joy of learning,', 121.766, 125.321, NULL),
+  (9319, 102, 'not because we thought they were going
+to put direct us to a specific job.', 125.322, 129.947, NULL),
+  (9320, 102, 'We still got jobs,', 129.948, 131.485, NULL),
+  (9321, 102, 'we were living our lives expansively,', 131.486, 134.666, NULL),
+  (9322, 102, 'with life''s ups and downs,', 134.667, 136.613, NULL),
+  (9323, 102, 'and we did not feel
+that we had wasted a single minute.', 136.614, 141.733, NULL),
+  (9324, 102, 'And as I spoke
+with the 20%, the happier 20%,', 141.734, 146.005, NULL),
+  (9325, 102, 'I discovered that each of them knew', 146.762, 148.951, NULL),
+  (9326, 102, 'something about their life purpose', 148.952, 151.512, NULL),
+  (9327, 102, 'because they knew five things:', 151.513, 154.022, NULL),
+  (9328, 102, 'who they were, what they did,', 154.023, 158.012, NULL),
+  (9329, 102, 'who they did it for,', 158.013, 159.988, NULL),
+  (9330, 102, 'what those people wanted or needed,', 159.989, 162.477, NULL),
+  (9331, 102, 'and what they got out of it,
+how they changed as a result.', 162.478, 166.558, NULL),
+  (9332, 102, 'Does that sound hard?', 167.628, 168.815, NULL),
+  (9333, 102, 'It''s not, it''s actually really simple.', 168.816, 170.966, NULL),
+  (9334, 102, 'In fact it''s so simple, that you can learn
+your life purpose now.', 170.968, 176.967, NULL),
+  (9335, 102, 'You''re going to know your life
+purpose now, in the next five minutes.', 176.968, 180.208, NULL),
+  (9336, 102, 'Would you like to know your life purpose
+in the next five minutes?', 180.209, 183.348, NULL),
+  (9337, 102, '(Audience) Yes.', 183.349, 184.322, NULL),
+  (9338, 102, 'Can you be a little bit louder?', 184.323, 185.939, NULL),
+  (9339, 102, 'Because they are making
+a lot of noise in the tent,', 185.940, 188.379, NULL),
+  (9340, 102, 'and there is just a silly little microphone
+next to my cheek to hear you.', 188.380, 191.878, NULL),
+  (9341, 102, 'Would you like to know your life purpose
+in the next five minutes?', 191.879, 195.025, NULL),
+  (9342, 102, '(Audience) Yes!', 195.026, 196.119, NULL),
+  (9343, 102, 'Thank you. Actually, it''s not
+even going to take five minutes.', 196.120, 199.229, NULL),
+  (9344, 102, 'So, can I share something else with you?', 199.488, 201.727, NULL),
+  (9345, 102, 'If you''re like a lot of us,', 201.728, 203.162, NULL),
+  (9346, 102, 'you have wondered and worried
+about your life purpose for a long time,', 203.163, 207.160, NULL),
+  (9347, 102, 'and there are books, and magazines,
+and workshops, and seminars about it.', 207.161, 211.100, NULL),
+  (9348, 102, 'In fact, Amazon lists 151,928 books', 211.101, 217.790, NULL),
+  (9349, 102, 'that refer to how you can learn
+your life purpose.', 217.791, 221.913, NULL),
+  (9350, 102, '(Laughter)', 221.914, 223.014, NULL),
+  (9351, 102, 'Well, I know some people
+who have spent their entire lives', 223.023, 226.492, NULL),
+  (9352, 102, 'trying to learn their life purpose.', 226.493, 228.513, NULL),
+  (9353, 102, 'Look, we can all agree that
+the unexamined life is not worth living,', 228.522, 232.932, NULL),
+  (9354, 102, 'but if all you''re doing
+is examining, you''re not living.', 232.933, 237.497, NULL),
+  (9355, 102, '(Laughter)', 237.498, 238.742, NULL),
+  (9356, 102, 'So, let''s figure out
+the life purpose right now together:', 238.743, 242.668, NULL),
+  (9357, 102, 'who you are, what you do,
+who you do it for,', 242.669, 246.400, NULL),
+  (9358, 102, 'what those people want and need,
+and how they change as a result.', 246.401, 250.832, NULL),
+  (9359, 102, 'Shall we do it?
+(Audience) Yes.', 250.833, 252.355, NULL),
+  (9360, 102, 'All right.', 252.356, 253.330, NULL),
+  (9361, 102, 'Everybody, on the count of five,
+shout out your first name.', 253.331, 256.209, NULL),
+  (9362, 102, 'One, two, three, four, five:', 256.209, 257.959, NULL),
+  (9363, 102, '(Audience shouts)', 257.974, 259.261, NULL),
+  (9364, 102, 'Fabulous.', 259.262, 260.103, NULL),
+  (9365, 102, 'That was the first one, only four to go.', 260.103, 262.198, NULL),
+  (9366, 102, 'That''s who you are. (Laughter)', 262.199, 264.479, NULL),
+  (9367, 102, 'Now, what do you do?', 264.482, 265.937, NULL),
+  (9368, 102, 'What do you love to do?', 265.938, 267.957, NULL),
+  (9369, 102, 'Do you love to write, cook, design,', 267.958, 271.902, NULL),
+  (9370, 102, 'create iOS apps, write code,
+crunch numbers, talk, teach?', 271.903, 278.060, NULL),
+  (9371, 102, 'What do you love to do?', 278.061, 279.504, NULL),
+  (9372, 102, 'And if there is a lot of things
+that come up for you', 279.505, 281.956, NULL),
+  (9373, 102, 'focus it down by asking
+yourselves this one question:', 281.957, 285.478, NULL),
+  (9374, 102, 'what is the one thing that right now', 285.479, 287.233, NULL),
+  (9375, 102, 'you feel supremely qualified
+to teach other people?', 287.234, 292.227, NULL),
+  (9376, 102, 'Think about that in one word.', 292.228, 294.148, NULL),
+  (9377, 102, 'Hold it. Don''t release it yet.
+On the count of five.', 294.148, 296.696, NULL),
+  (9378, 102, 'What do you do?', 296.697, 298.036, NULL),
+  (9379, 102, 'One, two, three, four, five:', 298.037, 300.964, NULL),
+  (9380, 102, '(Audience shouts)', 300.965, 302.475, NULL),
+  (9381, 102, 'Great. That''s what you do.', 302.487, 304.094, NULL),
+  (9382, 102, 'Now, think about who you do it for,
+picture them in your mind,', 304.095, 307.824, NULL),
+  (9383, 102, 'be ready to say it on the count of five.', 307.825, 309.731, NULL),
+  (9384, 102, 'Hold it, don''t release it yet.', 309.732, 311.255, NULL),
+  (9385, 102, 'One, two, three, four, five:', 311.256, 313.502, NULL),
+  (9386, 102, '(Audience murmurs)', 313.503, 315.152, NULL),
+  (9387, 102, 'OK, who do you do it for,
+let''s see it one more time.', 315.152, 317.701, NULL),
+  (9388, 102, 'A little bit louder, please,
+over the people in the tent.', 317.701, 320.447, NULL),
+  (9389, 102, 'Who do you do it for? Together:', 320.448, 322.034, NULL),
+  (9390, 102, '(Audience shouts)', 322.035, 323.499, NULL),
+  (9391, 102, 'Thank you. That is the spirit
+that we need. OK, now.', 323.500, 326.265, NULL),
+  (9392, 102, 'What do all those people want or need?', 326.266, 328.267, NULL),
+  (9393, 102, 'What do they want or need that you have,', 328.268, 330.183, NULL),
+  (9394, 102, 'that they''ve come to you
+so you can give them this thing.', 330.183, 332.877, NULL),
+  (9395, 102, 'What do they want or need?
+In just one or two words.', 332.878, 335.322, NULL),
+  (9396, 102, 'Hold it, don''t release it yet.', 335.323, 336.762, NULL),
+  (9397, 102, 'And on the count of five:
+one, two, three, four, five...', 336.763, 340.413, NULL),
+  (9398, 102, '(Audience shouts)', 340.414, 341.544, NULL),
+  (9399, 102, 'Fantastic. Now, this is the best one.', 341.545, 343.585, NULL),
+  (9400, 102, 'How do they change?', 343.598, 345.258, NULL),
+  (9401, 102, 'How do they change or transform
+as a result of what you give them?', 345.266, 349.759, NULL),
+  (9402, 102, 'On the count of five,', 349.760, 351.038, NULL),
+  (9403, 102, 'how do they change or transform
+as a result of what you give them?', 351.039, 354.423, NULL),
+  (9404, 102, 'One, two, three, four, five:', 354.424, 357.361, NULL),
+  (9405, 102, '(Audience shouts)', 357.362, 359.471, NULL),
+  (9406, 102, 'Terrific. Now we''re going to put this
+all together kind of in a sentence, OK?', 359.472, 363.273, NULL),
+  (9407, 102, 'Everyone together,
+louder than the people in the tent:', 363.283, 366.196, NULL),
+  (9408, 102, 'who are you?', 366.197, 367.465, NULL),
+  (9409, 102, '(Audience responds)', 367.466, 368.667, NULL),
+  (9410, 102, 'What do you do?', 368.668, 370.301, NULL),
+  (9411, 102, '(Audience responds)', 370.302, 371.461, NULL),
+  (9412, 102, 'Who do you do it for?', 371.462, 373.028, NULL),
+  (9413, 102, '(Audience responds)', 373.029, 374.507, NULL),
+  (9414, 102, 'What do they want or need?', 374.508, 376.257, NULL),
+  (9415, 102, '(Audience responds)', 376.258, 377.372, NULL),
+  (9416, 102, 'How do they change as a result?', 377.373, 378.932, NULL),
+  (9417, 102, '(Audience responds)', 378.933, 379.893, NULL),
+  (9418, 102, 'Fantastic.', 379.893, 380.613, NULL),
+  (9419, 102, 'You have all just done something', 380.614, 382.502, NULL),
+  (9420, 102, 'that people who went to Yale
+could not figure out for 25 years.', 382.503, 386.109, NULL),
+  (9421, 102, 'Congratulations. Give yourselves
+a hand. (Applause)', 386.110, 389.922, NULL),
+  (9422, 102, 'Now, why is that formulation so powerful?', 389.923, 393.432, NULL),
+  (9423, 102, 'Because of all of those five things
+that you need to know', 393.433, 396.218, NULL),
+  (9424, 102, 'to know what your life purpose is,', 396.219, 397.993, NULL),
+  (9425, 102, 'only two are about yourself.', 397.994, 400.493, NULL),
+  (9426, 102, 'The other three of them
+are about other people:', 400.494, 403.520, NULL),
+  (9427, 102, 'who they are, what they want or need,', 403.523, 406.509, NULL),
+  (9428, 102, 'and how they change as a result.', 406.510, 409.554, NULL),
+  (9429, 102, 'That formulation forces you
+to be outward facing.', 410.274, 413.460, NULL),
+  (9430, 102, 'And all the happier people
+that I met outside the tent', 413.461, 416.520, NULL),
+  (9431, 102, 'on that warm New Haven night', 416.521, 418.476, NULL),
+  (9432, 102, 'they were outward facing,
+they were not inward facing.', 418.477, 421.175, NULL),
+  (9433, 102, 'They knew very clearly whom they served,
+what those people needed,', 421.176, 425.659, NULL),
+  (9434, 102, 'and how those people changed as a result.', 425.660, 428.264, NULL),
+  (9435, 102, 'And you may have intuited this already', 428.265, 430.121, NULL),
+  (9436, 102, 'that the most successful people
+in any field always focus most', 430.121, 435.508, NULL),
+  (9437, 102, 'on the people that they serve
+than on how they are served themselves.', 435.509, 440.783, NULL),
+  (9438, 102, 'Happier people make it a point
+to make other people happy,', 440.784, 445.534, NULL),
+  (9439, 102, 'and do things that make them
+feel well taken care of and secure.', 445.535, 450.508, NULL),
+  (9440, 102, 'If you make other people happy,
+life teaches us,', 450.509, 453.498, NULL),
+  (9441, 102, 'we will be taken care of, too.', 453.499, 455.764, NULL),
+  (9442, 102, 'So since you all did so well, we have time
+for just a little bit of extra credit.', 455.765, 459.959, NULL),
+  (9443, 102, '(Laughter)', 459.960, 461.101, NULL),
+  (9444, 102, 'One of the most difficult things', 461.102, 462.725, NULL),
+  (9445, 102, 'that happens when you meet
+people for the first time is', 462.726, 465.375, NULL),
+  (9446, 102, 'they ask you this question,', 465.376, 467.510, NULL),
+  (9447, 102, '"So, what do you do?"', 467.511, 469.680, NULL),
+  (9448, 102, 'And, if you''re like some of us,', 469.681, 471.544, NULL),
+  (9449, 102, 'that''s a really
+challenging question sometimes.', 471.545, 473.839, NULL),
+  (9450, 102, 'Particularly, if you''re in these moments
+where you''re between things,', 473.840, 477.628, NULL),
+  (9451, 102, 'or you''re feeling vulnerable,
+or it isn''t defined.', 477.629, 480.937, NULL),
+  (9452, 102, 'Or, what you seem to do
+isn''t what you really do,', 480.938, 484.604, NULL),
+  (9453, 102, 'or what you paid to do
+isn''t how you define yourself.', 484.605, 488.055, NULL),
+  (9454, 102, 'So, when people ask you
+this question, "So, what do you do?"', 488.059, 490.889, NULL),
+  (9455, 102, 'and also, you''ve got
+this mental monologue going on,', 490.889, 493.378, NULL),
+  (9456, 102, '"Why is he asking me?
+So, what do I do? Is it because..."', 493.378, 496.078, NULL),
+  (9457, 102, 'It''s that transactional thing
+where it''s like: "He wants to know', 496.079, 499.537, NULL),
+  (9458, 102, 'if he should really
+spend time talking to me?"', 499.538, 501.695, NULL),
+  (9459, 102, '(Laughter)', 501.696, 502.719, NULL),
+  (9460, 102, 'Or, it''s that other thing,
+so he can tell me what he does', 502.720, 505.719, NULL),
+  (9461, 102, 'because he''s sure it''s, "Oh, really,
+so much better than what I do?"', 505.720, 509.024, NULL),
+  (9462, 102, '(Laughter)', 509.025, 509.776, NULL),
+  (9463, 102, 'Right?', 509.776, 510.747, NULL),
+  (9464, 102, 'So, when somebody asks you
+that question, here''s what you do:', 510.748, 514.246, NULL),
+  (9465, 102, 'you just say the very last thing
+you called out,', 514.248, 517.503, NULL),
+  (9466, 102, 'how what you do changes
+the people you do it for.', 517.504, 520.989, NULL),
+  (9467, 102, 'So, for example, you might say,
+"I give kids awesome dreams."', 520.990, 527.959, NULL),
+  (9468, 102, 'If your life purpose is:
+"I write books for children,', 528.775, 532.897, NULL),
+  (9469, 102, 'so they can fall asleep at night,
+so they can have awesome dreams."', 532.898, 537.916, NULL),
+  (9470, 102, 'Or you might say: "I help people
+look and feel their best,"', 537.917, 542.206, NULL),
+  (9471, 102, 'if your life purpose is:', 542.207, 544.280, NULL),
+  (9472, 102, '"I design apparel for men and women
+who need affordable choices,', 544.281, 548.625, NULL),
+  (9473, 102, 'so they can look and feel their best."', 548.626, 551.839, NULL),
+  (9474, 102, 'Or you might say: "I help people
+get great work into the world,"', 551.840, 557.449, NULL),
+  (9475, 102, 'if your life purpose is:', 557.450, 559.881, NULL),
+  (9476, 102, '"I train entrepreneurs and creative people
+to take decisive actions,', 559.882, 564.403, NULL),
+  (9477, 102, 'so they can get
+their greatest work into the world."', 564.404, 567.308, NULL),
+  (9478, 102, 'And then,', 568.969, 570.248, NULL),
+  (9479, 102, 'that little snippet that you just said', 570.249, 573.248, NULL),
+  (9480, 102, 'becomes your personal elevator pitch.', 573.249, 575.935, NULL),
+  (9481, 102, 'And it will always start a conversation', 575.936, 577.997, NULL),
+  (9482, 102, 'because the person
+that you were just talking to', 577.998, 580.335, NULL),
+  (9483, 102, 'has to ask you a question,', 580.336, 581.705, NULL),
+  (9484, 102, '"How do you give kids great dreams?"', 581.706, 584.392, NULL),
+  (9485, 102, '"How do you help people
+look and feel their best?"', 584.393, 587.440, NULL),
+  (9486, 102, '"Can people really get
+their greatest work into the world?"', 587.441, 591.285, NULL),
+  (9487, 102, 'And then you get to tell them,', 591.286, 594.137, NULL),
+  (9488, 102, 'and you get to share your life purpose.', 594.138, 598.431, NULL),
+  (9489, 102, 'And you get to share
+how they may come to learn theirs, too.', 598.432, 602.452, NULL),
+  (9490, 102, '(Applause)', 603.723, 605.043, NULL);
+
 UPDATE subtitle_segment SET search_vector = to_tsvector('simple', text);
 
 SELECT setval('video_id_seq', (SELECT MAX(id) FROM video));
