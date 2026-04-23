@@ -83,12 +83,16 @@ searchForm.addEventListener('submit', async e => {
     try {
         await fetchPage();
     } catch (_) {
+        stopSync();
+        state.ytPlayer?.pauseVideo();
         show('empty');
         emptyMessage.textContent = 'Error al conectar con el servidor.';
         return;
     }
 
     if (state.results.length === 0) {
+        stopSync();
+        state.ytPlayer?.pauseVideo();
         show('empty');
         emptyMessage.textContent = `No se encontraron resultados para "${q}".`;
     } else {
