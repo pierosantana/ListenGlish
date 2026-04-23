@@ -66,7 +66,28 @@ El argumento `<acento>` es opcional y sirve como etiqueta informativa (`american
 python3 ingest_video.py dQw4w9WgXcQ "Never Gonna Give You Up" "Rick Astley" british
 ```
 
-### 5. Detener el entorno
+### 5. Verificar vídeos embeddables
+
+Algunos vídeos de YouTube tienen el embedding desactivado por su autor. Funcionan en YouTube directamente pero no se pueden incrustar en otras páginas, por lo que mostrarán un error en la app cuando se desplegue en un servidor real (en `localhost` YouTube no aplica esta restricción).
+
+Para detectarlos antes de un deploy:
+
+```bash
+python3 check_videos.py
+```
+
+El script usa el endpoint oEmbed de YouTube, que devuelve un código HTTP preciso:
+- `200` → embeddable, funciona correctamente
+- `401` → embedding desactivado o vídeo privado
+- `404` → vídeo eliminado
+
+Para eliminar los rotos de la BD (irreversible — regenera el seed antes):
+
+```bash
+python3 check_videos.py --delete
+```
+
+### 6. Detener el entorno
 
 ```bash
 docker compose down          # detiene los contenedores, conserva los datos
@@ -90,7 +111,7 @@ mvn verify
 | `GET` | `/api/dictionary/{word}` | Definición con caché en BD (Free Dictionary API) |
 | `POST` | `/api/admin/videos` | Ingestar vídeo + transcripción |
 
-> Al arrancar, Flyway aplica automáticamente `V4__seed_data.sql` con 21 vídeos y 7.200+ segmentos listos para buscar.
+> Al arrancar, Flyway aplica automáticamente `V4__seed_data.sql` con 45 vídeos y 21.900+ segmentos listos para buscar.
 
 ## Estructura
 
@@ -111,7 +132,7 @@ src/main/resources/
 │   ├── V1__initial_schema.sql   # Tablas + índice GIN para FTS
 │   ├── V2__dictionary_cache.sql # Caché de diccionario (JSONB)
 │   ├── V3__reindex_simple.sql   # Re-indexa con config 'simple'
-│   └── V4__seed_data.sql        # 21 vídeos y 7.200+ segmentos de seed
+│   └── V4__seed_data.sql        # 45 vídeos y 21.900+ segmentos de seed
 └── static/                      # Frontend (index.html, app.js, style.css)
 ```
 
