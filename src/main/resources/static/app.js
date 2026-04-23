@@ -165,7 +165,7 @@ async function renderClip(idx) {
     // Parar polling anterior, cargar player y transcript en paralelo
     stopSync();
     await Promise.all([
-        loadVideo(clip.youtubeId, Math.max(0, clip.startSeconds - 1.5)),
+        loadVideo(clip.youtubeId, Math.max(0, clip.startSeconds - 3)),
         loadTranscript(clip.youtubeId),
     ]);
 }
@@ -185,9 +185,9 @@ async function loadVideo(videoId, startSeconds) {
     } else {
         state.ytPlayer = new YT.Player('ytPlayer', {
             videoId,
-            playerVars: { start: startSeconds, autoplay: 1, rel: 0, modestbranding: 1 },
+            playerVars: { start: Math.floor(startSeconds), autoplay: 1, rel: 0, modestbranding: 1 },
             events: {
-                onReady: () => startSync(),
+                onReady: e => { e.target.seekTo(state.clipStart, true); startSync(); },
                 onStateChange: onPlayerStateChange,
                 onError: () => {
                     document.querySelector('.player-wrap').innerHTML =
