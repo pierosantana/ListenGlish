@@ -165,7 +165,7 @@ async function renderClip(idx) {
     // Parar polling anterior, cargar player y transcript en paralelo
     stopSync();
     await Promise.all([
-        loadVideo(clip.youtubeId, Math.max(0, clip.startSeconds - 2)),
+        loadVideo(clip.youtubeId, Math.max(0, clip.startSeconds - 1.2)),
         loadTranscript(clip.youtubeId),
     ]);
 }
