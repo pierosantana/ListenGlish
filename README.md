@@ -2,6 +2,10 @@
 
 Busca una palabra en inglés y escucha cómo la usan hablantes nativos en vídeos reales. Inspirado en YouGlish, construido para hispanohablantes que aprenden inglés.
 
+![Búsqueda en ListenGlish](imgs/02-busqueda.png)
+
+<sub>Más capturas: [pantalla de inicio](imgs/01-inicio.png) · [historial](imgs/03-historial.png) · [historial completo](imgs/04-historial-completo.png)</sub>
+
 ## Stack
 
 | Capa | Tecnología |
