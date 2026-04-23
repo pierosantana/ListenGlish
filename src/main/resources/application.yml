@@ -1,0 +1,53 @@
+spring:
+
+  datasource:
+    # jdbc:postgresql://HOST:PUERTO/NOMBRE_BASE_DE_DATOS
+    # localhost:5432 asume que docker-compose está corriendo en tu máquina.
+    url: jdbc:postgresql://localhost:5432/listenglish
+    username: listenglish
+    password: listenglish
+    # HikariCP es el pool de conexiones por defecto de Spring Boot.
+    # Gestiona un pool de conexiones reutilizables (abrir una conexión nueva
+    # por cada request sería muy caro en tiempo).
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+    hibernate:
+      # CRÍTICO: "validate" significa que Hibernate comprueba que el schema de la base
+      # de datos coincide con las entidades, pero NO modifica el schema.
+      # "create-drop" destruiría tus datos en cada reinicio.
+      # "update" es impredecible en producción.
+      # Como Flyway gestiona el schema, Hibernate solo valida.
+      ddl-auto: validate
+
+    # Imprime cada sentencia SQL que Hibernate envía a la base de datos.
+    # Invaluable durante el desarrollo para entender qué está pasando.
+    # Ponlo en false en producción (ruido + posible riesgo de seguridad).
+    show-sql: true
+
+    properties:
+      hibernate:
+        # Formatea el SQL impreso para que sea legible (con indentación).
+        format_sql: true
+
+  flyway:
+    enabled: true
+    # Flyway busca migraciones en classpath:db/migration por defecto,
+    # lo que corresponde a src/main/resources/db/migration/ en el árbol de fuentes.
+    locations: classpath:db/migration
+    schemas: public
+
+server:
+  port: 8080
+
+logging:
+  level:
+    # Muestra los valores reales de los parámetros (no solo '?').
+    # Requiere show-sql: true arriba.
+    org.hibernate.orm.jdbc.bind: TRACE
+    # Muestra los pasos de migración de Flyway al arrancar.
+    org.flywaydb: INFO
+    # Nivel de log para nuestra aplicación.
+    com.listenglish: DEBUG

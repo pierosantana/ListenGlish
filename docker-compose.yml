@@ -1,0 +1,47 @@
+# docker-compose.yml
+#
+# Define el entorno de desarrollo local.
+# Arrancar:           docker compose up -d
+# Parar:              docker compose down
+# Parar + borrar datos: docker compose down -v
+
+version: '3.9'
+
+services:
+
+  postgres:
+    # Siempre fija una versión específica de imagen.
+    # `latest` puede romperte el entorno en silencio cuando sale una nueva versión mayor.
+    image: postgres:16-alpine
+
+    container_name: listenglish-postgres
+
+    environment:
+      # Variables oficiales de la imagen Docker de PostgreSQL para la configuración inicial.
+      POSTGRES_DB: listenglish
+      POSTGRES_USER: listenglish
+      POSTGRES_PASSWORD: listenglish
+
+    ports:
+      # "PUERTO_HOST:PUERTO_CONTENEDOR"
+      # Tu app Spring Boot (en el host) se conecta a localhost:5432.
+      # El contenedor escucha internamente en 5432.
+      - "5432:5432"
+
+    volumes:
+      # Volumen con nombre: los datos persisten entre `docker compose down` y `up`.
+      # Sin esto, todos los datos desaparecen al reiniciar.
+      - postgres_data:/var/lib/postgresql/data
+
+    healthcheck:
+      # pg_isready verifica si PostgreSQL acepta conexiones.
+      # Docker usa esto para saber cuándo el contenedor está realmente listo.
+      test: ["CMD-SHELL", "pg_isready -U listenglish -d listenglish"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  # Volumen con nombre gestionado por Docker.
+  # Inspeccionar con: docker volume ls
+  postgres_data:
