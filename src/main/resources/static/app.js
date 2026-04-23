@@ -93,6 +93,7 @@ searchForm.addEventListener('submit', async e => {
         emptyMessage.textContent = `No se encontraron resultados para "${q}".`;
     } else {
         show('player');
+        saveSearch(state.query, state.total);
         renderClip(0);
     }
 });
@@ -415,3 +416,116 @@ function escapeHtml(str) {
         .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
         .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 }
+
+// ─────────────────────────────────────────────
+// Historial de búsquedas (localStorage)
+// ─────────────────────────────────────────────
+const HISTORY_KEY = 'lg_history';
+const HISTORY_MAX = 100;
+
+function saveSearch(query, total) {
+    if (!query || total < 1) return;
+    const history = getHistory().filter(h => h.query.toLowerCase() !== query.toLowerCase());
+    history.unshift({ query, total, ts: Date.now() });
+    if (history.length > HISTORY_MAX) history.length = HISTORY_MAX;
+    localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+    renderHistoryWidgets();
+}
+
+function getHistory() {
+    try { return JSON.parse(localStorage.getItem(HISTORY_KEY)) || []; }
+    catch (_) { return []; }
+}
+
+function renderHistoryWidgets() {
+    renderHomeHistory();
+    refreshPlayerHistorySection();
+}
+
+function renderHomeHistory() {
+    const history = getHistory();
+    const el = document.getElementById('homeHistory');
+    if (!history.length) { el.hidden = true; return; }
+    el.hidden = false;
+    const recent = history.slice(0, 8);
+    let html = recent.map(h =>
+        `<button class="history-chip" data-query="${escapeHtml(h.query)}">${escapeHtml(h.query)}</button>`
+    ).join('');
+    if (history.length > 8) {
+        html += `<button class="history-chip history-chip--more" id="homeShowAll">+${history.length - 8} más</button>`;
+    }
+    el.innerHTML = html;
+    document.getElementById('homeShowAll')?.addEventListener('click', openHistoryModal);
+}
+
+function refreshPlayerHistorySection() {
+    const history = getHistory();
+    const section = document.getElementById('historySection');
+    if (!history.length) { section.hidden = true; return; }
+    section.hidden = false;
+}
+
+function refreshHistoryGrid() {
+    const history = getHistory();
+    const grid = document.getElementById('historyGrid');
+    const recent = history.slice(0, 10);
+    let html = recent.map(h =>
+        `<button class="history-chip" data-query="${escapeHtml(h.query)}">${escapeHtml(h.query)}</button>`
+    ).join('');
+    if (history.length > 10) {
+        html += `<button class="history-chip history-chip--more" id="playerShowAll">Ver todo (${history.length})</button>`;
+    }
+    grid.innerHTML = html;
+    document.getElementById('playerShowAll')?.addEventListener('click', openHistoryModal);
+}
+
+// Toggle historial en el player
+document.getElementById('historyToggle').addEventListener('click', () => {
+    const grid    = document.getElementById('historyGrid');
+    const toggle  = document.getElementById('historyToggle');
+    const opening = grid.hidden;
+    grid.hidden   = !opening;
+    toggle.classList.toggle('history-toggle--open', opening);
+    if (opening) refreshHistoryGrid();
+});
+
+// Delegación de clicks en chips (home + player)
+document.addEventListener('click', e => {
+    const chip = e.target.closest('.history-chip[data-query]');
+    if (!chip) return;
+    const q = chip.dataset.query;
+    searchInput.value = q;
+    document.getElementById('historyModal').hidden = true;
+    searchForm.dispatchEvent(new Event('submit'));
+});
+
+// Modal historial completo
+function openHistoryModal() {
+    const history = getHistory();
+    const list    = document.getElementById('historyModalList');
+    list.innerHTML = history.map(h => {
+        const date = new Date(h.ts).toLocaleDateString('es-ES',
+            { day: '2-digit', month: 'short', year: '2-digit' });
+        const count = h.total === 1 ? '1 resultado' : `${h.total} resultados`;
+        return `<button class="history-chip history-chip--row" data-query="${escapeHtml(h.query)}">
+            <span class="hc-query">${escapeHtml(h.query)}</span>
+            <span class="hc-meta">${count} · ${date}</span>
+        </button>`;
+    }).join('');
+    document.getElementById('historyModal').hidden = false;
+}
+
+document.getElementById('historyModalClose').addEventListener('click', () => {
+    document.getElementById('historyModal').hidden = true;
+});
+
+// Cerrar modal al hacer clic fuera
+document.getElementById('historyModal').addEventListener('click', e => {
+    if (e.target === document.getElementById('historyModal')) {
+        document.getElementById('historyModal').hidden = true;
+    }
+});
+
+// Init: mostrar historial en pantalla de inicio si ya hay entradas
+renderHistoryWidgets();
+

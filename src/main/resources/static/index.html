@@ -41,6 +41,7 @@
         <section class="home-screen" id="homeScreen">
             <h1 class="home-title">Escucha inglés<br>en contexto real</h1>
             <p class="home-sub">Escribe una palabra y ve cómo la usan hablantes nativos en vídeos reales.</p>
+            <div class="home-history" id="homeHistory" hidden></div>
         </section>
 
         <!-- ===== CARGA ===== -->
@@ -91,6 +92,12 @@
             <div class="subtitle-block" id="subtitleBlock"></div>
             <div class="nav-dots" id="navDots"></div>
 
+            <!-- ===== HISTORIAL (player) ===== -->
+            <div class="history-section" id="historySection" hidden>
+                <button class="history-toggle" id="historyToggle">Historial</button>
+                <div class="history-grid" id="historyGrid" hidden></div>
+            </div>
+
         </div>
 
         <!-- ===== DICCIONARIO ===== -->
@@ -100,6 +107,17 @@
         </aside>
 
     </main>
+
+    <!-- ===== MODAL HISTORIAL ===== -->
+    <div class="history-modal-overlay" id="historyModal" hidden>
+        <div class="history-modal-box">
+            <div class="history-modal-header">
+                <span class="history-modal-title">Historial completo</span>
+                <button class="history-modal-close" id="historyModalClose" aria-label="Cerrar">✕</button>
+            </div>
+            <div class="history-modal-list" id="historyModalList"></div>
+        </div>
+    </div>
 
     <script src="app.js"></script>
 </body>
