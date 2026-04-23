@@ -19,33 +19,66 @@ Busca una palabra en inglés y escucha cómo la usan hablantes nativos en vídeo
 - Java 21+
 - Maven 3.9+
 - Docker + Docker Compose
+- Python 3 + `pip install youtube-transcript-api` _(solo para ingestar vídeos)_
 
-Para ingestar vídeos también necesitas Python 3 con `pip install youtube-transcript-api`.
+## Instalación y uso
 
-## Arrancar
+### 1. Clonar el repositorio
 
 ```bash
-# 1. Base de datos
-docker compose up -d
+git clone https://github.com/tu-usuario/ListenGlish.git
+cd ListenGlish
+```
 
-# 2. Aplicación  (Flyway aplica las migraciones automáticamente)
+### 2. Levantar la base de datos
+
+```bash
+docker compose up -d
+```
+
+PostgreSQL 16 arranca en segundo plano. Los datos persisten en un volumen Docker con nombre (`postgres_data`). Puedes verificar que está listo con:
+
+```bash
+docker compose ps   # debe mostrar estado "healthy"
+```
+
+### 3. Ejecutar la aplicación
+
+```bash
 mvn spring-boot:run
 ```
 
-Abre `http://localhost:8080`.
+En el primer arranque Flyway aplica las migraciones automáticamente. La aplicación queda disponible en `http://localhost:8080`.
 
-## Añadir vídeos
+### 4. Ingestar vídeos
+
+La app necesita vídeos con transcripción para poder buscar. El script `ingest_video.py` descarga la transcripción de YouTube y la envía al backend:
 
 ```bash
-python3 ingest_video.py <youtubeId> "Título" "Canal" american
+python3 ingest_video.py <youtubeId> "Título del vídeo" "Nombre del canal" <acento>
 ```
 
-El script descarga la transcripción de YouTube y la envía al backend vía `/api/admin/videos`. El acento puede ser `american`, `british`, `australian`, etc. (opcional, sirve como etiqueta).
+El argumento `<acento>` es opcional y sirve como etiqueta informativa (`american`, `british`, `australian`, etc.).
+
+**Ejemplo:**
+
+```bash
+python3 ingest_video.py dQw4w9WgXcQ "Never Gonna Give You Up" "Rick Astley" british
+```
+
+### 5. Detener el entorno
+
+```bash
+docker compose down          # detiene los contenedores, conserva los datos
+docker compose down -v       # detiene los contenedores y borra todos los datos
+```
 
 ## Tests
 
+Los tests de integración usan Testcontainers, que levanta su propio contenedor PostgreSQL aislado. No es necesario tener `docker compose up` activo.
+
 ```bash
-mvn verify   # Testcontainers levanta su propio PostgreSQL — no necesitas docker compose up
+mvn verify
 ```
 
 ## API
@@ -84,5 +117,5 @@ src/main/resources/
 - **FTS de PostgreSQL** en lugar de Elasticsearch: suficiente para este volumen y el índice GIN es explicable en entrevistas.
 - **Flyway** en lugar de `ddl-auto`: control total del schema, reproducible en cualquier entorno.
 - **Testcontainers** en lugar de H2: los tests usan PostgreSQL real y capturan comportamiento específico (índices GIN, `tsvector`).
-- **`DictionaryApi` como interfaz**: Mockito en Java 21+ puede tener problemas mockeando clases concretas con ciertos módulos; extraer la interfaz elimina el problema.
-- **Fisher-Yates shuffle** en el frontend: el usuario ve clips aleatorios sin repetición, precargando la siguiente página al llegar al final.
+- **`DictionaryApi` como interfaz**: extraída de la clase concreta para que Mockito pueda mockearla sin problemas en Java 21+.
+- **Fisher-Yates shuffle** en el frontend: el usuario ve clips en orden aleatorio sin repetición, precargando la siguiente página al acercarse al final.
