@@ -26,7 +26,7 @@ Busca una palabra en inglés y escucha cómo la usan hablantes nativos en vídeo
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/ListenGlish.git
+git clone https://github.com/pierosantana/ListenGlish.git
 cd ListenGlish
 ```
 
@@ -90,6 +90,8 @@ mvn verify
 | `GET` | `/api/dictionary/{word}` | Definición con caché en BD (Free Dictionary API) |
 | `POST` | `/api/admin/videos` | Ingestar vídeo + transcripción |
 
+> Al arrancar, Flyway aplica automáticamente `V4__seed_data.sql` con 21 vídeos y 7.200+ segmentos listos para buscar.
+
 ## Estructura
 
 ```
@@ -108,7 +110,8 @@ src/main/resources/
 ├── db/migration/
 │   ├── V1__initial_schema.sql   # Tablas + índice GIN para FTS
 │   ├── V2__dictionary_cache.sql # Caché de diccionario (JSONB)
-│   └── V3__reindex_simple.sql   # Re-indexa con config 'simple'
+│   ├── V3__reindex_simple.sql   # Re-indexa con config 'simple'
+│   └── V4__seed_data.sql        # 21 vídeos y 7.200+ segmentos de seed
 └── static/                      # Frontend (index.html, app.js, style.css)
 ```
 
