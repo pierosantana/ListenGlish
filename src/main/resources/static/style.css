@@ -737,7 +737,7 @@ main {
     flex-wrap: wrap;
     gap: 0.5rem;
     justify-content: center;
-    margin-top: 1.75rem;
+    margin: 1.75rem auto 0;
     max-width: 520px;
     animation: fadeUp .35s var(--ease) both;
 }
@@ -780,6 +780,9 @@ main {
     gap: 0.45rem;
     margin-top: 0.8rem;
 }
+/* [hidden] tiene especificidad 0,1,0 — igual que .history-grid.
+   Con dos selectores ganamos (0,2,0) y el display:none se aplica. */
+.history-grid[hidden] { display: none; }
 .history-grid .history-chip {
     justify-content: flex-start;
 }
