@@ -20,7 +20,12 @@ import urllib.error
 
 from youtube_transcript_api import YouTubeTranscriptApi
 
-API_URL = "http://localhost:8080/api/admin/videos"
+# Override con env vars para apuntar a prod:
+#   API_URL=https://tuapp.railway.app/api/admin/videos python3 ingest_video.py ...
+#   ADMIN_TOKEN=xxx python3 ingest_video.py ...
+import os
+API_URL     = os.environ.get("API_URL",     "http://localhost:8080/api/admin/videos")
+ADMIN_TOKEN = os.environ.get("ADMIN_TOKEN", "dev-token-change-me")
 
 def ingest(youtube_id, title, channel, accent=None, cookies_file=None):
     print(f"Descargando transcripción de: {youtube_id}")
@@ -66,7 +71,10 @@ def ingest(youtube_id, title, channel, accent=None, cookies_file=None):
         API_URL,
         data    = body,
         method  = "POST",
-        headers = {"Content-Type": "application/json"},
+        headers = {
+            "Content-Type":  "application/json",
+            "X-Admin-Token": ADMIN_TOKEN,
+        },
     )
 
     try:
