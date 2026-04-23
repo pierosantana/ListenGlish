@@ -187,7 +187,7 @@ async function loadVideo(videoId, startSeconds) {
             videoId,
             playerVars: { start: Math.floor(startSeconds), autoplay: 1, rel: 0, modestbranding: 1 },
             events: {
-                onReady: e => { e.target.seekTo(state.clipStart, true); startSync(); },
+                onReady: e => { e.target.seekTo(state.clipStart, true); e.target.playVideo(); startSync(); },
                 onStateChange: onPlayerStateChange,
                 onError: () => {
                     document.querySelector('.player-wrap').innerHTML =
