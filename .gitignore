@@ -18,6 +18,9 @@ target/
 .DS_Store
 Thumbs.db
 
+# Docs (notas de aprendizaje, no código)
+docs/
+
 # Logs
 *.log
 logs/
