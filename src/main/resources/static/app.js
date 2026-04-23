@@ -184,21 +184,28 @@ async function loadVideo(videoId, startSeconds) {
 
     if (state.ytPlayer) {
         state.ytPlayer.loadVideoById({ videoId, startSeconds });
-        // onStateChange sigue activo del constructor — no hace falta re-registrar
         startSync();
     } else {
+        // MutationObserver: pone allow="autoplay" en el iframe ANTES de que cargue
+        // el contenido. En onReady ya es demasiado tarde para móvil.
+        const playerWrap = document.querySelector('.player-wrap');
+        const obs = new MutationObserver(mutations => {
+            for (const m of mutations) {
+                for (const node of m.addedNodes) {
+                    if (node.tagName === 'IFRAME') {
+                        node.setAttribute('allow', 'autoplay; fullscreen; encrypted-media');
+                        obs.disconnect();
+                    }
+                }
+            }
+        });
+        obs.observe(playerWrap, { childList: true });
+
         state.ytPlayer = new YT.Player('ytPlayer', {
             videoId,
             playerVars: { start: Math.floor(startSeconds), autoplay: 1, rel: 0, modestbranding: 1 },
             events: {
-                onReady: e => {
-                    // Permitir autoplay en móvil (navegadores bloquean iframes cross-origin sin esto)
-                    const iframe = e.target.getIframe?.();
-                    if (iframe) iframe.allow = 'autoplay; fullscreen';
-                    e.target.seekTo(state.clipStart, true);
-                    e.target.playVideo();
-                    startSync();
-                },
+                onReady: e => { e.target.seekTo(state.clipStart, true); e.target.playVideo(); startSync(); },
                 onStateChange: onPlayerStateChange,
                 onError: () => {
                     document.querySelector('.player-wrap').innerHTML =
