@@ -165,7 +165,7 @@ async function renderClip(idx) {
     // Parar polling anterior, cargar player y transcript en paralelo
     stopSync();
     await Promise.all([
-        loadVideo(clip.youtubeId, Math.max(0, clip.startSeconds - 3)),
+        loadVideo(clip.youtubeId, Math.max(0, clip.startSeconds - 2)),
         loadTranscript(clip.youtubeId),
     ]);
 }
@@ -243,7 +243,8 @@ function startSync() {
         state.lastActiveSeg = idx;
 
         if (idx >= 0) {
-            showSubtitle(state.transcript[idx].text);
+            const peek = state.transcript[idx + 1]?.text ?? '';
+            showSubtitle(state.transcript[idx].text, peek);
         }
     }, 300);
 }
@@ -270,8 +271,10 @@ function findSegment(t) {
 // ─────────────────────────────────────────────
 // Subtítulo grande
 // ─────────────────────────────────────────────
-function showSubtitle(text) {
-    subtitleBlock.innerHTML = tokenizeText(text, state.query);
+function showSubtitle(text, peekText = '') {
+    subtitleBlock.innerHTML =
+        `<div class="subtitle-current">${tokenizeText(text, state.query)}</div>` +
+        (peekText ? `<div class="subtitle-peek">${tokenizeText(peekText, state.query)}</div>` : '');
 }
 
 function tokenizeText(text, query) {

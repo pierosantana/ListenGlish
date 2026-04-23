@@ -13,10 +13,10 @@
     --blue-mid:     rgba(0, 122, 255, 0.12);
     --blue-border:  rgba(0, 122, 255, 0.25);
 
-    /* Highlight (searched word) */
-    --highlight-bg:     rgba(0, 122, 255, 0.13);
-    --highlight-border: rgba(0, 122, 255, 0.35);
-    --highlight-text:   #0055d4;
+    /* Highlight (searched word) — amarillo marcador */
+    --highlight-bg:     rgba(255, 214, 10, 0.38);
+    --highlight-border: rgba(220, 180, 0, 0.55);
+    --highlight-text:   #3d2f00;
 
     /* Glass surfaces — light */
     --glass:        rgba(255, 255, 255, 0.62);
@@ -416,7 +416,7 @@ main {
     box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255,255,255,0.9);
 
     font-family: 'Outfit', sans-serif;
-    font-size: clamp(1.1rem, 2.5vw, 1.45rem);
+    font-size: clamp(1.63rem, 3.65vw, 2.08rem);
     font-weight: 500;
     line-height: 1.65;
     color: var(--text);
@@ -671,7 +671,7 @@ main {
 
     /* Subtítulo */
     .subtitle-block {
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding: 12px 14px;
         border-radius: var(--r-md);
         margin-top: 14px;
@@ -693,6 +693,20 @@ main {
         from { opacity: 0; transform: translateY(30px); }
         to   { opacity: 1; transform: translateY(0); }
     }
+}
+
+/* ── Subtítulo: texto actual + preview siguiente ─────────── */
+.subtitle-current {
+    line-height: inherit;
+}
+
+.subtitle-peek {
+    margin-top: 0.55em;
+    font-size: 0.58em;
+    font-weight: 400;
+    color: var(--text-muted);
+    line-height: 1.5;
+    opacity: 0.9;
 }
 
 /* ── Historial de búsquedas ───────────────────────────────── */
