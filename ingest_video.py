@@ -3,10 +3,14 @@
 Descarga la transcripción de un vídeo de YouTube y la ingesta en ListenGlish.
 
 Uso:
-    python3 ingest_video.py <youtubeId> <título> <canal> [acento]
+    python3 ingest_video.py <youtubeId> <título> <canal> [acento] [--cookies <archivo>]
 
-Ejemplo:
+Ejemplos:
     python3 ingest_video.py iG9CE55wbtY "Do schools kill creativity?" "TED" british
+    python3 ingest_video.py iG9CE55wbtY "Do schools kill creativity?" "TED" british --cookies cookies.txt
+
+Si YouTube bloquea tu IP, exporta las cookies desde el navegador con la extensión
+"Get cookies.txt LOCALLY" (Chrome/Firefox) y pásalas con --cookies cookies.txt
 """
 
 import sys
@@ -18,9 +22,15 @@ from youtube_transcript_api import YouTubeTranscriptApi
 
 API_URL = "http://localhost:8080/api/admin/videos"
 
-def ingest(youtube_id, title, channel, accent=None):
+def ingest(youtube_id, title, channel, accent=None, cookies_file=None):
     print(f"Descargando transcripción de: {youtube_id}")
-    api = YouTubeTranscriptApi()
+
+    kwargs = {}
+    if cookies_file:
+        kwargs["cookies"] = cookies_file
+        print(f"  → Usando cookies de: {cookies_file}")
+
+    api = YouTubeTranscriptApi(**kwargs)
     transcript = list(api.fetch(youtube_id))
     print(f"  → {len(transcript)} segmentos descargados")
 
@@ -31,10 +41,9 @@ def ingest(youtube_id, title, channel, accent=None):
             "endSeconds":   round(s.start + s.duration, 3)
         }
         for s in transcript
-        if s.text.strip()   # ignorar segmentos vacíos
+        if s.text.strip()
     ]
 
-    # Duración total = fin del último segmento
     duration = int(segments[-1]["endSeconds"]) if segments else 0
 
     payload = {
@@ -73,9 +82,17 @@ if __name__ == "__main__":
         print(__doc__)
         sys.exit(1)
 
+    args = sys.argv[1:]
+    cookies_file = None
+    if "--cookies" in args:
+        idx = args.index("--cookies")
+        cookies_file = args[idx + 1]
+        args = args[:idx] + args[idx + 2:]
+
     ingest(
-        youtube_id = sys.argv[1],
-        title      = sys.argv[2],
-        channel    = sys.argv[3],
-        accent     = sys.argv[4] if len(sys.argv) > 4 else None,
+        youtube_id   = args[0],
+        title        = args[1],
+        channel      = args[2],
+        accent       = args[3] if len(args) > 3 else None,
+        cookies_file = cookies_file,
     )

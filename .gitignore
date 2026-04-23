@@ -39,3 +39,4 @@ venv/
 # Env / secrets
 .env
 *.secret
+cookies.txt
