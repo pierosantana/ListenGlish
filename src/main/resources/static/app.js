@@ -187,7 +187,14 @@ async function loadVideo(videoId, startSeconds) {
             videoId,
             playerVars: { start: Math.floor(startSeconds), autoplay: 1, rel: 0, modestbranding: 1 },
             events: {
-                onReady: e => { e.target.seekTo(state.clipStart, true); e.target.playVideo(); startSync(); },
+                onReady: e => {
+                    // Permitir autoplay en móvil (navegadores bloquean iframes cross-origin sin esto)
+                    const iframe = e.target.getIframe?.();
+                    if (iframe) iframe.allow = 'autoplay; fullscreen';
+                    e.target.seekTo(state.clipStart, true);
+                    e.target.playVideo();
+                    startSync();
+                },
                 onStateChange: onPlayerStateChange,
                 onError: () => {
                     document.querySelector('.player-wrap').innerHTML =
