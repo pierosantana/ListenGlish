@@ -24,9 +24,8 @@ services:
 
     ports:
       # "PUERTO_HOST:PUERTO_CONTENEDOR"
-      # Tu app Spring Boot (en el host) se conecta a localhost:5432.
-      # El contenedor escucha internamente en 5432.
-      - "5432:5432"
+      # Usamos 5433 para no colisionar con otros proyectos que usen 5432.
+      - "5433:5432"
 
     volumes:
       # Volumen con nombre: los datos persisten entre `docker compose down` y `up`.
